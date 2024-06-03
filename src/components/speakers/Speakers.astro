@@ -1,0 +1,15 @@
+---
+import speakers from "./speakers.json";
+import SpeakerCard from "./SpeakerCard.astro";
+---
+
+<section class="container m-auto px-4 border">
+    <h1 class="text-2xl font-bold">Speakers</h1>
+    <section class="grid grid-cols-3 gap-4 p-4">
+        {
+            speakers.map((speaker) => (
+                <SpeakerCard {...speaker}></SpeakerCard>
+            ))
+        }
+    </section>
+</section>

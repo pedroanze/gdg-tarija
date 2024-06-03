@@ -1,0 +1,26 @@
+---
+import { Image } from "astro:assets";
+const { nombre, descripcion, foto } = Astro.props;
+
+import ImgAlejandro from "../../assets/images/alejandro.jpg";
+import ImgMarcelo from "../../assets/images/marcelo.jpg";
+import ImgSimon from "../../assets/images/simon.jpg";
+
+const imagenes = {
+    alejandro: ImgAlejandro,
+    marcelo: ImgMarcelo,
+    simon: ImgSimon,
+};
+---
+
+<section class="border rounded flex flex-col gap-4 items-center p-4">
+    <Image
+        class="rounded-full h-48 object-cover"
+        src={imagenes[foto]}
+        alt="foto"
+    />
+    <div class="font-bold text-xl">{nombre}</div>
+    <div class="text-justify">
+        {descripcion}
+    </div>
+</section>
