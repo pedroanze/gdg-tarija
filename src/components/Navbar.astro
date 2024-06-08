@@ -1,0 +1,36 @@
+<header class="bg-Background top-0 start-0 border-b border-Gray-900 w-full">
+    <nav class="flex flex-wrap justify-between items-center py-6 px-10">
+        <div class="">
+            <img class="h-12" src="https://cdn-icons-png.flaticon.com/512/5968/5968204.png" alt="">
+        </div>
+        <div id="menu-button" class="text-Gray-900 text-4xl font-bold md:hidden cursor-pointer">
+            &equiv;
+        </div>
+        <div id="menu-open" class="text-center w-full hidden md:flex md:w-auto">
+            <ul class="font-medium text-lg text-Gray-900 bg-Background md:flex gap-x-9">
+                <li class="py-4">
+                    <a href="" class="hover:text-gray-500">Quiénes Somos</a>
+                </li>
+                <li class="py-4">
+                    <a href="" class="hover:text-gray-500">Sponsors</a>
+                </li>
+                <li class="py-4">
+                    <a href="" class="hover:text-gray-500">Eventos</a>
+                </li>
+                <li class="py-4">
+                    <a href="" class="hover:text-gray-500">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+
+<script>
+    const button = document.querySelector('#menu-button')
+    const menuOpen = document.querySelector('#menu-open')
+
+    button.addEventListener("click", () => {
+        menuOpen.classList.toggle("hidden");
+    })
+</script>
