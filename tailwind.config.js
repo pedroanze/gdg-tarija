@@ -20,6 +20,8 @@ export default {
     },
     extend: {
       colors: {
+        'Background': '#eeeeee',
+        'Gray-900':'#202124',
         blue: {
           50: '#F0F5FE',
           100: '#DCE9FD',
