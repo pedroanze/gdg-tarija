@@ -1,0 +1,17 @@
+---
+import { Image } from "astro:assets";
+const { medio, contacto, logo } = Astro.props;
+
+import ImgGmail from "../../assets/images/gmail.png";
+import ImgWhatsApp from "../../assets/images/whatsapp.png";
+
+const imagenes = {
+  gmail: ImgGmail,
+  whatsapp: ImgWhatsApp,
+};
+---
+
+<div class="flex items-center">
+  <Image class="h-14 w-auto" src={imagenes[logo]} alt={medio} />
+  <span class="self-center text-lg"> {contacto} </span>
+</div>
