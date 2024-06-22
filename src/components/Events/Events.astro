@@ -1,0 +1,197 @@
+---
+const events = [
+  {
+    src: "/src/assets/images/build_with_AI.webp",
+    link: "https://gdg.community.dev/events/details/google-gdg-sucre-presents-hackathon-build-with-ai-bolivia/",
+    date: "4 May 2024 ",
+    title: "Hackatón 1",
+    fullName: "Hackaton Build With AI Bolivia"
+  },
+  {
+    src: "/src/assets/images/impact_the_future.webp",
+    link: "https://gdg.community.dev/events/details/google-gdg-tarija-presents-international-womens-day-tarija-2024/",
+    date: "20 abr 2024",
+    title: "Conferencia",
+    fullName: "International Womens Day Tarija 2024"
+  },
+  {
+    src: "/src/assets/images/kick.webp",
+    link: "https://gdg.community.dev/events/details/google-gdg-tarija-presents-kickoff-2024/",
+    date: "17 feb 2024",
+    title: "Sesion Informativa",
+    fullName: "KickOff 2024"
+  },
+  {
+    src: "/src/assets/images/devfest.webp",
+    link: "https://gdg.community.dev/events/details/google-gdg-tarija-presents-devfest-tarija2023/",
+    date: "9 dic 2023",
+    title: "Taller / Grupo de Estudio",
+    fullName: "DevFest Tarija2023"
+  },
+  {
+    src: "/src/assets/images/grupo_taller.webp",
+    link: "https://gdg.community.dev/events/details/google-gdg-tarija-presents-conectate-colabora-triunfa-workshop-de-google-suite-y-design-thinking/",
+    date: "10 nov 2023",
+    title: "Taller / Grupo de Estudio",
+    fullName: "Conéctate, Colabora, Triunfa: Workshop de Google Suite y Design Thinking"
+  },
+  {
+    src: "/src/assets/images/google_extend.webp",
+    link: "https://gdg.community.dev/events/details/google-gdg-tarija-presents-google-io-extended-tarija-2023/",
+    date: "12 ago 2023",
+    title: "Sesion con Potente / Charla Técnico",
+    fullName: "Google I/O Extended Tarija 2023"
+  },
+  {
+    src: "/src/assets/images/workshop.webp",
+    link: "https://gdg.community.dev/events/details/google-gdg-tarija-presents-workshop-creando-tu-propio-chat-gpt-con-openia-ypython/",
+    date: "20 jul 2023",
+    title: "Taller / Grupo de Estudio",
+    fullName: "International Womens Day Tarija 2023"
+  },
+  {
+    src: "/src/assets/images/conferencia.webp",
+    link: "https://gdg.community.dev/events/details/google-gdg-tarija-presents-international-womens-day-tarija-2023/",
+    date: "15 Dec 2023",
+    title: "Conferencia",
+    fullName: "Nombre Completo del Evento 8"
+  },
+];
+let visibleEvents = 4;
+console.log("🚀 ~ visibleEvents:", visibleEvents);
+
+const loadMoreEvents = () => {
+  console.log(2);
+  alert(visibleEvents);
+  visibleEvents += 4;
+};
+---
+
+<section class="content-container mt-14">
+  <h2 class="text-3xl font-bold text-center mb-8">
+    Eventos Pasados {visibleEvents}
+  </h2>
+  <div
+    id="event-list"
+    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-center"
+  >
+  </div>
+  {
+    visibleEvents < events.length && (
+      <div class="flex justify-center mt-8">
+        <button id="load-more" class="bg-blue-500 text-white py-2 px-4 rounded">
+          Ver Más
+        </button>
+      </div>
+    )
+  }
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const events = [
+    {
+    src: "/src/assets/images/build_with_AI.webp",
+    link: "https://gdg.community.dev/events/details/google-gdg-sucre-presents-hackathon-build-with-ai-bolivia/",
+    date: "4 May 2024 ",
+    title: "Hackatón 1",
+    fullName: "Hackaton Build With AI Bolivia"
+  },
+  {
+    src: "/src/assets/images/impact_the_future.webp",
+    link: "https://gdg.community.dev/events/details/google-gdg-tarija-presents-international-womens-day-tarija-2024/",
+    date: "20 abr 2024",
+    title: "Conferencia",
+    fullName: "International Womens Day Tarija 2024"
+  },
+  {
+    src: "/src/assets/images/kick.webp",
+    link: "https://gdg.community.dev/events/details/google-gdg-tarija-presents-kickoff-2024/",
+    date: "17 feb 2024",
+    title: "Sesion Informativa",
+    fullName: "KickOff 2024"
+  },
+  {
+    src: "/src/assets/images/devfest.webp",
+    link: "https://gdg.community.dev/events/details/google-gdg-tarija-presents-devfest-tarija2023/",
+    date: "9 dic 2023",
+    title: "Taller / Grupo de Estudio",
+    fullName: "DevFest Tarija2023"
+  },
+  {
+    src: "/src/assets/images/grupo_taller.webp",
+    link: "https://gdg.community.dev/events/details/google-gdg-tarija-presents-conectate-colabora-triunfa-workshop-de-google-suite-y-design-thinking/",
+    date: "10 nov 2023",
+    title: "Taller / Grupo de Estudio",
+    fullName: "Conéctate, Colabora, Triunfa: Workshop de Google Suite y Design Thinking"
+  },
+  {
+    src: "/src/assets/images/google_extend.webp",
+    link: "https://gdg.community.dev/events/details/google-gdg-tarija-presents-google-io-extended-tarija-2023/",
+    date: "12 ago 2023",
+    title: "Sesion con Potente / Charla Técnico",
+    fullName: "Google I/O Extended Tarija 2023"
+  },
+  {
+    src: "/src/assets/images/workshop.webp",
+    link: "https://gdg.community.dev/events/details/google-gdg-tarija-presents-workshop-creando-tu-propio-chat-gpt-con-openia-ypython/",
+    date: "20 jul 2023",
+    title: "Taller / Grupo de Estudio",
+    fullName: "International Womens Day Tarija 2023"
+  },
+  {
+    src: "/src/assets/images/conferencia.webp",
+    link: "https://gdg.community.dev/events/details/google-gdg-tarija-presents-international-womens-day-tarija-2023/",
+    date: "15 Dec 2023",
+    title: "Conferencia",
+    fullName: "Nombre Completo del Evento 8"
+  },
+    ];
+
+    let visibleEvents = 4;
+
+    const eventList = document.getElementById("event-list");
+    const loadMoreBtn = document.getElementById("load-more");
+
+    const loadEvents = () => {
+      eventList.innerHTML = "";
+
+      events.slice(0, visibleEvents).forEach((event) => {
+        const eventElement = document.createElement("div");
+        eventElement.className = "text-center mb-4";
+
+        eventElement.innerHTML = `
+          <a
+            href="${event.link}"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="block transform transition-transform duration-300 hover:scale-110"
+          >
+            <img
+              src="${event.src}"
+              alt="${event.title}"
+              class="w-48 h-48 rounded-full object-cover mx-auto"
+            />
+          </a>
+          <p class="text-gray-500 mt-5">${event.date}</p>
+          <p class="text-gray-800 font-semibold mt-5">${event.title}</p>
+          <p class="text-gray-900 mt-5">${event.fullName}</p>
+          <p class="text-gray-600 mt-5">GDG Tarija</p>
+        `;
+
+        eventList.appendChild(eventElement);
+      });
+
+      if (visibleEvents >= events.length) {
+        loadMoreBtn.style.display = "none";
+      }
+    };
+
+    loadMoreBtn?.addEventListener("click", () => {
+      visibleEvents += 4;
+      loadEvents();
+    });
+
+    loadEvents();
+  });
+</script>
