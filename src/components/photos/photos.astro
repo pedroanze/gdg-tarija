@@ -1,0 +1,47 @@
+---
+---
+
+<div class="w-full bg-neutral-800 text-zinc-100 py-10 flex flex-col items-center">
+    <div class="w-full max-w-6xl px-4">
+      <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-10 text-center">Galería de Fotos</h1>
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-3 relative overflow-hidden bg-cover bg-no-repeat">
+        <img class="max-w-l h-50 md:h-60 object-cover rounded-lg cursor-pointer transform transition duration-500 hover:scale-110" src="../../../src/assets/images/comunity-photos/1.png" alt="Foto 1" onclick="openModal('../../../src/assets/images/comunity-photos/1.png')"/>
+        <img class="max-w-l h-50 md:h-60 object-cover rounded-lg cursor-pointer transition duration-300 ease-in-out hover:scale-110" src="../../../src/assets/images/comunity-photos/2.png" alt="Foto 2" onclick="openModal('../../../src/assets/images/comunity-photos/2.png')"/>
+        <img class="max-w-l h-50 md:h-60 object-cover rounded-lg cursor-pointer transform transition duration-500 hover:scale-110" src="../../../src/assets/images/comunity-photos/3.png" alt="Foto 3" onclick="openModal('../../../src/assets/images/comunity-photos/3.png')"/>
+      </div>
+      <div class="mt-10 flex justify-center">
+        <a href="https://photos.app.goo.gl/T1r7dZUf3RAypyXd8" class="bg-blue-500 text-white px-6 py-2 rounded-full text-lg font-medium hover:bg-blue-600">Ver más</a>
+      </div>
+    </div>
+  </div>
+  
+  <div id="modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75">
+    <div class="relative bg-neutral-800 p-4 rounded-lg max-w-full max-h-full">
+      <button id="close-modal" class="absolute top-2 right-2 text-black bg-zinc-100 rounded-full px-2 py-1" onclick="closeModal()">X</button>
+      <img id="modal-image" src="" alt="Imagen ampliada" class="max-w-full max-h-full rounded-lg" />
+    </div>
+  </div>
+  
+  <script is:inline>
+    function openModal(src) {
+      document.getElementById('modal').classList.remove('hidden');
+      document.getElementById('modal-image').src = src;
+      document.body.style.overflow = 'hidden'; // Evita el scroll de la página al abrir el modal
+    }
+  
+    function closeModal() {
+      document.getElementById('modal').classList.add('hidden');
+      document.getElementById('modal-image').src = '';
+      document.body.style.overflow = ''; // Restaura el scroll de la página al cerrar el modal
+    }
+  
+    document.getElementById('close-modal').addEventListener('click', closeModal);
+  
+    // Cierra el modal cuando se hace clic fuera de la imagen
+    document.getElementById('modal').addEventListener('click', function(event) {
+      if (event.target.id === 'modal') {
+        closeModal();
+      }
+    });
+  </script>
+  
