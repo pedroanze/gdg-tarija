@@ -1,0 +1,42 @@
+[
+  {
+    "src": "/src/assets/images/sponsor1.png",
+    "link": "https://www.facebook.com/MujeresTICsBO/",
+    "title": "Mujeres Tics"
+  },
+  {
+    "src": "/src/assets/images/sponsor2.png",
+    "link": "https://www.uajms.edu.bo/",
+    "title": "Universidad Autonoma Juan Misael Saracho"
+  },
+  {
+    "src": "/src/assets/images/sponsor3.png",
+    "link": "https://www.tarija.gob.bo/",
+    "title": "Gobierno Autonomo departamental de Tarija"
+  },
+  {
+    "src": "/src/assets/images/sponsor4.png",
+    "link": "https://www.facebook.com/ing.informatica.uajms/?locale=es_LA",
+    "title": "Departamento de informatica y sistemas"
+  },
+  {
+    "src": "/src/assets/images/sponsor5.png",
+    "link": "https://digitalharborbolivia.com/",
+    "title": "Digital Harbor"
+  },
+  {
+    "src": "/src/assets/images/sponsor6.png",
+    "link": "https://www.instagram.com/high_code_society/",
+    "title": "High Code Society"
+  },
+  {
+    "src": "/src/assets/images/catolica.png",
+    "link": "https://tja.ucb.edu.bo/",
+    "title": "Universidad Catolica Boliviana"
+  },
+  {
+    "src": "/src/assets/images/WTT.png",
+    "link": "https://www.facebook.com/wtmtarija/?locale=es_LA",
+    "title": "Women Techmakers Tarija"
+  }
+]
