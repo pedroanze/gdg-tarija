@@ -1,7 +1,7 @@
 ---
 ---
 
-<div class="w-full bg-neutral-800 text-zinc-100 py-10 flex flex-col items-center">
+<div id="about" class="w-full bg-neutral-800 text-zinc-100 py-10 flex flex-col items-center">
     <div class="w-full max-w-6xl px-4">
       <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-10 text-center">Galería de Fotos</h1>
       <div class="grid grid-cols-1 gap-8 md:grid-cols-3 relative overflow-hidden bg-cover bg-no-repeat">
@@ -15,9 +15,9 @@
     </div>
   </div>
   
-  <div id="modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75">
+  <div id="modal" class="fixed inset-0 items-center justify-center bg-black bg-opacity-75 hidden">
     <div class="relative bg-neutral-800 p-4 rounded-lg max-w-full max-h-full">
-      <button id="close-modal" class="absolute top-2 right-2 text-black bg-zinc-100 rounded-full px-2 py-1" onclick="closeModal()">X</button>
+      <button id="close-modal" class="absolute top-2 right-2 text-black bg-zinc-100 rounded-full px-2 py-1" onclick="closeModal()">&#10005;</button>
       <img id="modal-image" src="" alt="Imagen ampliada" class="max-w-full max-h-full rounded-lg" />
     </div>
   </div>
@@ -25,6 +25,7 @@
   <script is:inline>
     function openModal(src) {
       document.getElementById('modal').classList.remove('hidden');
+      document.getElementById('modal').classList.add('flex');
       document.getElementById('modal-image').src = src;
       document.body.style.overflow = 'hidden'; // Evita el scroll de la página al abrir el modal
     }
@@ -38,6 +39,7 @@
     document.getElementById('close-modal').addEventListener('click', closeModal);
   
     // Cierra el modal cuando se hace clic fuera de la imagen
+    
     document.getElementById('modal').addEventListener('click', function(event) {
       if (event.target.id === 'modal') {
         closeModal();
