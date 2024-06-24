@@ -1,0 +1,29 @@
+---
+import { Image } from "astro:assets";
+const {
+    id,
+    Photo,
+    Name,
+    Linkedin,
+    Github,
+    Facebook,
+    Instagram,
+    Sitio_web,
+    About,
+    Comisión,
+} = Astro.props;
+---
+
+<section class="flex flex-col gap-4 items-center p-4">
+    <Image
+        src={Photo}
+        width="50"
+        height="50"
+        alt="foto"
+        class="rounded-full w-32 h-32 object-cover"
+    />
+    <div class="font-bold text-xl">{Name}</div>
+    <div class="text-justify">
+        {Comisión}
+    </div>
+</section>
