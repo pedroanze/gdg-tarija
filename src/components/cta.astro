@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
-import GoogleExtLogo from "../../public/img/google-extended-2024-logo.png";
-import GoogleExtBanner from "../../public/img/IOExtended2024-Website-Banner-A.png";
+import GoogleExtLogo from "../../src/assets/svg/Logo Brack.svg";
+import GoogleExtBanner from "../../src/assets/svg/hero.svg";
 
 interface Props {}
 
@@ -9,11 +9,11 @@ const {} = Astro.props;
 ---
 
 <div class="background--color flex flex-col">
-    <div class="w-full mt-40">
+    <div class="w-full mt-40 sm:mt-8">
         <div class="">
             <Image class="m-auto w-10/12 sm:w-1/2" src={GoogleExtLogo} alt="Logo" />
         </div>
-        <div class="text-center mt-16">
+        <div class="text-center mt-14">
             <span class="text-2xl font-bold sm:text-3xl"> !Proximamente! </span>
         </div>
     </div>
