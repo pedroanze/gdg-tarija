@@ -1,41 +1,41 @@
 [
   {
-    "src": "/gdg-tarija/assets/images/sponsors/mujeres_tic_logo.png",
+    "src": "/gdg-tarija/img/sponsors/mujeres_tic_logo.png",
     "link": "https://www.facebook.com/MujeresTICsBO/",
     "title": "Mujeres TICS"
   },
   {
-    "src": "/gdg-tarija/assets/images/sponsors/uajms_logo.png",
+    "src": "/gdg-tarija/img/sponsors/uajms_logo.png",
     "link": "https://www.uajms.edu.bo/",
     "title": "Universidad Autónoma Juan Misael Saracho"
   },
   {
-    "src": "/gdg-tarija/assets/images/sponsors/gadt_udj_logo.png",
+    "src": "/gdg-tarija/img/sponsors/gadt_udj_logo.png",
     "link": "https://www.tarija.gob.bo/",
     "title": "Gobierno Autónomo Departamental de Tarija"
   },
   {
-    "src": "/gdg-tarija/assets/images/sponsors/is_uajms_logo.png",
+    "src": "/gdg-tarija/img/sponsors/is_uajms_logo.png",
     "link": "https://www.facebook.com/ing.informatica.uajms/?locale=es_LA",
     "title": "Departamento de Informática y Sistemas"
   },
   {
-    "src": "/gdg-tarija/assets/images/sponsors/digital_harbor_logo.png",
+    "src": "/gdg-tarija/img/sponsors/digital_harbor_logo.png",
     "link": "https://digitalharborbolivia.com/",
     "title": "Digital Harbor"
   },
   {
-    "src": "/gdg-tarija/assets/images/sponsors/hcs_logo.png",
+    "src": "/gdg-tarija/img/sponsors/hcs_logo.png",
     "link": "https://www.instagram.com/high_code_society/",
     "title": "High Code Society"
   },
   {
-    "src": "/gdg-tarija/assets/images/sponsors/ucb_logo.png",
+    "src": "/gdg-tarija/img/sponsors/ucb_logo.png",
     "link": "https://tja.ucb.edu.bo/",
     "title": "Universidad Catolica Boliviana"
   },
   {
-    "src": "/gdg-tarija/assets/images/sponsors/wt_logo.png",
+    "src": "/gdg-tarija/img/sponsors/wt_logo.png",
     "link": "https://www.facebook.com/wtmtarija/?locale=es_LA",
     "title": "Women Techmakers Tarija"
   }
