@@ -1,56 +1,56 @@
 [
 
   {
-    "src": "/src/assets/images/events/taller paginas web.webp",
+    "src": "gdg-tarija/img/events/taller paginas web.webp",
     "link": "https://gdg.community.dev/events/details/google-gdg-tarija-presents-taller-creacion-de-paginas-web/",
     "date": "28 de Junio 2024 ",
     "title": "Taller",
     "fullName": "Taller Creación de Páginas Web"
   },
   {
-    "src": "/src/assets/images/events/build_with_AI.webp",
+    "src": "gdg-tarija/img/events/build_with_AI.webp",
     "link": "https://gdg.community.dev/events/details/google-gdg-sucre-presents-hackathon-build-with-ai-bolivia/",
     "date": "4 May 2024 ",
     "title": "Hackatón",
     "fullName": "Hackaton Build With AI Bolivia"
   },
   {
-    "src": "/src/assets/images/events/impact_the_future.webp",
+    "src": "gdg-tarija/img/events/impact_the_future.webp",
     "link": "https://gdg.community.dev/events/details/google-gdg-tarija-presents-international-womens-day-tarija-2024/",
     "date": "20 abr 2024",
     "title": "Conferencia",
     "fullName": "International Womens Day Tarija 2024"
   },
   {
-    "src": "/src/assets/images/events/devfest.webp",
+    "src": "gdg-tarija/img/events/devfest.webp",
     "link": "https://gdg.community.dev/events/details/google-gdg-tarija-presents-devfest-tarija2023/",
     "date": "9 dic 2023",
     "title": "Conferencia",
     "fullName": "DevFest Tarija 2023"
   },
   {
-    "src": "/src/assets/images/events/grupo_taller.webp",
+    "src": "gdg-tarija/img/events/grupo_taller.webp",
     "link": "https://gdg.community.dev/events/details/google-gdg-tarija-presents-conectate-colabora-triunfa-workshop-de-google-suite-y-design-thinking/",
     "date": "10 nov 2023",
     "title": "Taller",
     "fullName": "Conéctate, Colabora, Triunfa: Workshop de Google Suite y Design Thinking"
   },
   {
-    "src": "/src/assets/images/events/google_extend.webp",
+    "src": "gdg-tarija/img/events/google_extend.webp",
     "link": "https://gdg.community.dev/events/details/google-gdg-tarija-presents-google-io-extended-tarija-2023/",
     "date": "12 ago 2023",
     "title": "Conferencia",
     "fullName": "Google I/O Extended Tarija 2023"
   },
   {
-    "src": "/src/assets/images/events/conferencia.webp",
+    "src": "gdg-tarija/img/events/conferencia.webp",
     "link": "https://gdg.community.dev/events/details/google-gdg-tarija-presents-workshop-creando-tu-propio-chat-gpt-con-openia-ypython/",
     "date": "20 jul 2023",
     "title": "Conferencia",
     "fullName": "International Womens Day Tarija 2023"
   },
   {
-    "src": "/src/assets/images/events/devfest2022.webp",
+    "src": "gdg-tarija/img/events/devfest2022.webp",
     "link": "https://gdg.community.dev/events/details/google-gdg-tarija-presents-devfest-tarija2022/",
     "date": "18 de Noviembre 2022 ",
     "title": "Conferencia",
