@@ -1,4 +1,16 @@
 [
+  {
+    "Photo": "/img/members/Valeria_Burgos.jpg",
+    "Name": "Valeria Burgos",
+    "Linkedin": "https://www.linkedin.com/in/valeriaburgos/",
+    "Github": "",
+    "Facebook": "https://www.facebook.com/pvaleriaburgos/",
+    "Instagram": "https://www.instagram.com/pvaleriaburgos/",
+    "Sitio_web": "",
+    "About": "Soy ingeniera informática con especialidad en calidad de software. Soy una persona apasionada por la tecnología y el conocimiento. Me encuentro constantemente actualizándome y capacitándome en nuevas tecnologías y habilidades.",
+    "foto": "",
+    "Comisión": "Organizer"
+  },
    {
     "Photo": "/img/members/Pedro_Anze.jpg",
     "Name": "Pedro Anze",
@@ -8,6 +20,42 @@
     "Instagram": "https://www.instagram.com/pedroanze_/",
     "Sitio_web": "",
     "About": "Estudiante de Ingeniería de sistemas y un apasionado con la tecnología y desarrollo",
+    "foto": "",
+    "Comisión": "Organizer"
+  },
+  {
+    "Photo": "/img/members/Natalia_Calle.jpg",
+    "Name":"Natalia Calle",
+    "Linkedin": "https://www.linkedin.com/in/natalia-callet/",
+    "Github": "",
+    "Facebook": "",
+    "Instagram": "",
+    "Sitio_web": "",
+    "About": "Ingeniera Informática, apasionada por el aprendizaje continuo y la adquisición de nuevas habilidades, herramientas y tecnologías.",
+    "foto": "",
+    "Comisión": "Organizer"
+  },
+  {
+    "Photo": "/img/members/Damaris.jpg",
+    "Name": "Damaris Mamani",
+    "Linkedin": "",
+    "Github": "",
+    "Facebook": "https://www.facebook.com/mamani.damaris.13?mibextid=ZbWKwL",
+    "Instagram": "https://www.instagram.com/damaris.mamani.13?igsh=bDlwYzdpNnFrMXNp",
+    "Sitio_web": "",
+    "About": "Exploradora del mundo de la tecnología y las finanzas, en busca constante de crecimiento profesional y oportunidades para compartir aprendizajes. Comprometida con transformar conocimiento en impacto positivo.",
+    "foto": "",
+    "Comisión": "Organizer"
+  },
+  {
+    "Photo": "/img/members/Amilkar.png",
+    "Name": "Amilkar Dominguez",
+    "Linkedin": "",
+    "Github": "",
+    "Facebook": "",
+    "Instagram": "",
+    "Sitio_web": "",
+    "About": "",
     "foto": "",
     "Comisión": "Organizer"
   },
@@ -46,18 +94,6 @@
     "About": "Una persona entradora ,comprometida , Que le gusta enseñar y aprender de los demás.",
     "foto": "",
     "Comisión": "Diseño"
-  },
-  {
-    "Photo": "/img/members/Natalia_Calle.jpg",
-    "Name":"Natalia Calle",
-    "Linkedin": "https://www.linkedin.com/in/natalia-callet/",
-    "Github": "",
-    "Facebook": "",
-    "Instagram": "",
-    "Sitio_web": "",
-    "About": "Ingeniera Informática, apasionada por el aprendizaje continuo y la adquisición de nuevas habilidades, herramientas y tecnologías.",
-    "foto": "",
-    "Comisión": "Organizer"
   },
   {
     "Photo": "/img/members/Ivan_D.jpg",
@@ -108,7 +144,7 @@
     "Comisión": "Apoyo Técnico"
   },
   {
-    "Photo": "/gdg-tarija/img/members/Silvana_Noelia_Bamba_Sossa.jpg",
+    "Photo": "/img/members/Silvana_Noelia_Bamba_Sossa.jpg",
     "Name":"Silvana Bamba",
     "Linkedin": "",
     "Github": "https://github.com/silvi3110",
@@ -142,18 +178,6 @@
     "About": "Soy una persona apasionada por la tecnología, con un gran interés en enseñar lo que sé e inspirar a otros a unirse a este fascinante mundo. Además, disfruto participar en voluntariados, ya que tengo un fuerte sentido del servicio y un deseo genuino de ayudar a quienes realmente lo necesitan. Siempre estoy dispuesta a apoyar y colaborar con la comunidad, siendo resiliente, activa y comprometida en mis esfuerzos por hacer una diferencia positiva.",
     "foto": "",
     "Comisión": "Logistica"
-  },
-  {
-    "Photo": "/img/members/Valeria_Burgos.jpg",
-    "Name": "Valeria Burgos",
-    "Linkedin": "https://www.linkedin.com/in/valeriaburgos/",
-    "Github": "",
-    "Facebook": "https://www.facebook.com/pvaleriaburgos/",
-    "Instagram": "https://www.instagram.com/pvaleriaburgos/",
-    "Sitio_web": "",
-    "About": "Soy ingeniera informática con especialidad en calidad de software. Soy una persona apasionada por la tecnología y el conocimiento. Me encuentro constantemente actualizándome y capacitándome en nuevas tecnologías y habilidades.",
-    "foto": "",
-    "Comisión": "Organizer"
   },
   {
     "Photo": "/img/members/Alessandro_Dominguez.jpg",
@@ -250,17 +274,6 @@
     "About": "Soy una entusiasta de la tecnología y amante de los naimalitos. Participo en eventos de tecnología, disfrutando de la oportunidad de aprender continuamente y de conectar con otros en mi campo.",
     "foto": "",
     "Comisión": "Marketing"
-  },
-  {
-    "Photo": "/img/members/Damaris.jpg",
-    "Name": "Damaris Mamani",
-    "Linkedin": "",
-    "Github": "",
-    "Facebook": "https://www.facebook.com/mamani.damaris.13?mibextid=ZbWKwL",
-    "Instagram": "https://www.instagram.com/damaris.mamani.13?igsh=bDlwYzdpNnFrMXNp",
-    "Sitio_web": "",
-    "About": "Exploradora del mundo de la tecnología y las finanzas, en busca constante de crecimiento profesional y oportunidades para compartir aprendizajes. Comprometida con transformar conocimiento en impacto positivo.",
-    "foto": "",
-    "Comisión": ""
   }
+
 ]
