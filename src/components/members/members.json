@@ -1,6 +1,6 @@
 [
    {
-    "Photo": "/gdg-tarija/img/members/Pedro_Anze.jpg",
+    "Photo": "/img/members/Pedro_Anze.jpg",
     "Name": "Pedro Anze",
     "Linkedin": "https://www.linkedin.com/in/pedroanze/",
     "Github": "https://github.com/pedroanze/",
@@ -12,7 +12,7 @@
     "Comisión": "Organizer"
   },
   {
-    "Photo": "/gdg-tarija/img/members/Angel_Angola.jpg",
+    "Photo": "/img/members/Angel_Angola.jpg",
     "Name":"Angel Angola",
     "Linkedin": "",
     "Github": "",
@@ -24,7 +24,7 @@
     "Comisión": "Diseño"
   },
   {
-    "Photo": "/gdg-tarija/img/members/Fridel_Baldiviezo.jpg",
+    "Photo": "/img/members/Fridel_Baldiviezo.jpg",
     "Name":"Fridel Baldiviezo",
     "Linkedin": "https://www.linkedin.com/in/frideldev/",
     "Github": "https://github.com/frideldev",
@@ -36,7 +36,7 @@
     "Comisión": "Desarrollo"
   },
   {
-    "Photo": "/gdg-tarija/img/members/Yordi_Vega.jpg",
+    "Photo": "/img/members/Yordi_Vega.jpg",
     "Name":"Yordi Vega",
     "Linkedin": "",
     "Github": "",
@@ -48,7 +48,7 @@
     "Comisión": "Diseño"
   },
   {
-    "Photo": "/gdg-tarija/img/members/Natalia_Calle.jpg",
+    "Photo": "/img/members/Natalia_Calle.jpg",
     "Name":"Natalia Calle",
     "Linkedin": "https://www.linkedin.com/in/natalia-callet/",
     "Github": "",
@@ -60,7 +60,7 @@
     "Comisión": "Organizer"
   },
   {
-    "Photo": "/gdg-tarija/img/members/Ivan_D.jpg",
+    "Photo": "/img/members/Ivan_D.jpg",
     "Name":"Ivan Mamani",
     "Linkedin": "",
     "Github": "https://github.com/ivanric",
@@ -72,7 +72,7 @@
     "Comisión": "Desarrollo"
   },
   {
-    "Photo": "/gdg-tarija/img/members/Jesus_Miranda.jpg",
+    "Photo": "/img/members/Jesus_Miranda.jpg",
     "Name":"Jesus Miranda",
     "Linkedin": "https://www.linkedin.com/in/jesus-miranda-004806264/",
     "Github": "",
@@ -84,7 +84,7 @@
     "Comisión": "Apoyo Técnico"
   },
   {
-    "Photo": "/gdg-tarija/img/members/Alex_Flores.jpg",
+    "Photo": "/img/members/Alex_Flores.jpg",
     "Name":"Alexander Flores",
     "Linkedin": "https://www.linkedin.com/in/warachidev/",
     "Github": "",
@@ -96,7 +96,7 @@
     "Comisión": "Desarrollo"
   },
   {
-    "Photo": "/gdg-tarija/img/members/Kevin_Flores.jpg",
+    "Photo": "/img/members/Kevin_Flores.jpg",
     "Name":"Kevin Flores",
     "Linkedin": "https://www.linkedin.com/in/kevin-flores-vallejos-631a16189/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "Github": "https://github.com/kevinfloresvallejos",
@@ -108,7 +108,7 @@
     "Comisión": "Apoyo Técnico"
   },
   {
-    "Photo": "/gdg-tarija/img/members/Silvana_Noelia_Bamba_Sossa.JPG",
+    "Photo": "/img/members/Silvana_Noelia_Bamba_Sossa.JPG",
     "Name":"Silvana Bamba",
     "Linkedin": "",
     "Github": "https://github.com/silvi3110",
@@ -120,7 +120,7 @@
     "Comisión": "Logistica"
   },
   {
-    "Photo": "/gdg-tarija/img/members/David_Fernando_Camata_Baspineiro.jpg",
+    "Photo": "/img/members/David_Fernando_Camata_Baspineiro.jpg",
     "Name": "David Camata",
     "Linkedin": "",
     "Github": "https://github.com/Fer140421",
@@ -132,7 +132,7 @@
     "Comisión": "Apoyo Técnico"
   },
   {
-    "Photo": "/gdg-tarija/img/members/Jhoselyn_Fernández_Ojeda.jpg",
+    "Photo": "/img/members/Jhoselyn_Fernández_Ojeda.jpg",
     "Name": "Jhoselyn Fernández",
     "Linkedin": "https://www.linkedin.com/in/jhoselyn-fern%C3%A1ndez-ojeda-b0536227b/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "Github": "https://github.com/jhosi14",
@@ -144,7 +144,7 @@
     "Comisión": "Logistica"
   },
   {
-    "Photo": "/gdg-tarija/img/members/Valeria_Burgos.jpg",
+    "Photo": "/img/members/Valeria_Burgos.jpg",
     "Name": "Valeria Burgos",
     "Linkedin": "https://www.linkedin.com/in/valeriaburgos/",
     "Github": "",
@@ -156,7 +156,7 @@
     "Comisión": "Organizer"
   },
   {
-    "Photo": "/gdg-tarija/img/members/Alessandro_Dominguez.jpg",
+    "Photo": "/img/members/Alessandro_Dominguez.jpg",
     "Name": "Alessandro Dominguez",
     "Linkedin": "https://www.linkedin.com/in/alessandro-dominguez-selaes-086b22234/ ",
     "Github": "https://github.com/Alessandro199510",
@@ -168,7 +168,7 @@
     "Comisión": "Desarrollo"
   },
   {
-    "Photo": "/gdg-tarija/img/members/Luis_Alejandro_Yanarico_Aldana.jpg",
+    "Photo": "/img/members/Luis_Alejandro_Yanarico_Aldana.jpg",
     "Name": "Luis Yanarico",
     "Linkedin": "https://www.linkedin.com/in/luis-yanarico-aldana-9307b1208/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "Github": "",
@@ -180,7 +180,7 @@
     "Comisión": "Desarrollo"
   },
   {
-    "Photo": "/gdg-tarija/img/members/Jose_Luis_Ibañez_Manguia.jpg",
+    "Photo": "/img/members/Jose_Luis_Ibañez_Manguia.jpg",
     "Name": "Jose Ibañez",
     "Linkedin": "",
     "Github": "",
@@ -192,7 +192,7 @@
     "Comisión": "Apoyo Técnico"
   },
   {
-    "Photo": "/gdg-tarija/img/members/Marcia_Andrade.jpg",
+    "Photo": "/img/members/Marcia_Andrade.jpg",
     "Name": "Marcia Andrade",
     "Linkedin": "https://www.linkedin.com/in/marcia-milenka-andrade-llanos/",
     "Github": "",
@@ -204,7 +204,7 @@
     "Comisión": "Desarrollo"
   },
   {
-    "Photo": "/gdg-tarija/img/members/Mauricio_Rosas_Velásquez.jpg",
+    "Photo": "/img/members/Mauricio_Rosas_Velásquez.jpg",
     "Name": "Mauricio Rosas",
     "Linkedin": "https://www.linkedin.com/in/mauricio-rosas-vel%C3%A1squez-8433352a2/",
     "Github": "https://github.com/maurirosas",
@@ -216,7 +216,7 @@
     "Comisión": "Transmisión"
   },
   {
-    "Photo": "/gdg-tarija/img/members/Angel_Arturo_España_Vacaflor.jpeg",
+    "Photo": "/img/members/Angel_Arturo_España_Vacaflor.jpeg",
     "Name": "Arturo España",
     "Linkedin": "https://www.linkedin.com/in/arthur-espana/",
     "Github": "",
@@ -228,7 +228,7 @@
     "Comisión": "Logistica"
   },
   {
-    "Photo": "/gdg-tarija/img/members/Irka_Jallaza.jpg",
+    "Photo": "/img/members/Irka_Jallaza.jpg",
     "Name": "Irka Jallaza",
     "Linkedin": "",
     "Github": "https://github.com/irka_jallaza",
@@ -240,7 +240,7 @@
     "Comisión": "Desarrollo"
   },
   {
-    "Photo": "/gdg-tarija/img/members/Marlene_Choque_Perez.jpg",
+    "Photo": "/img/members/Marlene_Choque_Perez.jpg",
     "Name": "Marlene Choque",
     "Linkedin": "https://www.linkedin.com/in/marlenechoqueperez\r",
     "Github": "",
@@ -252,7 +252,7 @@
     "Comisión": "Marketing"
   },
   {
-    "Photo": "/gdg-tarija/img/members/Damaris.jpg",
+    "Photo": "/img/members/Damaris.jpg",
     "Name": "Damaris Mamani",
     "Linkedin": "",
     "Github": "",
