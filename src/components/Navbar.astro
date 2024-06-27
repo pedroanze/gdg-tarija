@@ -1,15 +1,17 @@
 ---
 import { Image } from "astro:assets";
-import Logo from "../assets/images/GDGTarija-Horizontal.png";
-import Logo2 from "../assets/images/GDGTarija-Horizontal2.png";
+// import Logo from "../assets/images/GDGTarija-Horizontal.png";
+// import Logo2 from "../assets/images/GDGTarija-Horizontal2.png";
+import Logo from "../assets/svg/LOGO-GDG-TARIJA.svg";
+import Logo2 from "../assets/svg/LOGO-GDG-TARIJA-DESKTOP.svg";
 ---
 
 <header class="bg-Background top-0 start-0 border-b border-Gray-900 w-full">
-    <nav class="flex flex-wrap justify-between items-center py-6 px-10">
+    <nav class="flex flex-wrap justify-between items-center py-6 px-6 md:px-10">
         <div class="h-12 flex items-center">
-            <Image class="w-40 md:hidden" src={Logo} alt="logo" />
+            <Image class="w-36 md:hidden" src={Logo} alt="logo" />
             <Image
-                class="w-56 hidden md:flex lg:w-80"
+                class="w-48 hidden md:flex lg:w-80"
                 src={Logo2}
                 alt="logo2"
             />
@@ -25,7 +27,7 @@ import Logo2 from "../assets/images/GDGTarija-Horizontal2.png";
             class="items-center text-center w-full hidden md:flex md:w-auto"
         >
             <ul
-                class="font-medium text-lg text-Gray-900 bg-Background flex flex-col pt-7 md:flex-row md:pt-0 gap-9 gap-x-9"
+                class="font-medium text-sm lg:text-lg text-Gray-900 bg-Background flex flex-col pt-7 md:flex-row md:pt-0 gap-9 gap-x-5 lg:gap-x-9"
             >
                 <li>
                     <a href="#about" class="hover:text-gray-500"
