@@ -51,7 +51,7 @@
     loadMoreBtn?.addEventListener("click", loadMoreEvents);
 
     // Cargar eventos desde el archivo JSON
-    fetch('/src/components/Events/events.json')
+    fetch('/events.json')
       .then(response => response.json())
       .then(data => {
         events = data; // Asignar los eventos del JSON a la variable events
