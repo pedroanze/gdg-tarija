@@ -31,7 +31,6 @@
           <p class="text-gray-500 mt-5">${event.date}</p>
           <p class="text-gray-800 font-semibold mt-5">${event.title}</p>
           <p class="text-gray-900 mt-5">${event.fullName}</p>
-          <p class="text-gray-600 mt-5">GDG Tarija</p>
         `;
 
         eventList.appendChild(eventElement);
@@ -52,7 +51,7 @@
     loadMoreBtn?.addEventListener("click", loadMoreEvents);
 
     // Cargar eventos desde el archivo JSON
-    fetch('./events.json')
+    fetch('/gdg-tarija/src/components/Events/events.json')
       .then(response => response.json())
       .then(data => {
         events = data; // Asignar los eventos del JSON a la variable events
