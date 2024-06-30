@@ -1,9 +1,11 @@
 ---
+
 ---
 
-
-
-<div id="about" class="w-full bg-neutral-800 text-zinc-100 py-10 flex flex-col items-center">
+<div
+  id="about"
+  class="w-full bg-neutral-800 text-zinc-100 py-10 flex flex-col items-center animate-fade-up animate-duration-[1500ms] animate-ease-in animate-fill-forwards"
+>
   <div class="w-full max-w-6xl px-4">
     <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-10 text-center">Galería de Fotos</h1>
     <div class="grid grid-cols-1 gap-8 md:grid-cols-3 relative overflow-hidden bg-cover bg-no-repeat">
@@ -12,55 +14,92 @@
       <img class="max-w-l h-50 md:h-60 object-cover rounded-lg cursor-pointer transform transition duration-500 hover:scale-110" src="/img/photos-comunity/3.png" alt="Foto 3" onclick="openPhotoModal('modal-3', '/img/photos-comunity/3.png')"/>
     </div>
     <div class="mt-10 flex justify-center">
-      <a href="https://photos.app.goo.gl/T1r7dZUf3RAypyXd8" class="bg-blue-500 text-white px-6 py-2 rounded-full text-lg font-medium hover:bg-blue-600">Ver más</a>
+      <a
+        href="https://photos.app.goo.gl/T1r7dZUf3RAypyXd8"
+        class="bg-blue-500 text-white px-6 py-2 rounded-full text-lg font-medium hover:bg-blue-600"
+        >Ver más</a
+      >
     </div>
   </div>
 </div>
 
 <!-- Modales para las fotos -->
-<div id="modal-1" class="fixed inset-0 hidden items-center justify-center bg-black bg-opacity-75 z-50">
+<div
+  id="modal-1"
+  class="fixed inset-0 hidden items-center justify-center bg-black bg-opacity-75 z-50"
+>
   <div class="relative bg-neutral-800 p-4 rounded-lg max-w-full max-h-full">
-    <button class="absolute top-2 right-2 text-black bg-zinc-100 rounded-full px-2 py-1" onclick="closePhotoModal('modal-1')">&#10005;</button>
-    <img id="modal-image-1" src="" alt="Imagen ampliada" class="max-w-full max-h-full rounded-lg" />
+    <button
+      class="absolute top-2 right-2 text-black bg-zinc-100 rounded-full px-2 py-1"
+      onclick="closePhotoModal('modal-1')">&#10005;</button
+    >
+    <img
+      id="modal-image-1"
+      src=""
+      alt="Imagen ampliada"
+      class="max-w-full max-h-full rounded-lg"
+    />
   </div>
 </div>
 
-<div id="modal-2" class="fixed inset-0 hidden items-center justify-center bg-black bg-opacity-75 z-50">
+<div
+  id="modal-2"
+  class="fixed inset-0 hidden items-center justify-center bg-black bg-opacity-75 z-50"
+>
   <div class="relative bg-neutral-800 p-4 rounded-lg max-w-full max-h-full">
-    <button class="absolute top-2 right-2 text-black bg-zinc-100 rounded-full px-2 py-1" onclick="closePhotoModal('modal-2')">&#10005;</button>
-    <img id="modal-image-2" src="" alt="Imagen ampliada" class="max-w-full max-h-full rounded-lg" />
+    <button
+      class="absolute top-2 right-2 text-black bg-zinc-100 rounded-full px-2 py-1"
+      onclick="closePhotoModal('modal-2')">&#10005;</button
+    >
+    <img
+      id="modal-image-2"
+      src=""
+      alt="Imagen ampliada"
+      class="max-w-full max-h-full rounded-lg"
+    />
   </div>
 </div>
 
-<div id="modal-3" class="fixed inset-0 hidden items-center justify-center bg-black bg-opacity-75 z-50">
+<div
+  id="modal-3"
+  class="fixed inset-0 hidden items-center justify-center bg-black bg-opacity-75 z-50"
+>
   <div class="relative bg-neutral-800 p-4 rounded-lg max-w-full max-h-full">
-    <button class="absolute top-2 right-2 text-black bg-zinc-100 rounded-full px-2 py-1" onclick="closePhotoModal('modal-3')">&#10005;</button>
-    <img id="modal-image-3" src="" alt="Imagen ampliada" class="max-w-full max-h-full rounded-lg" />
+    <button
+      class="absolute top-2 right-2 text-black bg-zinc-100 rounded-full px-2 py-1"
+      onclick="closePhotoModal('modal-3')">&#10005;</button
+    >
+    <img
+      id="modal-image-3"
+      src=""
+      alt="Imagen ampliada"
+      class="max-w-full max-h-full rounded-lg"
+    />
   </div>
 </div>
 
 <script is:inline>
   function openPhotoModal(modalId, src) {
     const modal = document.getElementById(modalId);
-    const modalImage = modal.querySelector('img');
-    modal.classList.remove('hidden');
-    modal.classList.add('flex');
+    const modalImage = modal.querySelector("img");
+    modal.classList.remove("hidden");
+    modal.classList.add("flex");
     modalImage.src = src;
-    document.body.style.overflow = 'hidden'; // Evita el scroll de la página al abrir el modal
+    document.body.style.overflow = "hidden"; // Evita el scroll de la página al abrir el modal
   }
 
   function closePhotoModal(modalId) {
     const modal = document.getElementById(modalId);
-    const modalImage = modal.querySelector('img');
-    modal.classList.add('hidden');
-    modal.classList.remove('flex');
-    modalImage.src = '';
-    document.body.style.overflow = ''; // Restaura el scroll de la página al cerrar el modal
+    const modalImage = modal.querySelector("img");
+    modal.classList.add("hidden");
+    modal.classList.remove("flex");
+    modalImage.src = "";
+    document.body.style.overflow = ""; // Restaura el scroll de la página al cerrar el modal
   }
 
   // Cierra el modal cuando se hace clic fuera de la imagen
-  document.querySelectorAll('.fixed.inset-0').forEach(modal => {
-    modal.addEventListener('click', function(event) {
+  document.querySelectorAll(".fixed.inset-0").forEach((modal) => {
+    modal.addEventListener("click", function (event) {
       if (event.target === modal) {
         closePhotoModal(modal.id);
       }

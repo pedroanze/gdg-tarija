@@ -9,21 +9,25 @@ const {} = Astro.props;
 ---
 
 <div class="background--color flex flex-col">
-    <div class="w-full mt-40 sm:mt-8">
-        <div class="">
-            <Image class="m-auto w-10/12 sm:w-1/2" src={GoogleExtLogo} alt="Logo" />
-        </div>
-        <div class="text-center mt-14">
-            <span class="text-2xl font-bold sm:text-3xl"> !Proximamente! </span>
-        </div>
+  <div class="w-full mt-40 sm:mt-8">
+    <div class="">
+      <Image class="m-auto w-10/12 sm:w-1/2" src={GoogleExtLogo} alt="Logo" />
     </div>
-    <div class="w-full mt-16">
-        <Image class="m-auto w-10/12 sm:w-1/2" src={GoogleExtBanner} alt="Banner" />
+    <div class="text-center mt-14">
+      <span class="text-2xl font-bold sm:text-3xl"> !Proximamente! </span>
     </div>
+  </div>
+  <div class="w-full mt-16">
+    <Image
+      class="m-auto w-10/12 sm:w-1/2 animate-fade-up animate-duration-[1500ms] animate-ease-in animate-fill-forwards"
+      src={GoogleExtBanner}
+      alt="Banner"
+    />
+  </div>
 </div>
 
 <style>
-    .background--color {
-        background: #EFEFEF;
-    }
+  .background--color {
+    background: #efefef;
+  }
 </style>
