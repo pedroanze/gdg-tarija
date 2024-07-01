@@ -10,28 +10,30 @@ const mensaje = `Universidad Catolica\n Bolviana Campus Central`;
 ---
 
 <div class="background--color flex flex-col">
-  <div class="w-full mt-40 sm:mt-8">
+  <div class="w-full mt-40 sm:mt-8 min-[190px]:mt-8">
     <div class="">
       <Image class="m-auto w-10/12 sm:w-1/2" src={GoogleExtLogo} alt="Logo" />
     </div>
     <div
-      class="grid md:grid-cols-2 sm:grid-cols-1 md:mx-0 min-[190px]:mr-24 place-items-center"
+      class="grid lg:grid-cols-2 sm:grid-cols-1 lg:mx-0 min-[190px]:mr-24 place-items-center"
     >
-      <div class="text-right mt-10 grid grid-cols-2 justify-self-end">
+      <div
+        class="text-right mt-10 grid grid-cols-2 lg:justify-self-end sm:justify-self-center"
+      >
         <div class="mr-5">
           <p>
             <span
-              class="material-symbols-outlined md:text-6xl min-[190px]:text-3xl"
+              class="material-symbols-outlined lg:text-6xl min-[190px]:text-4xl"
             >
               location_on
             </span>
           </p>
         </div>
         <div>
-          <p class="md:text-xl min-[190px]:text-sm text-left">
+          <p class="lg:text-xl min-[190px]:text-sm text-left">
             Universidad Catolica
             <br />
-            <span class="md:text-xl min-[190px]:text-xs"
+            <span class="lg:text-xl min-[190px]:text-xs"
               >Boliviana Campus Central</span
             >
           </p>
@@ -39,29 +41,29 @@ const mensaje = `Universidad Catolica\n Bolviana Campus Central`;
       </div>
 
       <div
-        class="text-right mt-10 grid grid-cols-2 sm:justify-self-start min-[190px]:ml-4"
+        class="text-right mt-10 grid grid-cols-2 min-[190px]:ml-4 sm:justify-self-center lg:justify-self-start"
       >
         <div class="mr-5">
           <p>
             <span
-              class="material-symbols-outlined md:text-6xl min-[190px]:text-3xl"
+              class="material-symbols-outlined lg:text-6xl min-[190px]:text-4xl"
             >
               calendar_clock
             </span>
           </p>
         </div>
         <div>
-          <p class="md:text-xl min-[190px]:text-sm text-left">
+          <p class="lg:text-xl min-[190px]:text-sm text-left">
             Sabado 20 de Julio
             <br />
-            <span class="md:text-xl min-[190px]:text-sm">9:00 Hrs</span>
+            <span class="lg:text-xl min-[190px]:text-sm">9:00 Hrs</span>
           </p>
         </div>
       </div>
     </div>
     <div class="mt-10 flex justify-center">
       <a
-        href="#"
+        href="https://forms.gle/wCFY8X3k8bvm6v547"
         class="bg-blue-500 text-white px-6 py-2 rounded-full text-lg font-medium hover:bg-blue-600"
         >Registrate Aqui</a
       >
