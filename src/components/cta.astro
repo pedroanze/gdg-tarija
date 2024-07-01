@@ -6,6 +6,7 @@ import GoogleExtBanner from "../../src/assets/svg/hero.svg";
 interface Props {}
 
 const {} = Astro.props;
+const mensaje = `Universidad Catolica\n Bolviana Campus Central`;
 ---
 
 <div class="background--color flex flex-col">
@@ -13,8 +14,64 @@ const {} = Astro.props;
     <div class="">
       <Image class="m-auto w-10/12 sm:w-1/2" src={GoogleExtLogo} alt="Logo" />
     </div>
-    <div class="text-center mt-14">
-      <span class="text-2xl font-bold sm:text-3xl"> !Proximamente! </span>
+    <div
+      class="grid md:grid-cols-2 sm:grid-cols-1 md:mx-0 min-[190px]:mr-24 place-items-center"
+    >
+      <div class="text-right mt-10 grid grid-cols-2 justify-self-end">
+        <div class="mr-5">
+          <p>
+            <span
+              class="material-symbols-outlined md:text-6xl min-[190px]:text-3xl"
+            >
+              location_on
+            </span>
+          </p>
+        </div>
+        <div>
+          <p class="md:text-xl min-[190px]:text-sm text-left">
+            Universidad Catolica
+            <br />
+            <span class="md:text-xl min-[190px]:text-xs"
+              >Boliviana Campus Central</span
+            >
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="text-right mt-10 grid grid-cols-2 sm:justify-self-start min-[190px]:ml-4"
+      >
+        <div class="mr-5">
+          <p>
+            <span
+              class="material-symbols-outlined md:text-6xl min-[190px]:text-3xl"
+            >
+              calendar_clock
+            </span>
+          </p>
+        </div>
+        <div>
+          <p class="md:text-xl min-[190px]:text-sm text-left">
+            Sabado 20 de Julio
+            <br />
+            <span class="md:text-xl min-[190px]:text-sm">9:00 Hrs</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="mt-10 flex justify-center">
+      <a
+        href="#"
+        class="bg-blue-500 text-white px-6 py-2 rounded-full text-lg font-medium hover:bg-blue-600"
+        >Registrate Aqui</a
+      >
+    </div>
+    <div class="mt-10 flex justify-center">
+      <a
+        href="#"
+        class="bg-blue-500 text-white px-6 py-2 rounded-full text-lg font-medium hover:bg-blue-600"
+        >Paquetes del Evento</a
+      >
     </div>
   </div>
   <div class="w-full mt-16">
