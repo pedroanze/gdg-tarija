@@ -1,0 +1,20 @@
+[
+  {
+    "titulo": "¿Quiénes somos?",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ullamcorper accumsan justo, sit amet dignissim ex viverra et. Fusce egestas urna in convallis maximus. Vivamus sapien justo, mollis ac maximus non, aliquam ut risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas tincidunt leo vitae lorem aliquam posuere. Sed vestibulum sodales nunc sit amet tincidunt. Nullam consequat, orci a gravida ornare, mi lacus iaculis arcu, nec faucibus arcu lacus vitae massa. Phasellus eget risus non ipsum mollis aliquam eu ac eros.",
+    "bg_button": "bg-red-500",
+    "position": "0"
+  },
+  {
+    "titulo": "Nuestra misión",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ullamcorper accumsan justo, sit amet dignissim ex viverra et. Fusce egestas urna in convallis maximus. Vivamus sapien justo, mollis ac maximus non, aliquam ut risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas tincidunt leo vitae lorem aliquam posuere. Sed vestibulum sodales nunc sit amet tincidunt. Nullam consequat, orci a gravida ornare, mi lacus iaculis arcu, nec faucibus arcu lacus vitae massa. Phasellus eget risus non ipsum mollis aliquam eu ac eros.",
+    "bg_button": "bg-blue-500",
+    "position": "1"
+  },
+  {
+    "titulo": "Nuestra visión",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ullamcorper accumsan justo, sit amet dignissim ex viverra et. Fusce egestas urna in convallis maximus. Vivamus sapien justo, mollis ac maximus non, aliquam ut risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas tincidunt leo vitae lorem aliquam posuere. Sed vestibulum sodales nunc sit amet tincidunt. Nullam consequat, orci a gravida ornare, mi lacus iaculis arcu, nec faucibus arcu lacus vitae massa. Phasellus eget risus non ipsum mollis aliquam eu ac eros.",
+    "bg_button": "bg-green-500",
+    "position": "2"
+  }
+]

@@ -1,0 +1,11 @@
+---
+const { titulo, bg_button, position } = Astro.props;
+const clase = "w-4 h-4 rounded-full " + bg_button;
+---
+
+<button
+  type="button"
+  class={clase}
+  aria-current="false"
+  aria-label={titulo}
+  data-carousel-slide-to={position}></button>

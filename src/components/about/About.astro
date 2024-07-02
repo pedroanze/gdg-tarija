@@ -1,0 +1,55 @@
+---
+import info_about from "./info_about.json";
+import Slide from "./Slide.astro";
+import ButtonsNavigate from "./ButtonsNavigate.astro";
+
+import { Image } from "astro:assets";
+
+import flecha_izq from "../../assets/svg/IO-10.svg";
+import flecha_der from "../../assets/svg/IO-11.svg";
+---
+
+<!-- This is an example component -->
+<div class="w-full bg-neutral-800 text-zinc-100 py-10 animate-fade-up animate-duration-[1500ms] animate-ease-in animate-fill-forwards">
+  <!-- quitar deslizamiento automatico data-carousel="static" -->
+  <div id="default-carousel" class="relative flex flex-col items-center" data-carousel="slide">
+    <!-- Carousel wrapper -->
+    <div class="overflow-hidden w-full md:w-9/12 relative h-96 rounded-lg sm:h-96 md:h-80 lg:h-64 xl:h-64 2xl:h-64 mx-6">
+      <!-- Slider items -->
+      {info_about.map((info) => <Slide {...info} />)}
+      <!-- Slider indicators -->
+      <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2 rtl:space-x-reverse">
+        {info_about.map((info) => <ButtonsNavigate {...info} />)}
+      </div>
+      <!-- Slider controls -->
+      <button
+        type="button"
+        class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+        data-carousel-prev
+      >
+        <Image
+          src={flecha_izq}
+          format="svg"
+          width="40"
+          height="40"
+          alt="Logo IO Izquierda"
+          loading="lazy"
+        />
+      </button>
+      <button
+        type="button"
+        class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+        data-carousel-next
+      >
+        <Image
+          src={flecha_der}
+          format="svg"
+          width="40"
+          height="40"
+          alt="Logo IO Izquierda"
+          loading="lazy"
+        />
+      </button>
+    </div>
+  </div>
+</div>
