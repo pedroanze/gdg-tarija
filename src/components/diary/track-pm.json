@@ -1,0 +1,43 @@
+[
+    {
+        "hora": "15:00",
+        "titulo": "Introduction"
+    },
+    {
+        "hora": "15:10",
+        "titulo": "El flujo de trabajo del desarrollador asistido por IA con IDX",
+        "nombre": "Rodrigo Torrico"
+    },
+    {
+        "hora": "15:35",
+        "titulo": "Dominando el Manejo de Estados en Flutter con Riverpod",
+        "nombre": "Sebastian Gonzales Tito"
+    },
+    {
+        "hora": "16:00",
+        "titulo": "Kotlin Multiplatform: El futuro del desarrollo multiplataforma",
+        "nombre": "Josué Lemus Miranda"
+    },
+    {
+        "hora": "16:25",
+        "titulo": "Refrigerio"
+    },
+    {
+        "hora": "16:35",
+        "titulo": "Priorizando la Seguridad en Flutter",
+        "nombre": "Gonzalo Caira Aguilar"
+    },
+    {
+        "hora": "17:00",
+        "titulo": "¡Prepárate para sumergirte en el mundo de las API de Gemini!",
+        "nombre": "Maria Griselda Garcia Flores"
+    },
+    {
+        "hora": "17:25",
+        "titulo": "Sorteo y foto del evento"
+    },
+    {
+        "hora": "17:50",
+        "titulo": "Fin track Tarde"
+    }
+]

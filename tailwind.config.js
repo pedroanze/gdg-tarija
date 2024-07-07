@@ -22,6 +22,7 @@ export default {
       colors: {
         Background: "#eeeeee",
         "Gray-900": "#202124",
+        "Orange": "#F46831",
         blue: {
           50: "#F0F5FE",
           100: "#DCE9FD",

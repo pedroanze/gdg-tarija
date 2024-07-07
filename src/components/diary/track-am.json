@@ -1,0 +1,44 @@
+[
+    {
+        "hora": "09:00",
+        "titulo": "Introduction"
+    },
+    {
+        "hora": "09:10",
+        "titulo": "PaliGemma: Combinando Lenguaje y Visión para el Futuro de la IA",
+        "nombre": "Alejandro Núñez Arroyo"
+    },
+    {
+        "hora": "09:35",
+        "titulo": "Aplicación de MediaPipe en Proyectos de Desarrollo Web",
+        "nombre": "Angel Christian Flores Lazarte"
+    },
+    {
+        "hora": "10:00",
+        "titulo": "IA en la Web con Google AI Edge",
+        "nombre": "Nicolas Molina Monroy"
+    },
+    {
+        "hora": "10:25",
+        "titulo": "Refrigerio"
+    },
+    {
+        "hora": "10:40",
+        "titulo": "Desbloqueando el poder de la reactividad en Angular con Signals",
+        "nombre": "Mauricio Arce Torrez"
+    },
+    {
+        "hora": "11:05",
+        "titulo": "Diseña con Gemini y Material Design 3 ",
+        "nombre": "Carlos Collazos"
+    },
+    {
+        "hora": "11:30",
+        "titulo": "Project IDX: Una plataforma de desarrollo completa en la nube",
+        "nombre": "Kevin Brayan Gomez Rocha"
+    },
+    {
+        "hora": "11:55",
+        "titulo": "Fin track mañana"
+    }
+]
