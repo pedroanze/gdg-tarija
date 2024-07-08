@@ -18,22 +18,22 @@ export interface Props {
 const { id, titulo, nombre, foto, descripcion, bio_speaker, hora, tema } = Astro.props;
 ---
 
-<div id={id} class="modal fixed inset-0 bg-gray-900 bg-opacity-50 hidden grid place-items-center">
-  <div class="modal-content bg-white rounded-lg overflow-hidden relative w-full md:w-1/2 h-auto p-4">
+<div id={id} class="modal fixed inset-0 bg-gray-900 bg-opacity-50 hidden grid place-items-center z-10">
+  <div class="modal-content bg-white rounded-lg overflow-hidden relative w-full md:w-1/2 h-auto py-6 px-8">
     <button class="absolute top-4 right-4 text-gray-700 hover:text-gray-900" onclick={`closeModal('${id}')`}>
       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
       </svg>
     </button>
     <div class="text-center">
-      <img class="rounded-full w-32 h-32 mx-auto mb-4 relative z-10" src={foto} alt={nombre} />
+      <img class="rounded-full w-32 h-32 object-cover mx-auto mb-4 relative z-10" src={foto} alt={nombre} />
       <div class="absolute top-14 left-0 right-0 flex justify-center">
         <Image class="w-64 h-auto mx-auto" src={FondoPerfil} alt="Logo" />
       </div>
       <h2 class="text-blue-500 text-lg">{nombre}</h2>
-      <p class="mb-2">Ponente</p>
+      <p class="mb-3">Ponente</p>
       <h3 class="font-semibold text-xl text-gray-900">{titulo}</h3>
-      <p class="text-sm text-gray-700 text-justify" id={`desc-${id}`} data-descripcion={descripcion} data-expanded="false">
+      <p class="text-sm text-gray-700 text-justify pt-2" id={`desc-${id}`} data-descripcion={descripcion} data-expanded="false">
         {descripcion.length > 100 ? `${descripcion.substring(0, 100)}...` : descripcion}
         {descripcion.length > 100 ? (
           <span class="text-blue-500 cursor-pointer underline ml-1" onclick={`toggleDescription('${id}')`}>
