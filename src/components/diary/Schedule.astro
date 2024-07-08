@@ -1,42 +1,61 @@
 ---
+import DiaryDetail from "./DiaryDetail.astro";
+
 export interface Props {
-    hora: string;
-    titulo: string;
-    nombre?: string;
+  hora: string;
+  titulo: string;
+  nombre?: string;
+  foto?: string;
+  tema?: string;
+  descripcion?: string;
+  bio_speaker?: string;
 }
 
-const {hora, titulo, nombre}=Astro.props;
+const {
+  hora,
+  titulo,
+  nombre,
+  foto,
+  descripcion,
+  tema,
+  bio_speaker,
+} = Astro.props;
+
+const modalId = `modal-${Math.random().toString(36).substr(2, 9)}`;
 ---
 
 <div class="col-span-4 pt-5">
-    <hr class="border-blue-500" />
+  <hr class="border-blue-500" />
 </div>
 <div class="row-span-2 justify-self-start">
-    <h1
-        class="text-2xl md:text-3xl font-bold text-right text-Gray-900"
-    >
-        {hora}
-    </h1>
+  <h1 class="text-2xl md:text-3xl font-bold text-right text-Gray-900">{hora}</h1>
 </div>
 <div class={`${nombre ? 'col-span-2': 'col-span-3'}`}>
-    <p class="text-sm font-bold md:text-base text-left text-Gray-900">
-        {titulo}
-    </p>
+  <p class="text-sm font-bold md:text-base text-left text-Gray-900">{titulo}</p>
 </div>
 
-{
-    nombre && (
+{nombre && (
+  <>
     <div class="row-span-2 justify-self-end place-content-center">
-        <a
-            href=""
-            class="bg-Orange text-white px-4 py-1 rounded-lg text-sm  md:font-medium hover:bg-yellow-700"
-            >Detalle</a>
+      <button
+        class="bg-Orange text-white px-4 py-1 rounded-lg text-sm md:font-medium hover:bg-yellow-700"
+        onclick={`document.getElementById('${modalId}').classList.remove('hidden'); document.body.style.overflow='hidden';`}
+      >
+        Detalle
+      </button>
     </div>
     <div class="col-span-2">
-        <p class="text-sm font-bold text-blue-500">
-            {nombre}
-        </p>
+      <p class="text-sm font-bold text-blue-500">{nombre}</p>
     </div>
-    )
-}
-
+    <DiaryDetail
+      id={modalId}
+      titulo={titulo}
+      nombre={nombre}
+      foto={foto}
+      descripcion={descripcion}
+      bio_speaker={bio_speaker}
+      hora={hora}
+      tema={tema}
+    />
+  </>
+)}

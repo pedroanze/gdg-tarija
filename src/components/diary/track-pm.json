@@ -17,7 +17,7 @@
         "hora": "15:35",
         "titulo": "Dominando el Manejo de Estados en Flutter con Riverpod",
         "nombre": "Sebastian Gonzales Tito",
-        "foto": "/img/speakers/Sebastina_Gonzales_Tito.png",
+        "foto": "/img/speakers/Sebastian_Gonzales_Tito.png",
         "tema": "Mobile",
         "descripcion": "En esta charla, exploraremos cómo utilizar Riverpod para manejar estados de manera sencilla y efectiva en Flutter. Esta herramienta facilita la gestión del estado en nuestras aplicaciones, ofreciendo una alternativa moderna y más intuitiva que otros métodos tradicionales. Aprenderemos los conceptos básicos de Riverpod, cómo implementarlo en proyectos nuevos y existentes, y veremos ejemplos prácticos que te permitirán aplicar estos conocimientos de inmediato.",
         "bio_speaker": "Sebastian es estudiante de Ingeniería de Sistemas y actualmente trabaja como Desarrollador FullStack en una Startup Chilena. Organizer del GDG Sucre y Flutter Sucre, disfruta compartir y aprender en comunidad sobre las últimas tendencias tecnológicas. Su pasión por la tecnología le motiva a mantenerse siempre actualizado y a explorar continuamente nuevas innovaciones."
