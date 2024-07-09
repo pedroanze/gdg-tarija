@@ -1,12 +1,72 @@
 [
   {
     "id": "p1",
-    "pregunta": "El evento dara un certificado?",
-    "respuesta": "Respuesta"
+    "pregunta": "¿De qué va a tratar el evento?",
+    "respuesta": "Los topics principales del Google I/O Extended Tarija 2024 son IA, Web, Cloud, Mobile y UI/UX. Contaremos con presentaciones de expertos nacionales e internacionales."
   },
   {
     "id": "p2",
-    "pregunta": "Sobre que tratara el evento?",
-    "respuesta": "Respuesta"
+    "pregunta": "¿Cómo me registro para el evento?",
+    "respuesta": "Puedes registrarte en la [página oficial del GDG Tarija](https://gdgtarija.com/)."
+  },
+  {
+    "id": "p3",
+    "pregunta": "¿Cuántos expositores habrá en el evento?",
+    "respuesta": "Habrá 11 expositores nacionales e internacionales."
+  },
+  {
+    "id": "p4",
+    "pregunta": "¿Dónde se llevará a cabo el evento?",
+    "respuesta": "El evento se llevará a cabo en el Campus Central de la Universidad Católica Boliviana."
+  },
+  {
+    "id": "p5",
+    "pregunta": "¿El evento tiene algún costo?",
+    "respuesta": "La entrada es gratuita, pero los cupos son limitados. Puedes adquirir paquetes especiales para una mejor experiencia."
+  },
+  {
+    "id": "p6",
+    "pregunta": "¿Cuánto tiempo tenemos para adquirir los paquetes?",
+    "respuesta": "Puedes adquirir los paquetes hasta el viernes 12 o hasta que se agoten los cupos. Te recomendamos hacerlo lo antes posible para asegurar tu lugar."
+  },
+  {
+    "id": "p7",
+    "pregunta": "¿Se brindarán certificados?",
+    "respuesta": "Sí, se darán certificados tanto físicos como digitales a las personas que adquieran los paquetes del evento."
+  },
+  {
+    "id": "p8",
+    "pregunta": "¿Habrá transmisión en vivo del evento?",
+    "respuesta": "Sí, la transmisión será por el Facebook del GDG Tarija."
+  },
+  {
+    "id": "p9",
+    "pregunta": "¿Habrá comida y bebida disponible en el evento?",
+    "respuesta": "Sí, habrá comida para todos los asistentes y una mesa de comida exclusiva para los que adquieran los paquetes."
+  },
+  {
+    "id": "p10",
+    "pregunta": "¿El turno de la mañana y la tarde serán iguales o se tratarán temas diferentes durante todo el día?",
+    "respuesta": "El evento cubrirá diferentes temas a lo largo del día, con sesiones variadas tanto en la mañana como en la tarde."
+  },
+  {
+    "id": "p11",
+    "pregunta": "¿Hay alguna restricción de edad para asistir al evento?",
+    "respuesta": "No, el evento está abierto para todas las edades."
+  },
+  {
+    "id": "p12",
+    "pregunta": "¿Necesito llevar algo en particular al evento?",
+    "respuesta": "No es necesario llevar nada en particular, pero te recomendamos traer un dispositivo móvil o laptop para tomar notas y participar en las actividades interactivas."
+  },
+  {
+    "id": "p13",
+    "pregunta": "¿Habrá estacionamiento disponible en el lugar del evento?",
+    "respuesta": "No, no hay estacionamiento en la universidad."
+  },
+  {
+    "id": "p14",
+    "pregunta": "¿Cómo puedo obtener más información sobre el evento?",
+    "respuesta": "Puedes visitar nuestra [página oficial del GDG Tarija](https://gdgtarija.com/) o seguirnos en nuestras redes sociales para más actualizaciones."
   }
 ]
