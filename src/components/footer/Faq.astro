@@ -1,0 +1,54 @@
+<h2 class="text-3xl font-bold text-center my-8">Preguntas Frecuentes</h2>
+<div id="acordion" class="space-y-4 w-auto mx-10 content-center mb-8"></div>
+<script is:inline>
+  const faqList = document.getElementById("acordion");
+
+  function toggleAccordion(index) {
+    //console.log(index);
+    const content = document.getElementById(`content-${index}`);
+
+    if (content.classList.contains("hidden")) {
+      content.classList.remove("hidden");
+    } else {
+      content.classList.add("hidden");
+    }
+  }
+
+  const loadFaqs = (faqs) => {
+    faqList.innerHTML = "";
+
+    faqs.forEach((faq) => {
+      const faqElement = document.createElement("div");
+
+      faqElement.innerHTML = `
+        <div class="border border-gray-200 rounded items-center">
+          <div class="flex justify-between items-center">
+            <p class="ml-5 sm:text-lg lg:text-xl font-bold">
+              ${faq.pregunta}
+            </p>
+            <button class="text-left p-4" id="button-${faq.id}">
+              <span class="material-symbols-outlined">keyboard_arrow_down</span>
+            </button>
+          </div>
+          <div id="content-${faq.id}" class="p-4 animate-flip-down hidden">
+            <p>${faq.respuesta}</p>
+          </div>
+        </div>
+      `;
+
+      faqList.appendChild(faqElement);
+
+      document
+        .getElementById(`button-${faq.id}`)
+        .addEventListener("click", () => toggleAccordion(faq.id));
+    });
+  };
+
+  fetch("/faq.json")
+    .then((response) => response.json())
+    .then((data) => {
+      faqs = data;
+      loadFaqs(faqs);
+    })
+    .catch((error) => console.error("Error al cargar faqs desde JSON:", error));
+</script>

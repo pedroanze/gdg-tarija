@@ -1,0 +1,12 @@
+[
+  {
+    "id": "p1",
+    "pregunta": "El evento dara un certificado?",
+    "respuesta": "Respuesta"
+  },
+  {
+    "id": "p2",
+    "pregunta": "Sobre que tratara el evento?",
+    "respuesta": "Respuesta"
+  }
+]
