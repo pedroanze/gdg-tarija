@@ -11,14 +11,14 @@ import flecha_der from "../../assets/svg/IO-11.svg";
 
 <!-- This is an example component -->
 <div class="w-full bg-neutral-800 text-zinc-100 py-10 animate-fade-up animate-duration-[1500ms] animate-ease-in animate-fill-forwards">
-  <!-- quitar deslizamiento automatico data-carousel="static" -->
-  <div id="default-carousel" class="relative flex flex-col items-center" data-carousel="slide">
+  <!-- deslizamiento automatico data-carousel="slide" con un intervalo de 3 segs por defecto-->
+  <div id="default-carousel" class="relative flex flex-col items-center" data-carousel="static">
     <!-- Carousel wrapper -->
-    <div class="overflow-hidden w-full md:w-9/12 relative h-96 rounded-lg sm:h-96 md:h-80 lg:h-64 xl:h-64 2xl:h-64 mx-6">
+    <div class="overflow-hidden w-full md:w-9/12 relative h-96 rounded-lg sm:h-64 lg:h-48 mx-6">
       <!-- Slider items -->
       {info_about.map((info) => <Slide {...info} />)}
       <!-- Slider indicators -->
-      <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2 rtl:space-x-reverse">
+      <div class="flex absolute bottom-0 left-1/2 z-30 space-x-3 -translate-x-1/2 rtl:space-x-reverse">
         {info_about.map((info) => <ButtonsNavigate {...info} />)}
       </div>
       <!-- Slider controls -->
@@ -30,8 +30,8 @@ import flecha_der from "../../assets/svg/IO-11.svg";
         <Image
           src={flecha_izq}
           format="svg"
-          width="40"
-          height="40"
+          width="35"
+          height="35"
           alt="Logo IO Izquierda"
           loading="lazy"
         />
@@ -44,8 +44,8 @@ import flecha_der from "../../assets/svg/IO-11.svg";
         <Image
           src={flecha_der}
           format="svg"
-          width="40"
-          height="40"
+          width="35"
+          height="35"
           alt="Logo IO Izquierda"
           loading="lazy"
         />

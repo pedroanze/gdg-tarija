@@ -1,42 +1,33 @@
 [
   {
-    "src": "/img/sponsors/mujeres_tic_logo.png",
-    "link": "https://www.facebook.com/MujeresTICsBO/",
-    "title": "Mujeres TICS"
-  },
-  {
-    "src": "/img/sponsors/uajms_logo.png",
-    "link": "https://www.uajms.edu.bo/",
-    "title": "Universidad Autónoma Juan Misael Saracho"
-  },
-  {
-    "src": "/img/sponsors/gadt_udj_logo.png",
+    "src": "/img/sponsors/LogoGobernacionJuvenil.png",
     "link": "https://www.tarija.gob.bo/",
     "title": "Gobierno Autónomo Departamental de Tarija"
-  },
-  {
-    "src": "/img/sponsors/is_uajms_logo.png",
-    "link": "https://www.facebook.com/ing.informatica.uajms/?locale=es_LA",
-    "title": "Departamento de Informática y Sistemas"
-  },
-  {
-    "src": "/img/sponsors/digital_harbor_logo.png",
-    "link": "https://digitalharborbolivia.com/",
-    "title": "Digital Harbor"
-  },
-  {
-    "src": "/img/sponsors/hcs_logo.png",
-    "link": "https://www.instagram.com/high_code_society/",
-    "title": "High Code Society"
   },
   {
     "src": "/img/sponsors/ucb_logo.png",
     "link": "https://tja.ucb.edu.bo/",
     "title": "Universidad Catolica Boliviana"
   },
+
+  {
+    "src": "/img/sponsors/digital_harbor_logo.png",
+    "link": "https://digitalharborbolivia.com/",
+    "title": "Digital Harbor"
+  },
+  {
+    "src": "/img/sponsors/logo-centro-sistemas.png",
+    "link": "https://www.instagram.com/sistemas_ucbtja/",
+    "title": "Centro de Estudiantes de Ingenieria de Sistemas"
+  },
   {
     "src": "/img/sponsors/wt_logo.png",
     "link": "https://www.facebook.com/wtmtarija/?locale=es_LA",
     "title": "Women Techmakers Tarija"
+  },
+  {
+    "src": "/img/sponsors/mujeres_tic_logo.png",
+    "link": "https://www.facebook.com/MujeresTICsBO/",
+    "title": "Mujeres TICS"
   }
 ]
