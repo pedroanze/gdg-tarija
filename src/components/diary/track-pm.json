@@ -1,9 +1,5 @@
 [
     {
-        "hora": "15:00",
-        "titulo": "Introduction"
-    },
-    {
         "hora": "15:10",
         "titulo": "El flujo de trabajo del desarrollador asistido por IA con IDX",
         "nombre": "Rodrigo Torrico",
@@ -16,7 +12,7 @@
     {
         "hora": "15:35",
         "titulo": "Dominando el Manejo de Estados en Flutter con Riverpod",
-        "nombre": "Sebastian Gonzales Tito",
+        "nombre": "Sebastián Gonzales Tito",
         "foto": "/img/speakers/Sebastian_Gonzales_Tito.png",
         "tema": "Mobile",
         "descripcion": "En esta charla, exploraremos cómo utilizar Riverpod para manejar estados de manera sencilla y efectiva en Flutter. Esta herramienta facilita la gestión del estado en nuestras aplicaciones, ofreciendo una alternativa moderna y más intuitiva que otros métodos tradicionales. Aprenderemos los conceptos básicos de Riverpod, cómo implementarlo en proyectos nuevos y existentes, y veremos ejemplos prácticos que te permitirán aplicar estos conocimientos de inmediato.",
@@ -32,10 +28,6 @@
         "bio_speaker": "Soy programador con 5 años de experiencia en el desarrollo móvil, durante este tiempo eh manejado tecnologías como flutter, Swift para iOS y Kotlin para Android."
     },
     {
-        "hora": "16:25",
-        "titulo": "Refrigerio"
-    },
-    {
         "hora": "16:35",
         "titulo": "Priorizando la Seguridad en Flutter",
         "nombre": "Gonzalo Caira Aguilar",
@@ -47,18 +39,10 @@
     {
         "hora": "17:00",
         "titulo": "¡Prepárate para sumergirte en el mundo de las API de Gemini!",
-        "nombre": "Maria Griselda Garcia Flores",
+        "nombre": "María Griselda Garcia Flores",
         "foto": "/img/speakers/Griselda_Garcia_Flores.png",
         "tema": "AI",
         "descripcion": "En esta charla hablaremos sobre algunas de las APIs existentes para usar GEMINI en nuestra aplicación, un demo pequeño y casos de uso.",
         "bio_speaker": "Griselda es ingeniera de sistemas con más de 6 años de experiencia en desarrollo web, actualmente trabaja en Jalasoft, cuenta con un diplomado en gestión de tecnologías de la información y educación superior, es trainer del bootcamp de Jala University a nivel LATAM, Women Techmaker Ambassador y lead organizer de las comunidades Angular Bolivia y GDG Cochabamba. En sus tiempos libres le gusta ver series, películas, viajar, hacer deporte y jugar con sus gatitos."
-    },
-    {
-        "hora": "17:25",
-        "titulo": "Sorteo y foto del evento"
-    },
-    {
-        "hora": "17:50",
-        "titulo": "Fin track Tarde"
     }
 ]

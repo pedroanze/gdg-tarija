@@ -1,9 +1,5 @@
 [
     {
-        "hora": "09:00",
-        "titulo": "Introduction"
-    },
-    {
         "hora": "09:10",
         "titulo": "PaliGemma: Combinando Lenguaje y Visión para el Futuro de la IA",
         "nombre": "Alejandro Núñez Arroyo",
@@ -15,7 +11,7 @@
     {
         "hora": "09:35",
         "titulo": "Aplicación de MediaPipe en Proyectos de Desarrollo Web",
-        "nombre": "Angel Christian Flores Lazarte",
+        "nombre": "Ángel Christian Flores Lazarte",
         "foto": "/img/speakers/Angel_Christian_Flores_Lazarte.jpg",
         "tema": "AI",
         "descripcion": "Descubre cómo integrar MediaPipe en tus proyectos de desarrollo web para mejorar la interactividad y funcionalidad de tus aplicaciones. Aprende técnicas prácticas para implementar soluciones de visión por computadora y reconocimiento de gestos usando esta potente herramienta de Google. Ideal para desarrolladores web interesados en expandir sus habilidades y explorar nuevas posibilidades en el campo de la inteligencia artificial aplicada.",
@@ -29,10 +25,6 @@
         "tema": "AI",
         "descripcion": "Actualmente, muchos modelos de inteligencia artificial se ejecutan en servidores y se acceden a través de APIs. Sin embargo, ¿es posible ejecutar estos modelos directamente desde un navegador web? En esta charla exploraremos esta pregunta utilizando la tecnología de Google MediaPipe, TensorFlow la cual permite operar modelos de IA directamente en el navegador.",
         "bio_speaker": "I am a Senior Full-Stack Developer with more than 10 years of experience in development and technology management. Recognized by Google as an Angular & Web Developer Expert, and by Microsoft as a Most Valuable Professional."
-    },
-    {
-        "hora": "10:25",
-        "titulo": "Refrigerio"
     },
     {
         "hora": "10:40",
@@ -60,9 +52,5 @@
         "tema": "Cloud",
         "descripcion": "Exploraremos Project IDX, una revolucionaria plataforma de desarrollo de Google que está transformando la forma en que creamos Software. Descubriremos cómo Project IDX simplifica y agiliza el proceso de desarrollo, permitiendo a los desarrolladores crear Software de alta calidad de manera más rápida y eficiente. A lo largo de la presentación, veremos las características clave de Project IDX, los beneficios que ofrece y cómo puede ayudarlo a llevar sus proyectos de desarrollo al siguiente nivel.",
         "bio_speaker": "Web Developer con mas de 5 años de experiencia. Amante de la tecnología, entusiasta de las comunidades tech por lo que actualmente es parte de Organizaciones como GDG Santa Cruz como Organizer, y Founder y director de CDS - Comunidad de Desarrollo de Software."
-    },
-    {
-        "hora": "11:55",
-        "titulo": "Fin track mañana"
     }
 ]

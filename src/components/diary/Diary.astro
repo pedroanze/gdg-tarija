@@ -11,74 +11,55 @@ import trackAM from "./track-am.json";
 import trackPM from "./track-pm.json";
 ---
 
-<style>
-    details > summary {
-        list-style: none;
-    }
-    details > summary::-webkit-details-marker {
-        display: none;
-    }
-</style>
-<div class="flex flex-col bg-Background py-14">
-    <details>
-        <summary>
-            <div class="m-auto flex items-center justify-center">
-                <div
-                    class="bg-blue-500 text-white px-6 py-2 rounded-full text-lg cursor-pointer font-medium hover:bg-blue-600"
-                >
-                    Ver agenda
-                </div>
-            </div>
-        </summary>
-        <div class="m-auto w-10/12 pt-10">
-            <h1
-                class="text-2xl md:text-4xl lg:text-5xl font-bold text-left text-blue-500 pb-3"
+<div class="flex flex-col bg-Background pt-12">
+    <div class="m-auto w-10/12">
+        <h1
+            class="text-center md:text-left text-3xl md:text-4xl lg:text-5xl font-bold text-blue-500 pb-3"
+        >
+            AGENDA
+        </h1>
+
+        <!-- Track mañana -->
+
+        <div class="grid grid-cols-2 md:grid-cols-3">
+            <div
+                class="md:hidden col-span-2 place-self-start py-3"
             >
-                AGENDA
-            </h1>
-
-            <!-- Track mañana -->
-
-            <div class="grid grid-cols-2 md:grid-cols-3">
-                <div
-                    class="md:hidden col-span-2 justify-self-center place-content-center"
-                >
-                    <Image class="" src={HorarioAMSM} alt="HorarioAM" />
-                </div>
-                <div class="col-span-2">
-                    <div class="grid grid-cols-4 gap-2">
-                        {trackAM.map((speaker) => <Schedule {...speaker} />)}
-                    </div>
-                </div>
-                <div class="hidden md:flex items-center place-content-center">
-                    <div>
-                        <Image class="w-72" src={HorarioAM} alt="HorarioAM" />
-                    </div>
+                <Image class="" src={HorarioAMSM} alt="HorarioAM" />
+            </div>
+            <div class="col-span-2">
+                <div class="grid grid-cols-4 gap-2">
+                    {trackAM.map((speaker) => <Schedule {...speaker} />)}
                 </div>
             </div>
-
-            <!-- Track tarde -->
-
-            <div class="grid grid-cols-2 md:grid-cols-3">
-                <div
-                    class="md:hidden col-span-2 justify-self-center place-content-center pt-6"
-                >
-                    <Image class="" src={HorarioPMSM} alt="HorarioPM" />
-                </div>
-                <div
-                    class="hidden md:flex row-span-9 items-center place-content-center"
-                >
-                    <div>
-                        <Image class="w-72" src={HorarioPM} alt="HorarioPM" />
-                    </div>
-                </div>
-
-                <div class="col-span-2">
-                    <div class="grid grid-cols-4 gap-2">
-                        {trackPM.map((speaker) => <Schedule {...speaker} />)}
-                    </div>
+            <div class="hidden md:flex items-center place-content-center">
+                <div>
+                    <Image class="w-72" src={HorarioAM} alt="HorarioAM" />
                 </div>
             </div>
         </div>
-    </details>
+
+        <!-- Track tarde -->
+
+        <div class="grid grid-cols-2 md:grid-cols-3 pt-12">
+            <div
+                class="md:hidden col-span-2 justify-self-center place-content-center"
+            >
+                <Image class="" src={HorarioPMSM} alt="HorarioPM" />
+            </div>
+            <div
+                class="hidden md:flex items-center place-content-center"
+            >
+                <div>
+                    <Image class="w-72" src={HorarioPM} alt="HorarioPM" />
+                </div>
+            </div>
+
+            <div class="col-span-2">
+                <div class="grid grid-cols-4 gap-2">
+                    {trackPM.map((speaker) => <Schedule {...speaker} />)}
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
