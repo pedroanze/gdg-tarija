@@ -1,42 +1,46 @@
-<div class="flex justify-center">
+<div class="flex flex-col items-center bg-Background border-t border-black">
   <div class="lg:w-96 md:w-96 min-[190px]:w-72">
     <h2
-      class="lg:text-3xl sm:text-xl md:text-2xl min-[190px]:h-8 content-center sm lg:h-auto font-bold text-center my-8 border rounded-2xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white"
+      class="lg:text-4xl sm:text-xl md:text-2xl min-[190px]:h-8 content-center sm lg:h-auto font-bold text-center my-8 border rounded-2xl bg-gradient-to-r text-black"
     >
       Preguntas Frecuentes
     </h2>
   </div>
-</div>
 
-<div id="acordion" class="space-y-4 w-auto mx-10 content-center mb-8"></div>
+  <div id="acordion" class="space-y-4 w-auto mx-10 content-center mb-8"></div>
+</div>
 <script is:inline>
   const faqList = document.getElementById("acordion");
 
   const gradientes = [
-    "from-blue-500 via-purple-500 to-red-500",
-    "from-red-500 via-orange-400 to-yellow-500",
-    "from-green-500  via-green-500 to-blue-500",
-    "from-purple-500 via-pink-500 to-blue-500",
+    "from-green-500 via-green-500 to-blue-500",
+    "from-yellow-500 to-green-500",
+    "from-blue-500 via-purple to-red-500",
+    "from-yellow-500 via-orange-400 to-red-500 ",
+
   ];
 
   let indiceGradiente = 0;
 
   const obtenerGradiente = (index) => {
-    if (index % 4 === 0) {
+    if (index % 3 === 0) {
       const gradiente = gradientes[indiceGradiente];
       indiceGradiente = (indiceGradiente + 1) % gradientes.length;
-      return `bg-gradient-to-r ${gradiente}`;
+      return `bg-gradient-to-r ${gradiente} w-full`;
     }
-    return "bg-white";
+    return "bg-white w-full";
   };
-  function toggleAccordion(index) {
-    //console.log(index);
-    const content = document.getElementById(`content-${index}`);
 
-    if (content.classList.contains("hidden")) {
-      content.classList.remove("hidden");
+  function toggleAccordion(index) {
+    const content = document.getElementById(`content-${index}`);
+    const icon = document.getElementById(`icon-${index}`);
+
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+      icon.innerHTML = "keyboard_arrow_down";
     } else {
-      content.classList.add("hidden");
+      content.style.maxHeight = content.scrollHeight + "px";
+      icon.innerHTML = "keyboard_arrow_up";
     }
   }
 
@@ -48,17 +52,17 @@
       const faqElement = document.createElement("div");
 
       faqElement.innerHTML = `
-        <div class="border border-gray-200 rounded-xl items-center ">
-          <div class="flex justify-between items-center border rounded-xl ${gradiente}}">
-            <p class="ml-5 sm:text-lg lg:text-xl font-bold">
+        <div class="border border-gray-400 rounded-xl">
+          <div class="flex justify-between items-center rounded-xl ${gradiente}">
+            <p class="ml-5 sm:text-lg lg:text-xl font-bold w-full">
               ${faq.pregunta}
             </p>
-            <button class="text-left p-4 " id="button-${faq.id}">
-              <span class="text-3xl material-symbols-outlined">keyboard_arrow_down</span>
+            <button class="p-4" id="button-${faq.id}">
+              <span class="text-3xl material-symbols-outlined" id="icon-${faq.id}">keyboard_arrow_down</span>
             </button>
           </div>
-          <div id="content-${faq.id}" class="p-4 animate-flip-down hidden">
-            <p>${faq.respuesta}</p>
+          <div id="content-${faq.id}" class="overflow-hidden transition-max-height duration-500 ease-in-out max-h-0">
+            <p class="p-4">${faq.respuesta}</p>
           </div>
         </div>
       `;
