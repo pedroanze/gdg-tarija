@@ -2,7 +2,6 @@
 import { Image } from "astro:assets";
 import GoogleExtBanner from "../../assets/svg/hero.svg";
 import LogoDer from "../../assets/svg/Modal_Logo_Der.svg";
-import FondoPerfil from "../../assets/svg/Modal_Fondo_Perfil.svg";
 
 export interface Props {
   id: string;
@@ -13,9 +12,10 @@ export interface Props {
   bio_speaker: string;
   hora: string;
   tema: string;
+  nivel:string;
 }
 
-const { id, titulo, nombre, foto, descripcion, bio_speaker, hora, tema } = Astro.props;
+const { id, titulo, nombre, foto, descripcion, bio_speaker, hora, tema, nivel } = Astro.props;
 ---
 
 <div id={id} class="modal fixed inset-0 bg-gray-900 bg-opacity-50 hidden grid place-items-center z-10">
@@ -27,11 +27,8 @@ const { id, titulo, nombre, foto, descripcion, bio_speaker, hora, tema } = Astro
     </button>
     <div class="text-center">
       <img class="rounded-full w-32 h-32 object-cover mx-auto mb-4 relative z-10" src={foto} alt={nombre} />
-      <div class="absolute top-14 left-0 right-0 flex justify-center">
-        <Image class="w-64 h-auto mx-auto" src={FondoPerfil} alt="Logo" />
-      </div>
-      <h2 class="text-blue-500 text-lg">{nombre}</h2>
-      <p class="mb-3">Ponente</p>
+      <h2 class="font-semibold text-blue-500 text-lg">{nombre}</h2>
+      <p class="mb-3">Speaker</p>
       <h3 class="font-semibold text-xl text-gray-900">{titulo}</h3>
       <p class="text-sm text-gray-700 text-justify pt-2" id={`desc-${id}`} data-descripcion={descripcion} data-expanded="false">
         {descripcion.length > 100 ? `${descripcion.substring(0, 100)}...` : descripcion}
@@ -41,10 +38,19 @@ const { id, titulo, nombre, foto, descripcion, bio_speaker, hora, tema } = Astro
           </span>
         ) : null}
       </p>
-      <div class="text-left mt-2">
-        <h1 class="text-2xl md:text-3xl font-bold text-gray-900">{hora}</h1>
-        <span class="rounded-full px-3 py-1 text-sm inline-block mt-2" style="background: linear-gradient(to right, #9b5de5, #4361ee); color: white;">{tema}</span>
+      <div class="text-left mt-2 mb-6">
+        <div class="flex items-center">
+          <span class="material-symbols-outlined md:text-xl text-lg lg:text-2xl">
+            schedule
+          </span>
+          <h1 class="text-2xl md:text-3xl font-bold text-gray-900 ml-2">{hora}</h1>
+        </div>
+        <div class="">
+          <span class="rounded-full px-3 py-1 text-sm inline-block" style="background: linear-gradient(to right, #9b5de5, #4361ee); color: white;">{tema}</span>
+          <span class="rounded-full px-3 py-1 text-sm inline-block mt-2" style="background: linear-gradient(to right, #E5C34B, #36AC51); color: white;">{nivel}</span>
+        </div>
       </div>
+      
     </div>
     <div class="absolute bottom-0 right-0">
       <Image class="w-24 h-auto mx-auto" src={LogoDer} alt="Logo" />
