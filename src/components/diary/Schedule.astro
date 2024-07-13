@@ -32,7 +32,7 @@ const modalId = `modal-${Math.random().toString(36).substr(2, 9)}`;
     person_pin_circle
   </span>
 </div>
-<div class={`${nombre ? "col-span-2" : "col-span-3"} pe-1`}>
+<div class={`${nombre ? "col-span-2" : "col-span-3"}`}>
   <p class="text-sm font-bold md:text-base lg:text-lg  text-left text-Gray-900">{titulo}</p>
 </div>
 
@@ -41,7 +41,7 @@ const modalId = `modal-${Math.random().toString(36).substr(2, 9)}`;
     <>
       <div class="row-span-2 justify-self-end place-content-center">
         <button
-          class="bg-Orange text-white px-4 py-1 rounded-lg text-sm md:text-base lg:text-lg md:font-medium hover:bg-red-500"
+          class="bg-Orange text-white px-3 py-1 rounded-lg text-sm md:text-base lg:text-lg md:font-medium md:px-4 hover:bg-red-500"
           onclick={`document.getElementById('${modalId}').classList.remove('hidden'); document.body.style.overflow='hidden';`}
         >
           Detalle
