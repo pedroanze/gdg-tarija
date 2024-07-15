@@ -1,26 +1,26 @@
 [
     {
         "hora": "09:00",
+        "titulo": "Introducción a MediaPipe: Aprendiendo desde Cero",
+        "nombre": "Angel Christian Flores Lazarte",
+        "foto": "/img/speakers/Angel_Christian_Flores_Lazarte.jpg",
+        "tema": "AI",
+        "nivel": "Basic",
+        "descripcion": "Únete a esta sesión introductoria donde exploraremos MediaPipe desde cero. Descubre los fundamentos de esta poderosa plataforma de procesamiento de medios y aprende cómo puede transformar tus aplicaciones con sus beneficios innovadores.",
+        "bio_speaker": "Angel es un desarrollador de software y estudiante de ing de sistemas en la UMSS, apasionado por aprender cosas nuevas y enseñar siempre que puede, miembro activo de GDG, SCESI y Angular Bolivia."
+    },
+    {
+        "hora": "09:30",
         "titulo": "Creando aplicaciones de Visión por Computador con MediaPipe",
         "nombre": "Alejandro Núñez Arroyo",
         "foto": "/img/speakers/Alejandro_Núñez_Arroyo.jpg",
         "tema": "AI",
-        "nivel": "Basic",
+        "nivel": "Intermediate",
         "descripcion": "En esta charla, exploraremos MediaPipe, la herramienta Low Code de Google diseñada para acelerar y simplificar el desarrollo de soluciones de inteligencia artificial en el área de visión, lenguaje y audio. Desglosaremos las tareas de inteligencia artificial que se pueden realizar con MediaPipe, destacando sus componentes clave y casos de uso prácticos. Además, evaluaremos cómo integrar esta tecnología en diversos proyectos y compararemos su funcionamiento con otros frameworks como TensorFlow, analizando en qué situaciones es más recomendable utilizar MediaPipe.",
         "bio_speaker": "Ingeniero Mecatrónico con experiencia en la ejecución de proyectos basados en inteligencia artificial. Actualmente, se desempeña como Investigador en Inteligencia "        
     },
     {
-        "hora": "09:35",
-        "titulo": "Aplicación de MediaPipe en Proyectos de Desarrollo Web",
-        "nombre": "Angel Christian Flores Lazarte",
-        "foto": "/img/speakers/Angel_Christian_Flores_Lazarte.jpg",
-        "tema": "AI",
-        "nivel": "Intermediate",
-        "descripcion": "Descubre cómo integrar MediaPipe en tus proyectos de desarrollo web para mejorar la interactividad y funcionalidad de tus aplicaciones. Aprende técnicas prácticas para implementar soluciones de visión por computadora y reconocimiento de gestos usando esta potente herramienta de Google. Ideal para desarrolladores web interesados en expandir sus habilidades y explorar nuevas posibilidades en el campo de la inteligencia artificial aplicada.",
-        "bio_speaker": "Angel es un desarrollador de software y estudiante de ing de sistemas en la UMSS, apasionado por aprender cosas nuevas y enseñar siempre que puede, miembro activo de GDG, SCESI y Angular Bolivia."
-    },
-    {
-        "hora": "10:00",
+        "hora": "9:55",
         "titulo": "IA en la Web con Google AI Edge",
         "nombre": "Nicolas Molina Monroy",
         "foto": "/img/speakers/Nicolas_Molina_Monroy.jpg",
