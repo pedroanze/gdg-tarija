@@ -1,6 +1,6 @@
 [
     {
-        "hora": "15:10",
+        "hora": "15:00",
         "titulo": "El flujo de trabajo del desarrollador asistido por IA con IDX",
         "nombre": "Rodrigo Torrico",
         "foto": "/img/speakers/Rodrigo_Torrico.jpeg",
@@ -22,16 +22,6 @@
     },
     {
         "hora": "16:00",
-        "titulo": "Kotlin Multiplatform: El futuro del desarrollo multiplataforma",
-        "nombre": "Josué Lemus Miranda",
-        "foto": "/img/speakers/Josue_Lemus_Miranda.jpeg",
-        "tema": "Mobile",
-        "nivel": "Intermediate",
-        "descripcion": "Exploraremos el potencial de Kotlin Multiplatform (KMP) en el desarrollo multiplataforma y su comparación con otras tecnologías como Flutter. Analizaremos sus ventajas, desventajas y debatiremos si realmente puede convertirse en el futuro del desarrollo multiplataforma. Descubre si KMP y Flutter pueden coexistir y complementar tus proyectos móviles.",
-        "bio_speaker": "Soy programador con 5 años de experiencia en el desarrollo móvil, durante este tiempo eh manejado tecnologías como flutter, Swift para iOS y Kotlin para Android."
-    },
-    {
-        "hora": "16:35",
         "titulo": "Priorizando la Seguridad en Flutter",
         "nombre": "Gonzalo Caira Aguilar",
         "foto": "/img/speakers/Gonzalo_Caira_Aguilar.png",
@@ -39,6 +29,16 @@
         "nivel": "Intermediate",
         "descripcion": "En esta charla abordaremos buenas practicas de seguridad en el desarrollo mobile, esto nos permitirá garantizar la seguridad y fiabilidad de nuestras aplicaciones a nuestros ",
         "bio_speaker": "Software Engineer, organizador en las comunidades de GDG Arequipa y Flutter Arequipa y creador de contenido en Youtube en el canal “Hey Gonza"
+    },
+    {
+        "hora": "16:35",
+        "titulo": "Kotlin Multiplatform: El futuro del desarrollo multiplataforma",
+        "nombre": "Josué Lemus Miranda",
+        "foto": "/img/speakers/Josue_Lemus_Miranda.jpeg",
+        "tema": "Mobile",
+        "nivel": "Intermediate",
+        "descripcion": "Exploraremos el potencial de Kotlin Multiplatform (KMP) en el desarrollo multiplataforma y su comparación con otras tecnologías como Flutter. Analizaremos sus ventajas, desventajas y debatiremos si realmente puede convertirse en el futuro del desarrollo multiplataforma. Descubre si KMP y Flutter pueden coexistir y complementar tus proyectos móviles.",
+        "bio_speaker": "Soy programador con 5 años de experiencia en el desarrollo móvil, durante este tiempo eh manejado tecnologías como flutter, Swift para iOS y Kotlin para Android."
     },
     {
         "hora": "17:00",

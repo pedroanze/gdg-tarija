@@ -1,12 +1,12 @@
 [
     {
-        "hora": "09:10",
-        "titulo": "PaliGemma: Combinando Lenguaje y Visión para el Futuro de la IA",
+        "hora": "09:00",
+        "titulo": "Creando aplicaciones de Visión por Computador con MediaPipe",
         "nombre": "Alejandro Núñez Arroyo",
         "foto": "/img/speakers/Alejandro_Núñez_Arroyo.jpg",
         "tema": "AI",
         "nivel": "Basic",
-        "descripcion": "En esta charla, exploraremos PaliGemma, el nuevo modelo VLM (Vision Language Model) de Google que fusiona el procesamiento del lenguaje natural y la visión artificial para crear una inteligencia artificial multimodal. Analizaremos el impacto de los modelos multimodales, los objetivos de PaliGemma, su funcionamiento, componentes, y aplicaciones. Además, presentaré herramientas para que los asistentes puedan probar PaliGemma. Concluiré con una reflexión sobre los desafíos actuales que enfrenta PaliGemma y su potencial para transformar el uso de inteligencia artificial en los próximos años.",
+        "descripcion": "En esta charla, exploraremos MediaPipe, la herramienta Low Code de Google diseñada para acelerar y simplificar el desarrollo de soluciones de inteligencia artificial en el área de visión, lenguaje y audio. Desglosaremos las tareas de inteligencia artificial que se pueden realizar con MediaPipe, destacando sus componentes clave y casos de uso prácticos. Además, evaluaremos cómo integrar esta tecnología en diversos proyectos y compararemos su funcionamiento con otros frameworks como TensorFlow, analizando en qué situaciones es más recomendable utilizar MediaPipe.",
         "bio_speaker": "Ingeniero Mecatrónico con experiencia en la ejecución de proyectos basados en inteligencia artificial. Actualmente, se desempeña como Investigador en Inteligencia "        
     },
     {
