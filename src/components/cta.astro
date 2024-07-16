@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 import Diary  from "components/diary/Diary.astro";
 import GoogleExtLogo from "../../src/assets/svg/Logo Brack.svg";
 import GoogleExtBanner from "../../src/assets/svg/hero.svg";
+import Countdown from "./countdown/Countdown.astro";
 
 interface Props {}
 
@@ -10,7 +11,7 @@ const {} = Astro.props;
 const mensaje = `Universidad Catolica\n Bolviana Campus Central`;
 ---
 
-<div class="background--color flex flex-col">
+<div class="background--color flex flex-col pt-20">
   <div class="w-full mt-40 sm:mt-8 min-[190px]:mt-8">
     <div class="">
       <Image class="m-auto w-10/12 sm:w-1/2" src={GoogleExtLogo} alt="Logo" />
@@ -62,33 +63,51 @@ const mensaje = `Universidad Catolica\n Bolviana Campus Central`;
         </div>
       </div>
     </div>
-    <div class="mt-10 flex justify-center">
-      <a
-        href="https://forms.gle/wCFY8X3k8bvm6v547"
-        class="bg-blue-500 text-white px-6 py-2 rounded-full text-lg font-medium hover:bg-blue-600"
-        >Registrate Aqui</a
-      >
-    </div>
-    <div class="mt-5 flex justify-center sm:mt-10">
-      <a
-        href="https://forms.gle/HzFNQ5sEectVAmieA"
-        class="bg-blue-500 text-white px-6 py-2 rounded-full text-lg font-medium hover:bg-blue-600"
-        >Paquetes del Evento</a
-      >
-    </div>
-  </div>
-  <Diary />
-  <div class="w-full mt-16">
-    <Image
-      class="m-auto w-10/12 sm:w-1/2 animate-fade-up animate-duration-[1500ms] animate-ease-in animate-fill-forwards"
-      src={GoogleExtBanner}
-      alt="Banner"
-    />
-  </div>
-</div>
+    <Countdown />
 
-<style>
-  .background--color {
-    background: #efefef;
-  }
-</style>
+    <div
+      class="text-center flex items-center justify-center content-center mt-5 mb-5"
+    >
+      <div class="justify-self-end">
+        <p class="min-[190px]:text-sm md:text-2xl font-medium">
+          Agenda el evento en google Calendar:
+        </p>
+      </div>
+
+      <div class="justify-self-start">
+        <button id="add-to-calendar">
+          <img
+            class="min-[190px]:h-5 md:h-8 md:hover:h-9 min-[190px]:hover:h-6"
+            src="/img/Google-Calendar-Logo.png"
+            alt=""
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .background--color {
+      background: #efefef;
+    }
+  </style>
+
+  <script is:inline>
+    document
+      .getElementById("add-to-calendar")
+      .addEventListener("click", function () {
+        const event = {
+          title: "Google I/O Extended Tarija 2024",
+          location: `Universidad Católica Boliviana "San Pablo" Sete Tarija Calle Colon entre Bolivar e, Ingavi, Tarija`,
+          details:
+            "¡Únete a nosotros en el Google I/O Extended Tarija 2024, un evento imperdible para todos los apasionados por la tecnología! Nuestro objetivo principal es compartir las últimas novedades tecnológicas de Google con la comunidad de Tarija. Contaremos con expositores tanto nacionales como internacionales, que compartirán su conocimiento y experiencia en diversas áreas de la tecnología.\n Este evento es una oportunidad única para aprender, conectar y explorar las tendencias más recientes en el mundo de la tecnología. Habrá charlas inspiradoras, talleres prácticos y paneles de discusión que cubrirán una amplia gama de temas, desde desarrollo web y móvil hasta inteligencia artificial y más.\n No te pierdas esta oportunidad de sumergirte en el mundo de la tecnología y ser parte de una comunidad vibrante y apasionada. ¡Te esperamos en la Universidad Católica Boliviana el 20 de julio!",
+          start: "20240720T123000Z",
+          end: "20240720T220000Z",
+        };
+
+        const href = `https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(event.title)}&dates=${event.start}/${event.end}&details=${encodeURIComponent(event.details)}&location=${encodeURIComponent(event.location)}`;
+
+        window.open(href, "_blank");
+      });
+  </script>
+</div>

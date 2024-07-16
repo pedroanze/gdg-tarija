@@ -1,0 +1,75 @@
+<div class="bg-Background mt-10">
+  <div
+    id="countdown"
+    class="text-center flex items-center justify-center bg-Background mx-6"
+  >
+    <div class="flex bg-Background">
+      <div
+        class="sm:text-3xl min-[190px]:text-xl lg:text-6xl font-bold sm:mx-5 min-[190px]:mx-2"
+      >
+        <div class="flex flex-col">
+          <span id="days">00</span>
+          <span class="sm:text-xl min-[190px]:text-lg lg:text-3xl">Días</span>
+        </div>
+      </div>
+      <div
+        class="sm:text-3xl min-[190px]:text-xl lg:text-6xl font-bold sm:mx-5 min-[190px]:mx-2"
+      >
+        <div class="flex flex-col">
+          <span id="hours">00</span>
+          <span class="sm:text-xl min-[190px]:text-lg lg:text-3xl">Horas</span>
+        </div>
+      </div>
+      <div
+        class="sm:text-3xl min-[190px]:text-xl lg:text-6xl font-bold sm:mx-5 min-[190px]:mx-2"
+      >
+        <div class="flex flex-col">
+          <span id="minutes">00</span>
+          <span class="sm:text-xl min-[190px]:text-lg lg:text-3xl">Minutos</span
+          >
+        </div>
+      </div>
+      <div
+        class="sm:text-3xl min-[190px]:text-xl lg:text-6xl font-bold sm:mx-5 min-[190px]:mx-2"
+      >
+        <div class="flex flex-col">
+          <span id="seconds">00</span>
+          <span class="sm:text-xl min-[190px]:text-lg lg:text-3xl"
+            >Segundos</span
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script is:inline>
+  document.addEventListener("DOMContentLoaded", function () {
+    const endDate = new Date("2024-07-19T23:59:59").getTime();
+
+    const countdown = () => {
+      const now = new Date().getTime();
+      const distance = endDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("days").innerText = days;
+      document.getElementById("hours").innerText = hours;
+      document.getElementById("minutes").innerText = minutes;
+      document.getElementById("seconds").innerText = seconds;
+
+      if (distance < 0) {
+        clearInterval(interval);
+        document.getElementById("countdown").innerHTML = "EXPIRED";
+      }
+    };
+
+    const interval = setInterval(countdown, 1000);
+    countdown();
+  });
+</script>
