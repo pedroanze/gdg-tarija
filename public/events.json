@@ -1,5 +1,18 @@
 [
-
+  {
+    "src": "/img/events/preparate_mundo_laboral.webp",
+    "link": "https://gdg.community.dev/events/details/google-gdg-tarija-presents-preparate-para-el-mundo-laboral-2024/",
+    "date": "31 de Agosto 2024 ",
+    "title": "Conferencia",
+    "fullName": "Prepárate para el mundo laboral 2024"
+  },
+  {
+    "src": "/img/events/google_IO_2024.webp",
+    "link": "https://gdg.community.dev/events/details/google-gdg-tarija-presents-google-io-extended-tarija-2024/",
+    "date": "20 de Julio 2024 ",
+    "title": "Conferencia",
+    "fullName": "Google I/O Extended Tarija 2024"
+  },
   {
     "src": "/img/events/taller paginas web.webp",
     "link": "https://gdg.community.dev/events/details/google-gdg-tarija-presents-taller-creacion-de-paginas-web/",

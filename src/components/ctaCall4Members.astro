@@ -1,0 +1,45 @@
+---
+import { Image } from "astro:assets";
+import BgCall4M from "../assets/svg/bg-image-Call4M.svg";
+
+---
+
+<div class="flex flex-col pt-20" id="call4M">
+  <div class="w-full">
+    <div class="bg-gradient-to-b from-neutral-950 via-neutral-800 to-neutral-600 h-[720px] w-full relative">
+        <Image class="w-full h-full object-cover absolute mix-blend-overlay" src={BgCall4M} alt="fondo" />
+        <div class="relative top-0 left-0 w-full h-full flex items-center flex-col gap-7">
+            <h2 class="text-lg md:text-3xl lg:text-4xl font-medium text-center text-white mt-10">¡Únete a la comunidad del GDG Tarija!</h2>
+            <h6 class="text-6xl md:text-8xl lg:text-[120px] font-bold bg-gradient-to-r from-[#8eb251] via-[#b2c55c] to-[#dcbb45] text-center text-transparent bg-clip-text">Call 4 Members</h6>
+            <h2 class="text-base md:text-2xl lg:text-3xl font-medium text-center text-white">Envía tu postulación antes del 14 de septiembre</h2>
+            <div class="justify-center">
+                <a href="https://forms.gle/A7hXFmNXg1CMEWfu5">
+                  <button type='button' class='py-2.5 px-6 text-base md:text-lg rounded-full bg-gradient-to-r from-[#8eb251] via-[#b2c55c] to-[#dcbb45] text-white cursor-pointer font-semibold text-center shadow-xs transition duration-500 ease-in-out hover:scale-105'>
+                    Registrate Aquí
+                  </button>
+                </a>
+              </div>
+              
+        </div>
+      </div>    
+  </div>
+
+  <script is:inline>
+    document
+      .getElementById("add-to-calendar")
+      .addEventListener("click", function () {
+        const event = {
+          title: "Google I/O Extended Tarija 2024",
+          location: `Universidad Católica Boliviana "San Pablo" Sete Tarija Calle Colon entre Bolivar e, Ingavi, Tarija`,
+          details:
+            "¡Únete a nosotros en el Google I/O Extended Tarija 2024, un evento imperdible para todos los apasionados por la tecnología! Nuestro objetivo principal es compartir las últimas novedades tecnológicas de Google con la comunidad de Tarija. Contaremos con expositores tanto nacionales como internacionales, que compartirán su conocimiento y experiencia en diversas áreas de la tecnología.\n Este evento es una oportunidad única para aprender, conectar y explorar las tendencias más recientes en el mundo de la tecnología. Habrá charlas inspiradoras, talleres prácticos y paneles de discusión que cubrirán una amplia gama de temas, desde desarrollo web y móvil hasta inteligencia artificial y más.\n No te pierdas esta oportunidad de sumergirte en el mundo de la tecnología y ser parte de una comunidad vibrante y apasionada. ¡Te esperamos en la Universidad Católica Boliviana el 20 de julio!",
+          start: "20240720T123000Z",
+          end: "20240720T220000Z",
+        };
+
+        const href = `https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(event.title)}&dates=${event.start}/${event.end}&details=${encodeURIComponent(event.details)}&location=${encodeURIComponent(event.location)}`;
+
+        window.open(href, "_blank");
+      });
+  </script>
+</div>
