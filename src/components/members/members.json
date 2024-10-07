@@ -3,7 +3,6 @@
     "Photo": "/img/members/Valeria_Burgos.jpg",
     "Name": "Valeria Burgos",
     "Linkedin": "https://www.linkedin.com/in/valeriaburgos/",
-    "Github": "",
     "Facebook": "https://www.facebook.com/pvaleriaburgos/",
     "Instagram": "https://www.instagram.com/pvaleriaburgos/",
     "Sitio_web": "",
@@ -44,18 +43,6 @@
     "Instagram": "https://www.instagram.com/damaris.mamani.13?igsh=bDlwYzdpNnFrMXNp",
     "Sitio_web": "",
     "About": "Exploradora del mundo de la tecnología y las finanzas, en busca constante de crecimiento profesional y oportunidades para compartir aprendizajes. Comprometida con transformar conocimiento en impacto positivo.",
-    "foto": "",
-    "Comisión": "Organizer"
-  },
-  {
-    "Photo": "/img/members/Amilkar.png",
-    "Name": "Amilkar Dominguez",
-    "Linkedin": "",
-    "Github": "",
-    "Facebook": "",
-    "Instagram": "",
-    "Sitio_web": "",
-    "About": "",
     "foto": "",
     "Comisión": "Organizer"
   },
@@ -219,8 +206,8 @@
     "Photo": "/img/members/Marcia_Andrade.jpg",
     "Name": "Marcia Andrade",
     "Linkedin": "https://www.linkedin.com/in/marcia-milenka-andrade-llanos/",
-    "Github": "",
-    "Facebook": "",
+    "Github": "https://github.com/milenkandrade",
+    "Facebook": "https://www.facebook.com/marcia.m.andrade.ll",
     "Instagram": "https://www.instagram.com/marcia.andrade.4?igsh=MTZwb3BkZWFxbmp0Yg==",
     "Sitio_web": "",
     "About": "Soy una persona comprometida, autodidacta y resolutiva. Disfruto de los constantes desafíos y el aprendizaje que conlleva ser un desarrollador FrontEnd",
@@ -274,6 +261,17 @@
     "About": "Soy una entusiasta de la tecnología y amante de los naimalitos. Participo en eventos de tecnología, disfrutando de la oportunidad de aprender continuamente y de conectar con otros en mi campo.",
     "foto": "",
     "Comisión": "Marketing"
+  },
+  {
+    "Photo": "/img/members/Rodrigo_Velasco.jpg",
+    "Name": "Luis Velasco",
+    "Linkedin": "www.linkedin.com/in/rodrigo-velasco-rios",
+    "Github": "",
+    "Facebook": "",
+    "Instagram": "",
+    "Sitio_web": "",
+    "About": "",
+    "foto": "",
+    "Comisión": "Apoyo Técnico"
   }
-
 ]

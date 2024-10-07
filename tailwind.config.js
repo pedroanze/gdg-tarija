@@ -76,6 +76,16 @@ export default {
           950: "#000000",
         },
       },
+      keyframes: {
+        'border-spin': {
+          '100%': {
+            transform: 'rotate(-360deg)',
+          },
+        },
+      },
+      animation: {
+        'border-spin': 'border-spin 10s linear infinite',
+      },
     },
   },
   plugins: [require("tailwindcss-animated")],

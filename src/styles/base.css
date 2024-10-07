@@ -28,3 +28,38 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+@tailwind utilities;
+
+@layer utilities {
+  /* Act as a border */
+  .card-wrapper {
+    @apply relative overflow-hidden rounded-2xl bg-gradient-to-b from-slate-700 to-slate-800;
+  }
+
+  /* Gradient */
+  .card-wrapper::before {
+    background: conic-gradient(
+      #34A853 3deg,
+      #EA4335 15deg,
+      #F9AB00 25deg,
+      #4285F4 40deg,
+      transparent 60deg
+    );
+
+    @apply absolute left-[-25%] top-[-25%] h-[150%] w-[150%] animate-border-spin content-[''];
+  }
+
+  /* Body */
+  .card-content {
+    @apply absolute left-[1px] top-[1px] h-[calc(100%-2px)] w-[calc(100%-2px)] rounded-2xl bg-gradient-to-b from-gray-600 to-gray-700;
+  }
+
+  .card-content:hover .redes-sociales{
+    @apply translate-y-0 opacity-100;
+  }
+
+  .card-content:hover .card-items{
+    @apply -translate-y-3;
+  }
+}

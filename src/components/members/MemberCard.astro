@@ -1,20 +1,12 @@
 ---
 import { Image } from "astro:assets";
-const {
-    id,
-    Photo,
-    Name,
-    Linkedin,
-    Github,
-    Facebook,
-    Instagram,
-    Sitio_web,
-    About,
-    Comisión,
-} = Astro.props;
+import RedesSocialesMember from "./RedesSocialesMember.astro";
+
+const {Photo, Name, Linkedin, Github, Facebook, Instagram, Sitio_web, About, Comisión} = Astro.props;
+
 ---
 
-<section class="flex flex-col gap-4 items-center p-4">
+<!-- <section class="flex flex-col gap-4 items-center p-4">
     <Image
         src={Photo}
         width="50"
@@ -26,4 +18,32 @@ const {
     <div class="text-justify">
         {Comisión}
     </div>
-</section>
+</section> -->
+
+<div class="card-wrapper h-[300px] w-[260px] justify-self-center shadow-lg shadow-slate-900">
+    <div class="card-content flex items-center justify-center">
+        <div class="card-items flex flex-col gap-2 items-center text-xs transition duration-500 mt-10">
+            <Image
+                src={Photo}
+                width="50"
+                height="50"
+                alt="foto"
+                class="rounded-full size-36 object-cover border-4 border-neutral-700"
+                alt={Name}
+            />
+            <div class="font-bold text-xl text-white">{Name}</div>
+            <div class="text-justify text-white text-base">
+                {Comisión}
+            </div>
+            <div class="redes-sociales flex mt-2 sm:mt-0 sm:justify-center translate-y-6 transition duration-500 opacity-0">
+                <RedesSocialesMember 
+                    Linkedin={Linkedin}
+                    Github={Github}
+                    Facebook={Facebook}
+                    Instagram={Instagram}
+                    Sitio_web={Sitio_web}
+                />
+            </div>
+        </div>
+    </div>
+</div>
