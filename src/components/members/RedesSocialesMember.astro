@@ -1,0 +1,42 @@
+---
+import { Image } from "astro:assets";
+import ImgFacebook from "../../assets/svg/facebook.svg"
+import ImgInstagram from "../../assets/svg/instagram.svg"
+import ImgLinkedIn from "../../assets/svg/linkedin.svg"
+import ImgGithub from "../../assets/svg/github.svg"
+import ImgWeb from "../../assets/svg/globe-solid.svg"
+
+const {Linkedin, Github, Facebook, Instagram, Sitio_web} = Astro.props;
+---
+<>
+    {
+        (Linkedin && Linkedin !== "") &&
+            <a href={Linkedin} class="mt-4">
+                <Image src={ImgLinkedIn} class="h-5 m-2 w-auto" alt="Linkedin" />
+            </a>
+    }
+    {
+        (Sitio_web && Sitio_web !== "") &&
+            <a href={Sitio_web} class="mt-4">
+                <Image src={ImgWeb} class="h-5 m-2 w-auto" alt="Sitio Web"  />
+            </a>
+    }
+    {
+        (Github && Github !== "") &&
+            <a href={Github} class="mt-4">
+                <Image src={ImgGithub} class="h-5 m-2 w-auto" alt="Github"  />
+            </a>
+    }
+    {
+        (Instagram && Instagram !== "") &&
+            <a href={Instagram} class="mt-4">
+                <Image src={ImgInstagram} class="h-5 m-2 w-auto" alt="Instagram"  />
+            </a>
+    }
+    {
+        (Facebook !== "") &&
+        <a href={Facebook} class="mt-4">
+            <Image src={ImgFacebook} class="h-5 m-2 w-auto" alt="Facebook"  />
+        </a>
+    }
+</>
