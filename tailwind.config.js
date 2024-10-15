@@ -21,6 +21,10 @@ export default {
     extend: {
       colors: {
         Background: "#eeeeee",
+        "rojo-GDG": "#EA4335",
+        "amarillo-GDG": "#F9AB00",
+        "azul-GDG": "#4285F4",
+        "verde-GDG": "#34A853",
         "Gray-900": "#202124",
         "Orange": "#F46831",
         blue: {
