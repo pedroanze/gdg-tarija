@@ -1,0 +1,41 @@
+---
+const { color, borderWeight } = Astro.props;
+const colorMap = {
+  red: "bg-rojo-GDG",
+  yellow: "bg-amarillo-GDG",
+  blue: "bg-azul-GDG",
+  green: "bg-verde-GDG",
+  gray: "bg-Gray-900",
+  orange: "bg-Orange",
+};
+const selectedColor = colorMap[color] || "#ccc";
+---
+
+<style>
+  .custom-shape {
+    clip-path: polygon(100% 0, 100% 85%, 89% 100%, 0 100%, 0 15%, 9% 0);
+    aspect-ratio: 4 / 3;
+  }
+  .custom-shape-shadow {
+    clip-path: polygon(100% 0, 100% 85%, 89% 100%, 0 100%, 0 15%, 9% 0);
+    aspect-ratio: 4 / 3;
+    background-color: black;
+    padding: var(--border-weight);
+  }
+  .custom-child {
+    width: 90%;
+    height: 90%;
+    outline: var(--border-weight) solid black;
+  }
+</style>
+
+<div
+  class="custom-shape-shadow h-full w-full"
+  style={`--border-weight: ${borderWeight}`}
+>
+  <div class={`custom-shape h-full w-full ${selectedColor} flex justify-end`}>
+    <div class="custom-child bg-slate-50 content-center">
+      <slot />
+    </div>
+  </div>
+</div>
