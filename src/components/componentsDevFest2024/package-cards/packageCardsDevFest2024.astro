@@ -1,0 +1,85 @@
+---
+import XIcon from "../../../assets/svg/XIcon.svg";
+import { Image } from "astro:assets";
+const { card } = Astro.props;
+
+const getColor = (
+  classConfig, // Could Be bg, text
+) => {
+  const colors = {
+    red: `${classConfig}-rojo-GDG`,
+    yellow: `${classConfig}-amarillo-GDG`,
+    blue: `${classConfig}-azul-GDG`,
+    green: `${classConfig}-verde-GDG`,
+    gray: `${classConfig}-Gray-900`,
+    orange: `${classConfig}-Orange`,
+  };
+  return colors[card.cardColor];
+};
+---
+
+<style>
+  .custom-shape {
+    clip-path: polygon(0 3%, 3% 0, 100% 0, 100% 96%, 96% 100%, 0 100%);
+  }
+  .custom-width {
+    width: 96%;
+  }
+  .custom-height {
+    height: 96%;
+  }
+</style>
+
+<div class="h-full custom-shape p-1 bg-black">
+  <div class={`flex h-full custom-shape ${getColor("bg")} justify-end `}>
+    <div
+      class="bg-slate-50 outline outline-black flex flex-col justify-between custom-height custom-width mb-6 sm:mb-0"
+    >
+      <!-- XICON -->
+      <div class="pt-2 px-2 grow-0">
+        <Image src={XIcon} alt="xIcon" class="w-5 h-5" />
+      </div>
+
+      <!-- TITLE -->
+      <div class="pt-2 px-2 grow-0">
+        <h4 class={`${getColor("text")} text-center text-3xl font-bold italic`}>
+          {card.title}
+        </h4>
+      </div>
+
+      <!-- PACKAGES ELEMENTS AND IMAGE -->
+      <div
+        class="flex justify-between px-6 pt-6 grow-0 sm:flex-col-reverse md:flex-row"
+      >
+        <div class="flex-1 flex flex-col justify-between">
+          <ul class="list-disc ml-5 grow">
+            {
+              card.packageElements.map((packageElement) => {
+                return (
+                  <li class="text-lg font-bold italic sm:text-2xl">
+                    {packageElement}
+                  </li>
+                );
+              })
+            }
+          </ul>
+          <div class="pt-5 text-3xl italic grow-0">
+            <strong>{card.price} Bs.</strong>
+          </div>
+        </div>
+        <div class="flex-1">
+          <Image src={card.cardImage} class="float-end" alt="logo" />
+        </div>
+      </div>
+
+      <!-- GET ONE BUTTON -->
+      <div class="my-5 pb-10 text-center grow place-content-end">
+        <button
+          class="py-2 px-5 outline outline-black bg-amarillo-GDG text-white"
+        >
+          ¡Quiero uno!
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

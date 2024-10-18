@@ -93,4 +93,19 @@ export default {
     },
   },
   plugins: [require("tailwindcss-animated")],
+  safelist: [
+    // Agrega las clases dinámicas que Tailwind no puede detectar
+    'bg-rojo-GDG',
+    'bg-amarillo-GDG',
+    'bg-azul-GDG',
+    'bg-verde-GDG',
+    'bg-Gray-900',
+    'bg-Orange',
+    'text-rojo-GDG',
+    'text-amarillo-GDG',
+    'text-azul-GDG',
+    'text-verde-GDG',
+    'text-Gray-900',
+    'text-Orange',
+  ],
 };
