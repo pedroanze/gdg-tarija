@@ -1,53 +1,87 @@
 ---
-import { Image } from "astro:assets";
-import CloudImage from "../../../assets/svg/cloud-image.svg";
+import PackagePhoto from "../../../assets/svg/PackagePhoto.svg";
 import PackageCard from "../package-cards/packageCardsDevFest2024.astro";
+import CloudImage from "../../../assets/svg/cloud-image.svg";
+import { Image } from "astro:assets";
+import { CardDevFest2024 } from "models/cardDevFest2024";
+
+const cards = [
+  new CardDevFest2024({
+    title: "Paquete Developer",
+    packageElements: ["2 Stickers", "1 Llavero", "1 Cuaderno", "2 Pines"],
+    price: 30,
+    cardImage: PackagePhoto,
+    cardColor: "blue",
+  }),
+  new CardDevFest2024({
+    title: "Paquete ML",
+    packageElements: [
+      "3 Stickers",
+      "1 Llavero",
+      "1 Cuaderno",
+      "2 Pines",
+      "1 Vaso con Popote",
+    ],
+    price: 50,
+    cardImage: PackagePhoto,
+    cardColor: "green",
+  }),
+];
 ---
 
+<style>
+  .custom-shape {
+    clip-path: polygon(0 16%, 4% 0, 100% 0, 100% 83%, 96% 100%, 0 100%);
+  }
+  .custom-width {
+    width: 96%;
+  }
+  .custom-height {
+    height: 96%;
+  }
+</style>
+
 <div class="h-80">scscs</div>
-<div class="bg-rojo-GDG md:px-10">
-  <!-- TITLE AND CLOUDs -->
-  <div class="md:flex md:justify-between md:pt-3 md:pb-3">
-    <div class="md:flex-1"></div>
-    <div class="md:h-12">
-      <PackageCard color="red" borderWeight="2px">
-        <div class="md:pl-2 md:pr-4 md:py-2 md:h-full">
-          <strong class="md:text-center"> Paquetes </strong>
+<div class="bg-rojo-GDG pt-10 pb-10 px-6 outline outline-black outline-4">
+  <div>
+    <div class="flex justify-center lg:justify-between">
+      <div class="flex-1 hidden lg:block"></div>
+      <div class="flex-0 self-end">
+        <div class="custom-shape bg-black p-1">
+          <div class="flex custom-shape bg-rojo-GDG justify-end">
+            <div
+              class="bg-slate-50 outline outline-black custom-height custom-width mb-3"
+            >
+              <h2
+                class="text-center text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold py-2 px-8"
+              >
+                Paquetes
+              </h2>
+            </div>
+          </div>
         </div>
-      </PackageCard>
-    </div>
-    <div class="md:flex-1 md:self-end">
-      <div class="md:flex md:justify-end md:gap-x-3 md:items-end">
-        <Image src={CloudImage} alt="logo" class="md:max-h-10 md:m-0 md:w-auto" />
-        <Image src={CloudImage} alt="logo" class="md:max-h-6 md:m-0 md:w-auto" />
+      </div>
+      <div class="flex-1 text-right hidden lg:flex lg:justify-end lg:pr-6 lg:gap-x-5">
+        <Image src={CloudImage} alt="cloud" class="w-24 h-24 p-0 m-0 block self-end	" />
+        <Image src={CloudImage} alt="cloud" class="w-12 h-12 p-0 m-0 block self-end	" />
       </div>
     </div>
-  </div>
 
-  <!-- CARDS -->
-  <div class="bg-rojo-GDG md:flex md:gap-x-10">
-    <div class="md:flex-1 h-20">
-      <PackageCard color="red" borderWeight="2px">
-        <div>sxasxas</div>
-        <div>sxasxas</div>
-        <div>sxasxas</div>
-        <div>sxasxas</div>
-        <div>sxasxas</div>
-        <div>sxasxas</div>
-        <div>sxasxas</div>
-      </PackageCard>
-    </div>
-    <div class="md:flex-1 h-12">
-      <PackageCard color="red" borderWeight="2px">
-        <div class="md:pl-2 md:pr-4 md:py-2 md:h-full">
-          <strong class="md:text-center"> Paquetes </strong>
-        </div>
-      </PackageCard>
+    <!-- CARDS -->
+    <div class="flex flex-col sm:flex-row pt-4 m-0">
+      {
+        cards.map((card, cardIndex) => {
+          return (
+            <div
+              class={`
+                px-4 mt-6 flex-1 border-0 border-black ${cards.length != cardIndex + 1 ? "sm:border-r-2" : ""} 
+              `}
+            >
+              <PackageCard card={card} />
+            </div>
+          );
+        })
+      }
     </div>
   </div>
-
 </div>
-
-<script>
-  console.log("casca");
-</script>
