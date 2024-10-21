@@ -1,64 +1,31 @@
 ---
 import { Image } from "astro:assets";
-import Diary from "components/diary/Diary.astro";
-import GoogleExtLogo from "../../src/assets/svg/Logo Brack.svg";
-import LogoDevFest from "../assets/svg/logo-devfest-h.svg";
-import GoogleExtBanner from "../../src/assets/svg/hero.svg";
-import Countdown from "./countdown/Countdown.astro";
+import BgHero from "../../assets/images/devfest2024/Backg.png";
+import msg from "../../assets/images/devfest2024/el poder de la ia.png";
+import devfest from "../../assets/images/devfest2024/devfest.png";
+import BtnRegistro from "../../assets/images/devfest2024/btnregistro.png";
 
-interface Props {}
-
-const {} = Astro.props;
-const mensaje = `Universidad Catolica\n Bolviana Campus Central`;
 ---
 
-<div class="background--color flex flex-col pt-20">
-  <div class="w-full mt-40 sm:mt-8 min-[190px]:mt-8">
-    <div class="">
-      <Image
-        class="m-auto w-10/12 sm:w-1/2"
-        src={LogoDevFest}
-        alt="Logo DevFest2024"
-      />
-    </div>
-    <div class="text-center flex items-center justify-center mt-5 mb-5">
-      <a
-        href="/devfest2024"
-        class="rounded-full md:px-6 min-[190px]:px-4 min-[190px]:py-2 bg-red-500 border-4 hover:bg-green-500 border-black text-white md:text-3xl min-[190px]:text-lg font-semibold"
-      >
-        Conocer más sobre el DevFest
-      </a>
-    </div>
-    <!--
- Boton guardar fecha en Calendar
-
-    <div
-      class="text-center flex items-center justify-center content-center mt-5 mb-5"
-    >
-      <div class="justify-self-end">
-        <p class="min-[190px]:text-sm md:text-2xl font-medium">
-          Agenda el evento en google Calendar:
-        </p>
-      </div>
-
-      <div class="justify-self-start">
-        <button id="add-to-calendar">
-          <img
-            class="min-[190px]:h-5 md:h-8"
-            src="/img/Google-Calendar-Logo.png"
-            alt=""
-          />
-        </button>
-      </div>
-    </div>
--->
+<div class="flex flex-col bg-rojo-GDG" id="call4M">
+  <div class="w-full">
+    <div class="sm:h-[640px] h-[600px] w-auto relative sm:m-8 m-4">
+        <Image class="w-full h-full object-cover absolute" src={BgHero} alt="fondo" />
+        <div class="relative top-10 left-0 w-full h-full flex items-center flex-col gap-14 sm:gap-7">
+          <div class="justify-center mx-16">
+            <Image class="w-auto h-auto object-cover relative" src={msg} alt="fondo" />
+          </div>
+           <div class="justify-center mx-4">
+             <Image class="w-auto h-auto object-cover relative" src={devfest} alt="fondo" />
+          </div>
+            <div class="justify-center mx-16">
+                <a href="https://forms.gle/A7hXFmNXg1CMEWfu5">
+                    <Image class="w-auto h-auto object-cover relative" src={BtnRegistro} alt="fondo" />
+                </a>
+            </div>            
+        </div>
+      </div>    
   </div>
-
-  <style>
-    .background--color {
-      background: #efefef;
-    }
-  </style>
 
   <script is:inline>
     document
