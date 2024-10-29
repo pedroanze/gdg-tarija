@@ -3,20 +3,6 @@
         "title": "Paquetes",
         "href": "#paquetes",
         "color": "#F9AB00"
-    },
-    {
-        "title": "Mapa",
-        "href": "#mapa",
-        "color": "#34A853"
-    },
-    {
-        "title": "Agenda",
-        "href": "#agenda",
-        "color": "#EA4335"
-    },
-    {
-        "title": "Sponsors",
-        "href": "#sponsors",
-        "color": "#4285F4"
     }
+
 ]

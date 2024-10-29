@@ -19,30 +19,13 @@ import BtnRegistro from "../../assets/images/devfest2024/btnRegistrate.svg";
              <Image class="w-auto h-auto object-cover relative" src={devfest} alt="fondo" />
           </div>
             <div class="justify-center mx-16">
-                <a href="https://forms.gle/A7hXFmNXg1CMEWfu5">
-                    <Image class="w-auto h-auto object-cover relative" src={BtnRegistro} alt="fondo" />
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSddMIHMCz4r3_sQMPRH9HiZYEnuQWHkHYVaWoBH9zKQEkeVqA/viewform">
+                    <Image class="w-auto h-auto object-cover relative transition duration-500 hover:scale-110" src={BtnRegistro} alt="fondo" />
                 </a>
             </div>            
         </div>
       </div>    
   </div>
 
-  <script is:inline>
-    document
-      .getElementById("add-to-calendar")
-      .addEventListener("click", function () {
-        const event = {
-          title: "Google I/O Extended Tarija 2024",
-          location: `Universidad Católica Boliviana "San Pablo" Sete Tarija Calle Colon entre Bolivar e, Ingavi, Tarija`,
-          details:
-            "¡Únete a nosotros en el Google I/O Extended Tarija 2024, un evento imperdible para todos los apasionados por la tecnología! Nuestro objetivo principal es compartir las últimas novedades tecnológicas de Google con la comunidad de Tarija. Contaremos con expositores tanto nacionales como internacionales, que compartirán su conocimiento y experiencia en diversas áreas de la tecnología.\n Este evento es una oportunidad única para aprender, conectar y explorar las tendencias más recientes en el mundo de la tecnología. Habrá charlas inspiradoras, talleres prácticos y paneles de discusión que cubrirán una amplia gama de temas, desde desarrollo web y móvil hasta inteligencia artificial y más.\n No te pierdas esta oportunidad de sumergirte en el mundo de la tecnología y ser parte de una comunidad vibrante y apasionada. ¡Te esperamos en la Universidad Católica Boliviana el 20 de julio!",
-          start: "20240720T123000Z",
-          end: "20240720T220000Z",
-        };
-
-        const href = `https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(event.title)}&dates=${event.start}/${event.end}&details=${encodeURIComponent(event.details)}&location=${encodeURIComponent(event.location)}`;
-
-        window.open(href, "_blank");
-      });
-  </script>
+ 
 </div>
