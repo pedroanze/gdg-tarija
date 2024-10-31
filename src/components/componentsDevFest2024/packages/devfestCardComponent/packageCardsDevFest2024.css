@@ -1,0 +1,49 @@
+.packageCard {
+  /* La imagen se ajustará a todo el contenedor, ocupando 100% de ancho y alto */
+  background-size: 100% 100%;
+  /* Centra la imagen */
+  background-position: center;
+  /* Ajusta el ancho al 100% */
+  width: 100%;
+  /* Ajusta la altura mínima según el contenido */
+  min-height: 100%;
+  /* Usar flexbox */
+  display: flex;
+  /* Organiza los elementos en columna */
+  flex-direction: column;
+  /* Centra horizontalmente el contenido */
+  align-items: center;
+  /* Centra verticalmente el contenido */
+  justify-content: center;
+  /* Para centrar el texto */
+  text-align: center;
+}
+
+.packageCard--green,
+.packageCard--blue {
+  /* No repetir la imagen */
+  background-repeat: no-repeat;
+  /* La imagen de fondo ocupará todo el contenedor, se deforma si es necesario */
+  background-size: 100% 100%;
+  /* Centrar la imagen */
+  background-position: center;
+}
+
+.packageCard--green {
+  background-image: url('./../../../../assets/devfest2024/svg/CuadroVerdeMobile.svg');
+}
+
+.packageCard--blue {
+  background-image: url('./../../../../assets/devfest2024/svg/CuadroAzulMobile.svg');
+}
+
+/* Fondos para pantallas medianas y superiores */
+@media (min-width: 640px) {
+  .packageCard--green {
+    background-image: url('./../../../../assets/devfest2024/svg/CuadroVerde.svg');
+  }
+
+  .packageCard--blue {
+    background-image: url('./../../../../assets/devfest2024/svg/CuadroAzul.svg');
+  }
+}

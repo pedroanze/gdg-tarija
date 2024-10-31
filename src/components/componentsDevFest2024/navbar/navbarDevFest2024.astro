@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
-import Logo from "../../../assets/svg/devfest/LOGO_DEVFEST.svg";
-import Logo2 from "../../../assets/svg/devfest/LOGO_DEVFEST_DESK.svg";
+import Logo from "./../../../assets/devfest2024/svg/LOGO_DEVFEST.svg";
+import Logo2 from "./../../../assets/devfest2024/svg/LOGO_DEVFEST_DESK.svg";
 import MenuList from "../navbar/menuList.json";
 ---
 
@@ -42,8 +42,8 @@ import MenuList from "../navbar/menuList.json";
 </header>
 
 <script>
-  const button = document.querySelector("#menu-button");
-  const menuOpen = document.querySelector("#menu-open");
+  const button = document.querySelector("#menu-button")!;
+  const menuOpen = document.querySelector("#menu-open")!;
   button.addEventListener("click", () => {
     menuOpen.classList.toggle("hidden");
   });

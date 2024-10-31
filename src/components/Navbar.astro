@@ -1,7 +1,5 @@
 ---
 import { Image } from "astro:assets";
-// import Logo from "../assets/images/GDGTarija-Horizontal.png";
-// import Logo2 from "../assets/images/GDGTarija-Horizontal2.png";
 import Logo from "../assets/svg/LOGO-GDG-TARIJA.svg";
 import Logo2 from "../assets/svg/LOGO-GDG-TARIJA-DESKTOP.svg";
 ---
@@ -14,19 +12,11 @@ import Logo2 from "../assets/svg/LOGO-GDG-TARIJA-DESKTOP.svg";
       <Image class="w-36 md:hidden" src={Logo} alt="logo" />
       <Image class="w-48 hidden md:flex lg:w-80" src={Logo2} alt="logo2" />
     </div>
-    <div
-      id="menu-button"
-      class="text-Gray-900 text-4xl font-bold md:hidden cursor-pointer"
-    >
+    <div id="menu-button" class="text-Gray-900 text-4xl font-bold md:hidden cursor-pointer">
       &equiv;
     </div>
-    <div
-      id="menu-open"
-      class="items-center text-center w-full hidden md:flex md:w-auto animate-fade-down animate-duration-500"
-    >
-      <ul
-        class="font-medium text-sm lg:text-lg text-Gray-900 bg-Background flex flex-col pt-7 md:flex-row md:pt-0 gap-9 gap-x-5 lg:gap-x-9"
-      >
+    <div id="menu-open" class="items-center text-center w-full hidden md:flex md:w-auto animate-fade-down animate-duration-500">
+      <ul class="font-medium text-sm lg:text-lg text-Gray-900 bg-Background flex flex-col pt-7 md:flex-row md:pt-0 gap-9 gap-x-5 lg:gap-x-9">
         <li>
           <a href="#diary" class="hover:text-gray-500">Agenda</a>
         </li>
@@ -36,7 +26,6 @@ import Logo2 from "../assets/svg/LOGO-GDG-TARIJA-DESKTOP.svg";
         <li>
           <a href="#about" class="hover:text-gray-500">¿Quiénes Somos?</a>
         </li>
-
         <li>
           <a href="#sponsors" class="hover:text-gray-500">Sponsors</a>
         </li>

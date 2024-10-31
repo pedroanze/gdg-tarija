@@ -3,11 +3,7 @@
   id="faq"
 >
   <div class="lg:w-96 md:w-96 min-[190px]:w-72">
-    <h2
-      class="text-3xl text-center mb-10 font-bold"
-    >
-      Preguntas Frecuentes
-    </h2>
+    <h2 class="text-3xl text-center mb-10 font-bold">Preguntas Frecuentes</h2>
   </div>
 
   <div id="acordion" class="space-y-4 w-auto mx-10 content-center mb-8"></div>
@@ -84,7 +80,7 @@
         ...faq,
         respuesta: faq.respuesta.replace(
           /\[(.+?)\]\((.+?)\)/g,
-          '<a class="text-blue-800 underline" href="$2">$1</a>'
+          '<a class="text-blue-800 underline" href="$2">$1</a>',
         ),
       }));
       loadFaqs(faqs);

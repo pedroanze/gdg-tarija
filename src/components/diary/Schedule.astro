@@ -1,19 +1,19 @@
 ---
 import DiaryDetail from "./DiaryDetail.astro";
 
-export interface Props {
+interface ScheduleProps {
   hora: string;
   titulo: string;
   nombre?: string;
   foto?: string;
-  tema?: string;
   nivel?: string;
   descripcion?: string;
+  tema?: string;
   bio_speaker?: string;
 }
 
 const { hora, titulo, nombre, foto, nivel, descripcion, tema, bio_speaker } =
-  Astro.props;
+  Astro.props as ScheduleProps;
 
 const modalId = `modal-${Math.random().toString(36).substr(2, 9)}`;
 ---

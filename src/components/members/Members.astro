@@ -1,39 +1,11 @@
 ---
-import members from "./members.json"
+import members from "./members.json";
 import MemberCard from "./MemberCard.astro";
 ---
 
-<!-- <style>
-    details > summary {
-        list-style: none;
-    }
-    details > summary::-webkit-details-marker {
-        display: none;
-    }
-</style> -->
 <section id="members" class="bg-neutral-800 content-container mt-8 p-10 xl:px-20">
-    <h2 class="text-3xl font-bold text-center mb-8 text-zinc-100">Miembros</h2>
-    <!-- <details> -->
-        <!-- <summary>
-            <div
-                class="m-auto flex items-center justify-center"
-            >
-                <div
-                    class="bg-blue-500 text-white py-2 px-4 rounded-md cursor-pointer hover:scale-105"
-                >
-                    Ver miembros
-                </div>
-            </div>
-        </summary> -->
-
-        <div
-            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-16 place-content-center "
-        >
-            {
-                members.map((member) => (
-                    <MemberCard  {...member} />
-                ))
-            }
-        </div>
-    <!-- </details> -->
+  <h2 class="text-3xl font-bold text-center mb-8 text-zinc-100">Miembros</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-16 place-content-center">
+    {members.map((member) => <MemberCard {...member} />)}
+  </div>
 </section>

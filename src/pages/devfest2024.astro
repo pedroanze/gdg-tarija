@@ -1,7 +1,5 @@
 ---
-import Footer from "components/footer/Footer.astro";
 import Layout from "../layouts/Layout.astro";
-import Contact from "components/contact/Contact.astro";
 import PackagesDevFest2024 from "components/componentsDevFest2024/packages/packagesDevFest2024.astro";
 import NavbarDevFest2024 from "components/componentsDevFest2024/navbar/navbarDevFest2024.astro";
 import BuildingDevFest2024 from "components/componentsDevFest2024/building/buildingDevFest2024.astro";
@@ -9,9 +7,9 @@ import Cta from "components/componentsDevFest2024/cta.astro";
 ---
 
 <Layout title="DevFest 2024">
-  <NavbarDevFest2024/>
-  <div class=" h-[73px]  lg:h-[107px] bg-rojo-GDG"></div>
-  <Cta></Cta>
+  <NavbarDevFest2024 />
+  <div class="h-[73px] lg:h-[107px] bg-rojo-GDG"></div>
+  <Cta />
   <PackagesDevFest2024 />
-  <BuildingDevFest2024/>
+  <BuildingDevFest2024 />
 </Layout>
