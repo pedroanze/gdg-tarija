@@ -1,11 +1,10 @@
 ---
 import "./packageCardsDevFest2024.css";
 import { Image } from "astro:assets";
-import PaqueteGoldDevFest from "./../../../../assets/devfest2024/img/Paquete_Gold_DevFest.png";
-import datosPaquetes from "./../../../../assets/devfest2024/svg/datosPaquetes.svg";
+
 import { CardDevFest2024 } from './../helpers/cardDevFest2024';
 
-const { cardColor, title, link, price }: CardDevFest2024 = Astro.props.card;
+const { cardColor, title, link, price, content, cardImage }: CardDevFest2024 = Astro.props.card;
 
 const getColorClassForBackground = () => {
   const colors = {
@@ -25,10 +24,10 @@ const getColorClassForBackground = () => {
     </h2>
 
     <!-- SVG -->
-    <Image src={datosPaquetes} alt="Datos Paquetes" class="mt-[-30px] mb-[-20px] h-24 sm:h-32 md:h-36 w-auto" />
+    <Image src={content} alt="Datos Paquetes" class="mt-[-30px] mb-[-20px] h-24 sm:h-32 md:h-36 w-auto" />
 
     <!-- Imagen Principal -->
-    <Image src={PaqueteGoldDevFest} alt="Paquete Gold DevFest" class=" h-52 sm:h-56 md:h-80 w-auto" />
+    <Image src={cardImage} alt="Paquete Gold DevFest" class=" h-52 sm:h-56 md:h-80 w-auto" />
 
     <!-- Precio -->
     <p class="mt-[-15px] font-bold text-black text-xl sm:text-4xl mb-1 sm:mb-2">

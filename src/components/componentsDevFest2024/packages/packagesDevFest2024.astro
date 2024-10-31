@@ -11,7 +11,7 @@ import CloudImage from "./../../../assets/devfest2024/svg/cloud-image.svg";
 const cards: CardDevFest2024[] = devCards;
 ---
 
-<div class="bg-rojo-GDG pt-10 pb-10 px-6 outline outline-black outline-4">
+<div id="paquetes" class="bg-rojo-GDG pt-10 pb-10 px-6 outline outline-black outline-4">
   <div>
     <div class="flex justify-center lg:justify-between">
       <div class="flex-1 hidden lg:block"></div>
@@ -19,13 +19,13 @@ const cards: CardDevFest2024[] = devCards;
         <div class="custom-shape bg-black p-1">
           <div class="flex custom-shape bg-rojo-GDG justify-end">
             <div
-              class="bg-slate-50 outline outline-black custom-height custom-width mb-3"
+              class="bg-slate-50 outline outline-black p-2 custom-height custom-width mb-3"
             >
-              <h2
-                class="text-center text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold py-2 px-8"
+              <h1
+                class="text-center text-3xl xl:text-5xl font-bold py-2 px-8"
               >
                 Paquetes
-              </h2>
+              </h1>
             </div>
           </div>
         </div>
@@ -36,12 +36,12 @@ const cards: CardDevFest2024[] = devCards;
         <Image
           src={CloudImage}
           alt="cloud"
-          class="w-24 h-24 p-0 m-0 block self-end"
+          class="w-28 h-28 p-0 m-0 block self-end"
         />
         <Image
           src={CloudImage}
           alt="cloud"
-          class="w-12 h-12 p-0 m-0 block self-end"
+          class="w-20 h-20 p-0 m-0 block self-end"
         />
       </div>
     </div>
