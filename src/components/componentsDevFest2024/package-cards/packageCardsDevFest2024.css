@@ -1,12 +1,42 @@
 .packageCard {
-  height: 570px;
-  width: auto;
+  background-size: 100% 100%; /* La imagen se ajustará a todo el contenedor, ocupando 100% de ancho y alto */
+  background-position: center; /* Centra la imagen */
+  width: 100%; /* Ajusta el ancho al 100% */
+  min-height: 100%; /* Ajusta la altura mínima según el contenido */
+  display: flex; /* Usar flexbox */
+  flex-direction: column; /* Organiza los elementos en columna */
+  align-items: center; /* Centra horizontalmente el contenido */
+  justify-content: center; /* Centra verticalmente el contenido */
+  text-align: center; /* Para centrar el texto */
 }
 
+.packageCard--green,
+.packageCard--blue {
+  background-repeat: no-repeat; /* No repetir la imagen */
+  background-size: 100% 100%; /* La imagen de fondo ocupará todo el contenedor, se deforma si es necesario */
+  background-position: center; /* Centrar la imagen */
+}
+
+
+
+
 .packageCard--green {
-  background-image: url('./../../../assets/svg/devfest/CuadroVerde.svg');
+  background-image: url('./../../../assets/svg/devfest/CuadroVerdeMobile.svg');
 }
 
 .packageCard--blue {
-  background-image: url('./../../../assets/svg/devfest/CuadroAzul.svg');
+  background-image: url('./../../../assets/svg/devfest/CuadroAzulMobile.svg');
 }
+
+/* Fondos para pantallas medianas y superiores */
+@media (min-width: 640px) {
+  .packageCard--green {
+    background-image: url('./../../../assets/svg/devfest/CuadroVerde.svg');
+  }
+
+  .packageCard--blue {
+    background-image: url('./../../../assets/svg/devfest/CuadroAzul.svg');
+  }
+}
+
+

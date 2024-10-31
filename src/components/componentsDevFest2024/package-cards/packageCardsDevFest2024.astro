@@ -1,72 +1,44 @@
 ---
 import "./packageCardsDevFest2024.css";
 import { Image } from "astro:assets";
+import PaqueteGoldDevFest from "../../../assets/images/devfest2024/Paquete_Gold_DevFest.png";
 
-import XIcon from "../../../assets/svg/XIcon.svg";
-import GreenCardBackground from "../../../assets/svg/devfest/CuadroVerde.svg";
-import BlueCardBackground from "../../../assets/svg/devfest/CuadroAzul.svg";
+import datosPaquetes from "../../../assets/images/devfest2024/datosPaquetes.svg";
 
-const { cardColor, title, packageElements, price, cardImage } =
-  Astro.props.card;
+const { cardColor, title, link, price } = Astro.props.card;
 
-const getColorClassForBgOrText = (
-  classConfig, // Could Be bg, text
-) => {
-  const colors = {
-    // red: `${classConfig}-rojo-GDG`,
-    // yellow: `${classConfig}-amarillo-GDG`,
-    blue: `${classConfig}-azul-GDG`,
-    green: `${classConfig}-verde-GDG`,
-    // gray: `${classConfig}-Gray-900`,
-    // orange: `${classConfig}-Orange`,
-  };
-  return colors[cardColor];
-};
 const getColorClassForBackground = () => {
   const colors = {
-    // red: '',
-    // yellow: '',
     blue: "packageCard--blue",
     green: "packageCard--green",
-    // gray: '',
-    // orange: '',
   };
   return colors[cardColor];
 };
 ---
 
-<div class=`packageCard bg-no-repeat bg-cover ${getColorClassForBackground()}`>
-  <!-- X Icon -->
-  <div>
-    <Image src={XIcon} alt="" class="w-7 h-7" />
-  </div>
+<div class={`packageCard bg-no-repeat bg-cover ${getColorClassForBackground()} p-4 sm:p-6 flex flex-col items-center`}>
+  <!-- Contenedor general con padding/margin -->
+  <div class="flex flex-col items-center ml-4 mb-4 sm:ml-6 sm:mb-8 mt-4 sm:mt-6">
+    <!-- Título -->
+    <h2 class="text-black font-bold text-2xl sm:text-3xl md:text-4xl mb-4 sm:mb-6">
+      {title}
+    </h2>
 
-  <!-- Title -->
-  <div class="py-5">
-    <h3>{title}</h3>
-  </div>
-  <!-- Title -->
-  <div class="py-5">
-    <h3>{title}</h3>
-  </div>
-  <!-- Title -->
-  <div class="py-5">
-    <h3>{title}</h3>
-  </div>
-  <!-- Title -->
-  <div class="py-5">
-    <h3>{title}</h3>
-  </div>
-  <!-- Title -->
-  <div class="py-5">
-    <h3>{title}</h3>
-  </div>
-  <!-- Title -->
-  <div class="py-5">
-    <h3>{title}</h3>
-  </div>
-  <!-- Title -->
-  <div class="py-5">
-    <h3>{title}</h3>
+    <!-- SVG -->
+    <Image src={datosPaquetes} alt="Datos Paquetes" class="mt-[-30px] mb-[-20px] h-24 sm:h-32 md:h-36 w-auto" />
+
+    <!-- Imagen Principal -->
+    <Image src={PaqueteGoldDevFest} alt="Paquete Gold DevFest" class=" h-52 sm:h-56 md:h-80 w-auto" />
+
+    <!-- Precio -->
+    <p class="mt-[-15px] font-bold text-black text-xl sm:text-4xl mb-1 sm:mb-2">
+      {price} Bs
+    </p>
+
+    <!-- Botón -->
+    <a href={link} class="bg-[#f9ab00] border-4 border-black text-white text-xl sm:text-2xl font-bold py-2 sm:py-3 px-6 sm:px-8 rounded-lg hover:scale-105 transition-transform duration-200 ease-in-out text-center">
+      ¡Quiero uno!
+    </a>
   </div>
 </div>
+
