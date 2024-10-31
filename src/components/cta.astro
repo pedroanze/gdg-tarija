@@ -1,15 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import Diary from "components/diary/Diary.astro";
-import GoogleExtLogo from "../../src/assets/svg/Logo Brack.svg";
 import LogoDevFest from "../assets/svg/logo-devfest-h.svg";
-import GoogleExtBanner from "../../src/assets/svg/hero.svg";
-import Countdown from "./countdown/Countdown.astro";
-
-interface Props {}
-
-const {} = Astro.props;
-const mensaje = `Universidad Catolica\n Bolviana Campus Central`;
 ---
 
 <div class="background--color flex flex-col pt-20">
@@ -29,31 +20,7 @@ const mensaje = `Universidad Catolica\n Bolviana Campus Central`;
         Conocer más sobre el DevFest
       </a>
     </div>
-    <!--
- Boton guardar fecha en Calendar
-
-    <div
-      class="text-center flex items-center justify-center content-center mt-5 mb-5"
-    >
-      <div class="justify-self-end">
-        <p class="min-[190px]:text-sm md:text-2xl font-medium">
-          Agenda el evento en google Calendar:
-        </p>
-      </div>
-
-      <div class="justify-self-start">
-        <button id="add-to-calendar">
-          <img
-            class="min-[190px]:h-5 md:h-8"
-            src="/img/Google-Calendar-Logo.png"
-            alt=""
-          />
-        </button>
-      </div>
-    </div>
--->
   </div>
-
   <style>
     .background--color {
       background: #efefef;

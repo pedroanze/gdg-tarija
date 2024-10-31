@@ -3,19 +3,19 @@ import { Image } from "astro:assets";
 import GoogleExtBanner from "../../assets/svg/hero.svg";
 import LogoDer from "../../assets/svg/Modal_Logo_Der.svg";
 
-export interface Props {
+interface DiaryDetailProps {
   id: string;
   titulo: string;
   nombre: string;
   foto: string;
   descripcion: string;
-  bio_speaker: string;
+  bio_speaker?: string;
   hora: string;
   tema: string;
   nivel:string;
 }
 
-const { id, titulo, nombre, foto, descripcion, bio_speaker, hora, tema, nivel } = Astro.props;
+const { id, titulo, nombre, foto, descripcion, hora, tema, nivel } = Astro.props as DiaryDetailProps;
 ---
 
 <div id={id} class="modal fixed inset-0 bg-gray-900 bg-opacity-50 hidden grid place-items-center z-10">

@@ -1,45 +1,15 @@
 ---
-import PackagePhoto from "../../../assets/svg/PackagePhoto.svg";
-import PackageCard from "../package-cards/packageCardsDevFest2024.astro";
-import CloudImage from "../../../assets/svg/cloud-image.svg";
+import "./packagesDevFest2024.css";
 import { Image } from "astro:assets";
-import { CardDevFest2024 } from "models/cardDevFest2024";
 
-const cards = [
-  new CardDevFest2024({
-    title: "Paquete Developer",
-    packageElements: ["2 Stickers", "1 Llavero", "1 Cuaderno", "2 Pines"],
-    price: 30,
-    cardImage: PackagePhoto,
-    cardColor: "blue",
-  }),
-  new CardDevFest2024({
-    title: "Paquete ML",
-    packageElements: [
-      "3 Stickers",
-      "1 Llavero",
-      "1 Cuaderno",
-      "2 Pines",
-      "1 Vaso con Popote",
-    ],
-    price: 50,
-    cardImage: PackagePhoto,
-    cardColor: "green",
-  }),
-];
+import { CardDevFest2024 } from "components/componentsDevFest2024/packages/helpers/cardDevFest2024";
+import { devCards } from "./helpers/devCards";
+
+import PackageCard from "./devfestCardComponent/packageCardsDevFest2024.astro";
+import CloudImage from "./../../../assets/devfest2024/svg/cloud-image.svg";
+
+const cards: CardDevFest2024[] = devCards;
 ---
-
-<style>
-  .custom-shape {
-    clip-path: polygon(0 16%, 4% 0, 100% 0, 100% 83%, 96% 100%, 0 100%);
-  }
-  .custom-width {
-    width: 96%;
-  }
-  .custom-height {
-    height: 96%;
-  }
-</style>
 
 <div class="bg-rojo-GDG pt-10 pb-10 px-6 outline outline-black outline-4">
   <div>
@@ -60,20 +30,30 @@ const cards = [
           </div>
         </div>
       </div>
-      <div class="flex-1 text-right hidden lg:flex lg:justify-end lg:pr-6 lg:gap-x-5">
-        <Image src={CloudImage} alt="cloud" class="w-24 h-24 p-0 m-0 block self-end	" />
-        <Image src={CloudImage} alt="cloud" class="w-12 h-12 p-0 m-0 block self-end	" />
+      <div
+        class="flex-1 text-right hidden lg:flex lg:justify-end lg:pr-6 lg:gap-x-5"
+      >
+        <Image
+          src={CloudImage}
+          alt="cloud"
+          class="w-24 h-24 p-0 m-0 block self-end"
+        />
+        <Image
+          src={CloudImage}
+          alt="cloud"
+          class="w-12 h-12 p-0 m-0 block self-end"
+        />
       </div>
     </div>
 
     <!-- CARDS -->
-    <div class="flex flex-col sm:flex-row pt-4 m-0">
+    <div class="flex flex-col lg:flex-row pt-4 m-0">
       {
         cards.map((card, cardIndex) => {
           return (
             <div
               class={`
-                px-4 mt-6 flex-1 border-0 border-black ${cards.length != cardIndex + 1 ? "sm:border-r-2" : ""} 
+                px-0  lg:px-4 mt-6 flex-1 border-0 border-black ${cards.length != cardIndex + 1 ? "lg:border-r-4" : ""} 
               `}
             >
               <PackageCard card={card} />

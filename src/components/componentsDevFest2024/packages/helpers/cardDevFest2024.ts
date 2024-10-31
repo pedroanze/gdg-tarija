@@ -1,9 +1,10 @@
 export class CardDevFest2024 {
-  title;
-  packageElements;
-  price;
-  cardImage;
-  cardColor;
+  title: string;
+  packageElements: string[];
+  price: number;
+  cardImage?: ImageMetadata;
+  cardColor: 'blue' | 'green';
+  link: string;
   constructor(
     {
       title = '',
@@ -11,13 +12,14 @@ export class CardDevFest2024 {
       price = 0,
       cardImage = undefined,
       cardColor = 'blue',
-    }
+      link= '',
+    }: CardDevFest2024
   ) {
     this.title = title;
     this.packageElements = packageElements;
     this.price = price;
     this.cardImage = cardImage;
     this.cardColor = cardColor;
+    this.link = link;
   }
-
 }

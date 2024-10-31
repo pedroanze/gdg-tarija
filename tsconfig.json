@@ -4,6 +4,12 @@
     "baseUrl": "src",
     "paths": {
       "@styles/*": ["styles/*"]
-    }
+    },
+
+    // "strict": true,
+    // "noImplicitAny": true,
+    // "strictNullChecks": true,
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
   }
 }
