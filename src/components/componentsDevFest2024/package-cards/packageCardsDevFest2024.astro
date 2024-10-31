@@ -1,7 +1,14 @@
 ---
+import "./packageCardsDevFest2024.css";
+
 import XIcon from "../../../assets/svg/XIcon.svg";
+import BracketImage from "../../../assets/svg/devfest/PackagesDevfestBrackets.svg";
+
 import { Image } from "astro:assets";
-const { card } = Astro.props;
+
+const { cardColor, title, packageElements, price } = Astro.props.card;
+
+console.log(Astro.props.card);
 
 const getColor = (
   classConfig, // Could Be bg, text
@@ -14,21 +21,9 @@ const getColor = (
     gray: `${classConfig}-Gray-900`,
     orange: `${classConfig}-Orange`,
   };
-  return colors[card.cardColor];
+  return colors[cardColor];
 };
 ---
-
-<style>
-  .custom-shape {
-    clip-path: polygon(0 3%, 3% 0, 100% 0, 100% 96%, 96% 100%, 0 100%);
-  }
-  .custom-width {
-    width: 96%;
-  }
-  .custom-height {
-    height: 96%;
-  }
-</style>
 
 <div class="h-full custom-shape p-1 bg-black">
   <div class={`flex h-full custom-shape ${getColor("bg")} justify-end `}>
@@ -43,32 +38,24 @@ const getColor = (
       <!-- TITLE -->
       <div class="pt-2 px-2 grow-0">
         <h4 class={`${getColor("text")} text-center text-3xl font-bold italic`}>
-          {card.title}
+          {title}
         </h4>
       </div>
 
-      <!-- PACKAGES ELEMENTS AND IMAGE -->
-      <div
-        class="flex justify-between px-6 pt-6 grow-0 sm:flex-col-reverse md:flex-row"
-      >
-        <div class="flex-1 flex flex-col justify-between">
-          <ul class="list-disc ml-5 grow">
+      <!-- PACKAGE CONTAINER -->
+      <div>
+        <!-- Brackets -->
+        <div class="flex justify-center relative">
+          <Image src={BracketImage} alt="" class="bracketImage" />
+          <div class="absolute text-center self-center px-16 sm:px-10 md:px-12 text-white">
             {
-              card.packageElements.map((packageElement) => {
-                return (
-                  <li class="text-lg font-bold italic sm:text-2xl">
-                    {packageElement}
-                  </li>
-                );
+              packageElements.map((element, index) => {
+                return index != packageElements.length - 1
+                  ? `${element} - `
+                  : `${element}`;
               })
             }
-          </ul>
-          <div class="pt-5 text-3xl italic grow-0">
-            <strong>{card.price} Bs.</strong>
           </div>
-        </div>
-        <div class="flex-1">
-          <Image src={card.cardImage} class="float-end" alt="logo" />
         </div>
       </div>
 
