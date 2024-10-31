@@ -6,6 +6,7 @@ export class CardDevFest2024 {
   cardImage?: ImageMetadata;
   cardColor: 'blue' | 'green';
   link: string;
+  priceImage: ImageMetadata;
   constructor(
     {
       title = '',
@@ -13,6 +14,7 @@ export class CardDevFest2024 {
       price = 0,
       content = undefined,
       cardImage = undefined,
+      priceImage = undefined,
       cardColor = 'blue',
       link= '',
     }: CardDevFest2024
@@ -22,6 +24,7 @@ export class CardDevFest2024 {
     this.price = price;
     this.content = content;
     this.cardImage = cardImage;
+    this.priceImage = priceImage;
     this.cardColor = cardColor;
     this.link = link;
   }

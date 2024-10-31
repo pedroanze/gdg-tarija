@@ -4,6 +4,9 @@ import PaqueteGoldDevFest from "./../../../../assets/devfest2024/img/paqueteGold
 import PaqueteSilverDevFest from "./../../../../assets/devfest2024/img/paqueteSilverImg.png";
 import ContentSilver from "./../../../../assets/devfest2024/svg/contentSiver.svg"
 import ContentGold from "./../../../../assets/devfest2024/svg/contentGold.svg"
+import PrecioGold from "./../../../../assets/devfest2024/svg/precioGold.svg"
+import PrecioSilver from "./../../../../assets/devfest2024/svg/precioSilver.svg"
+
 
 export const devCards: CardDevFest2024[] = [
   {
@@ -13,7 +16,7 @@ export const devCards: CardDevFest2024[] = [
     
     price: 25,
     cardImage: PaqueteSilverDevFest,
-    
+    priceImage: PrecioSilver,
     cardColor: "blue",
     link: 'https://forms.gle/H3NY8vyjrwshj4hW6',
   },
@@ -29,6 +32,7 @@ export const devCards: CardDevFest2024[] = [
     price: 45,
     content: ContentGold,
     cardImage: PaqueteGoldDevFest,
+    priceImage: PrecioGold,
     cardColor: "green",
     link: 'https://forms.gle/H3NY8vyjrwshj4hW6',
   },
