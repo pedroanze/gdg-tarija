@@ -1,0 +1,12 @@
+.packageCard {
+  height: 570px;
+  width: auto;
+}
+
+.packageCard--green {
+  background-image: url('./../../../assets/svg/devfest/CuadroVerde.svg');
+}
+
+.packageCard--blue {
+  background-image: url('./../../../assets/svg/devfest/CuadroAzul.svg');
+}
