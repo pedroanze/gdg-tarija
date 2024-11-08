@@ -1,0 +1,37 @@
+.formsBackground--image {
+  background-image: none;
+}
+
+
+@media (min-width: 640px) {
+}
+
+@media (min-width: 768px) {
+  .formsBackground--image {
+    background-image: url('./../../../assets/devfest2024/svg/QueEsDevFestFondo1.svg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  .formsBackground--height {
+    min-height: 35rem;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .formsBackground--height {
+    min-height: 40rem;
+  }
+
+}
+
+@media (min-width: 1280px) {
+  .formsBackground--height {
+    min-height: 42rem;
+  }
+
+}
+
+@media (min-width: 1536px) {
+
+}
