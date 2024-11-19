@@ -10,12 +10,14 @@ const sponsorCards: SponsorCard[] = sponsorList;
 const collaboratorCards: SponsorCard[] = collaboratorList;
 ---
 
-<div class="bg-rojo-GDG py-8">
+<div id="sponsors" class="bg-rojo-GDG py-8">
+  <!-- SPONSORS -->
+  <TitleSponsorComponent title="Sponsors" color="bg-verde-GDG" />
+  <CardSponsorPanel cards={sponsorCards} />
+
   <!-- COLABORADORES -->
   <TitleSponsorComponent title="Colaboradores" color="bg-amarillo-GDG" />
   <CardSponsorPanel cards={collaboratorCards} />
 
-  <!-- SPONSORS -->
-  <TitleSponsorComponent title="Sponsors" color="bg-verde-GDG" />
-  <CardSponsorPanel cards={sponsorCards} />
+
 </div>
