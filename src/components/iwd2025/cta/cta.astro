@@ -1,19 +1,37 @@
 ---
 import { Image } from "astro:assets";
-import BgHero from "../../../assets/devfest2024/svg/fondo.svg";
+import Pizarra from "../../../assets/iwd2025/Pizarra.svg";
+import Nodos from "../../../assets/iwd2025/Nodos.svg";
+import Mujer from "../../../assets/iwd2025/Mujer_Celeste.svg";
+import Muebles from "../../../assets/iwd2025/Muebles.svg";
 
 ---
-<div class="iwd-2025 flex flex-col bg-iwd-secondary" id="HeroDevFest">
+<div class="iwd-2025 flex flex-col bg-iwd-secondary m-0" id="HeroDevFest">
   <div class="w-full">
-    <div class=" border-4 lg:border-[5px] border-black sm:h-[640px] h-[600px] w-auto relative sm:m-8 m-2 ">
-        <Image class="w-full h-full object-cover absolute" src={BgHero} alt="fondo" />
-        <div class="relative top-10 left-0 w-full h-full flex items-center flex-col gap-14 sm:gap-7">
+    <div class="w-auto relative">
+        <div class="flex justify-end">
+          <Image class="w-auto h-32" src={Nodos} alt="fondo" />
+        </div>
+        <div class="mt-[-30px] flex justify-center">
+          <Image class="  mx-3 w-[90%] object-cover absolute " src={Pizarra} alt="fondo" />
+
+        </div>
+        <div class="relative top-10 left-[-8px] w-full h-full flex items-center flex-col gap-7 sm:gap-5">
           <div class="justify-center mx-8 sm:mx-16">
+            <h1 class="text-center font-bold text-4xl md:text-6xl ">Redefine <span class="text-iwd-text">Possible</span></h1>
+            <h1 class="text-center text-lg md:text-3xl">International Women's Day 2025 Tarija</h1>
+
           </div>
             <div class="justify-center mx-4">
+              <a
+              href=""
+              class="font-medium rounded-full py-3 px-8 bg-iwd-text  hover:bg-iwd-primary  text-white text-xl duration-300"
+            >
+                Proximanente</a>
             </div>
-            <div class="justify-center mx-5 sm:mx-16 mt-10 sm:mt-0">
-
+            <div class="justify flex flex-row items-end mt-10 ">
+              <Image class="ml-2 w-auto h-32" src={Muebles} alt="fondo" />
+              <Image class="ml-[-15px] w-auto h-64" src={Mujer} alt="fondo" />
             </div>            
         </div>
       </div>    
