@@ -27,6 +27,8 @@ export default {
         "verde-GDG": "#34A853",
         "Gray-900": "#202124",
         "Orange": "#F46831",
+        "iwd-primary":"#165185",
+        "iwd-secondary":"#CAE6FF",
         blue: {
           50: "#F0F5FE",
           100: "#DCE9FD",
