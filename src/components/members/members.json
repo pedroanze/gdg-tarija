@@ -47,6 +47,30 @@
     "Comisión": "Organizer"
   },
   {
+    "Photo": "/img/members/Marcia_Andrade.jpg",
+    "Name": "Marcia Andrade",
+    "Linkedin": "https://www.linkedin.com/in/marcia-milenka-andrade-llanos/",
+    "Github": "https://github.com/milenkandrade",
+    "Facebook": "https://www.facebook.com/marcia.m.andrade.ll",
+    "Instagram": "https://www.instagram.com/marcia.andrade.4?igsh=MTZwb3BkZWFxbmp0Yg==",
+    "Sitio_web": "",
+    "About": "Soy una persona comprometida, autodidacta y resolutiva. Disfruto de los constantes desafíos y el aprendizaje que conlleva ser un desarrollador FrontEnd",
+    "foto": "",
+    "Comisión": "Organizer"
+  },
+  {
+    "Photo": "/img/members/Jhoselyn_Fernández_Ojeda.jpg",
+    "Name": "Jhoselyn Fernández",
+    "Linkedin": "https://www.linkedin.com/in/jhoselyn-fern%C3%A1ndez-ojeda-b0536227b/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    "Github": "https://github.com/jhosi14",
+    "Facebook": "",
+    "Instagram": "",
+    "Sitio_web": "",
+    "About": "Soy una persona apasionada por la tecnología, con un gran interés en enseñar lo que sé e inspirar a otros a unirse a este fascinante mundo. Además, disfruto participar en voluntariados, ya que tengo un fuerte sentido del servicio y un deseo genuino de ayudar a quienes realmente lo necesitan. Siempre estoy dispuesta a apoyar y colaborar con la comunidad, siendo resiliente, activa y comprometida en mis esfuerzos por hacer una diferencia positiva.",
+    "foto": "",
+    "Comisión": "Organizer"
+  },
+  {
     "Photo": "/img/members/Angel_Angola.jpg",
     "Name":"Angel Angola",
     "Linkedin": "",
@@ -116,7 +140,7 @@
     "Sitio_web": "",
     "About": "Soy un desarrollador jr y diseñador con experiencia en desarrollo web y móvil, sistemas de bases de datos y diseño gráfico.",
     "foto": "",
-    "Comisión": "Desarrollo"
+    "Comisión": "Diseño"
   },
   {
     "Photo": "/img/members/Kevin_Flores.jpg",
@@ -144,7 +168,7 @@
   },
   {
     "Photo": "/img/members/David_Fernando_Camata_Baspineiro.jpg",
-    "Name": "David Camata",
+    "Name": "Fernando Camata",
     "Linkedin": "",
     "Github": "https://github.com/Fer140421",
     "Facebook": "",
@@ -154,30 +178,7 @@
     "foto": "",
     "Comisión": "Apoyo Técnico"
   },
-  {
-    "Photo": "/img/members/Jhoselyn_Fernández_Ojeda.jpg",
-    "Name": "Jhoselyn Fernández",
-    "Linkedin": "https://www.linkedin.com/in/jhoselyn-fern%C3%A1ndez-ojeda-b0536227b/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    "Github": "https://github.com/jhosi14",
-    "Facebook": "",
-    "Instagram": "",
-    "Sitio_web": "",
-    "About": "Soy una persona apasionada por la tecnología, con un gran interés en enseñar lo que sé e inspirar a otros a unirse a este fascinante mundo. Además, disfruto participar en voluntariados, ya que tengo un fuerte sentido del servicio y un deseo genuino de ayudar a quienes realmente lo necesitan. Siempre estoy dispuesta a apoyar y colaborar con la comunidad, siendo resiliente, activa y comprometida en mis esfuerzos por hacer una diferencia positiva.",
-    "foto": "",
-    "Comisión": "Logistica"
-  },
-  {
-    "Photo": "/img/members/Alessandro_Dominguez.jpg",
-    "Name": "Alessandro Dominguez",
-    "Linkedin": "https://www.linkedin.com/in/alessandro-dominguez-selaes-086b22234/ ",
-    "Github": "https://github.com/Alessandro199510",
-    "Facebook": "",
-    "Instagram": "",
-    "Sitio_web": "",
-    "About": "Developer de aplicaciones móviles, escritorio y web con conocimientos en PHP, Java, C#, phpMyAdmin, Javascript, Angular, Ionic, Laravel, MySql, GitHub, GitLab, Posman entre otros.",
-    "foto": "",
-    "Comisión": "Desarrollo"
-  },
+
   {
     "Photo": "/img/members/Luis_Alejandro_Yanarico_Aldana.jpg",
     "Name": "Luis Yanarico",
@@ -202,18 +203,7 @@
     "foto": "",
     "Comisión": "Apoyo Técnico"
   },
-  {
-    "Photo": "/img/members/Marcia_Andrade.jpg",
-    "Name": "Marcia Andrade",
-    "Linkedin": "https://www.linkedin.com/in/marcia-milenka-andrade-llanos/",
-    "Github": "https://github.com/milenkandrade",
-    "Facebook": "https://www.facebook.com/marcia.m.andrade.ll",
-    "Instagram": "https://www.instagram.com/marcia.andrade.4?igsh=MTZwb3BkZWFxbmp0Yg==",
-    "Sitio_web": "",
-    "About": "Soy una persona comprometida, autodidacta y resolutiva. Disfruto de los constantes desafíos y el aprendizaje que conlleva ser un desarrollador FrontEnd",
-    "foto": "",
-    "Comisión": "Desarrollo"
-  },
+
   {
     "Photo": "/img/members/Mauricio_Rosas_Velásquez.jpg",
     "Name": "Mauricio Rosas",
