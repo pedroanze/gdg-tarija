@@ -1,0 +1,57 @@
+[
+    {
+        "nombre": "Adriana Calvo Bueno",
+        "charla": "¿Dónde están las mujeres?",
+        "ciudad":"Sucre",
+        "foto": "src/assets/iwd2025/speakers/AdrianaCalvo.jpeg",
+        "tiktok": "https://www.tiktok.com/@adri.js_",
+        "instagram":"https://www.instagram.com/adri.js_/"
+      },
+    {
+      "nombre": "Flavia Davila",
+      "charla": "¿Qué pasa con las mujeres y los datos?",
+      "foto": "src/assets/iwd2025/speakers/Flavia.jpg",
+      "ciudad":"Cochabamba",
+      "instagram": "https://www.instagram.com/justme.fla/",
+      "linkedin": "https://www.linkedin.com/in/flavia-davila/"
+    },
+    {
+        "nombre": "Yanet Colque Alarcon",
+        "charla": "IA ventajas y desventajas en la educación",
+        "ciudad":"Tarija",
+        "foto": "",
+        "tiktok": "",
+        "linkedin": "",
+        "instagram": ""
+
+      },
+      {
+        "nombre": "Adriana Eileen Paz Rivas",
+        "charla": "Multipotenciales: Ser Bueno en todo y nada a la vez, ¿Don o maldición?",
+        "ciudad":"La Paz",
+        "foto": "src/assets/iwd2025/speakers/AdrianaPaz.JPG",
+        "tiktok": "https://www.tiktok.com/@adrianapaz2000",
+        "instagram":"https://www.instagram.com/adri_gominola/",
+        "linkedin":"http://www.linkedin.com/in/adriana-eileen-paz-rivas"
+      },
+
+    {
+        "nombre": "Sidney Guerra",
+        "charla": "De la ingeniería al emprendimiento: Mi viaje multifacético en la tecnología",
+        "ciudad":"Oruro",
+        "foto": "/src/assets/iwd2025/speakers/Sidney.jpg",
+        "linkedin": "www.linkedin.com/in/sidney-guerrac",
+        "instagram": "https://www.instagram.com/sidney_guerrac/"
+
+      },
+      {
+        "nombre": "Damaris Mamani",
+        "charla": "Atrévete a Intentar: Transformando el Miedo en Acción",
+        "ciudad":"Tarija",
+        "foto": "src/assets/iwd2025/speakers/Damaris.jpg",
+        "linkedin": "https://www.linkedin.com/in/damarismamani",
+        "instagram": " https://www.instagram.com/damaris__mamani"
+
+      }
+  ]
+  

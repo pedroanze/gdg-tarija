@@ -21,8 +21,8 @@ import Muebles from "../../../assets/iwd2025/Muebles.svg";
         </div>
         <div class=" mt-[-22px]  relative top-10 left-[-8px] md:left-[-6px] w-full h-full flex items-center flex-col gap-7 sm:gap-5 md:mt-5 md:gap-10 lg:mt-48 lg:gap-20 lg:left-[-20px]">
           <div class="justify-center mx-8 sm:mx-16 lg:mt-10">
-            <h1 class="text-center font-bold text-4xl md:text-6xl xl:text-7xl 2xl:text-8xl ">Redefine <span class="text-iwd-text">Possible</span></h1>
-            <h2 class="text-center text-lg md:text-3xl md:mt-2 xl:text-4xl 2xl:text-5xl  lg:mt-6">International Women's Day 2025 Tarija</h2>
+            <h1 class="text-center font-bold text-4xl md:text-6xl xl:text-7xl ">Redefine <span class="text-iwd-text">Possible</span></h1>
+            <h2 class="text-center text-lg md:text-3xl md:mt-2 xl:text-4xl   lg:mt-6">International Women's Day 2025 Tarija</h2>
             
           </div>
             <div class="justify-center mx-4">
@@ -34,10 +34,88 @@ import Muebles from "../../../assets/iwd2025/Muebles.svg";
             </div>
             
         </div>
-        <div class="justify-end lg:justify-between flex flex-row items-end mt-32 lg:mt-[-32px] border-b-[120px] md:border-b-[120px] lg:border-b-[10px] border-iwd-primary">
+        <div class="justify-end lg:justify-between flex flex-row items-end mt-32 lg:mt-[-32px]">
           <Image class="ml-2 w-auto h-32 md:h-48 md:mr-40 lg:h-60 lg:ml-22 2xl:ml-24 " src={Muebles} alt="fondo" />
           <Image class="ml-[-15px] w-auto h-64 md:h-80 lg:h-[410px] 2xl:h-[420px] md:mr-10  z-10 lg:mr-10 2xl:mr-40" src={Mujer} alt="fondo" />
         </div>
       </div>    
   </div>
+  <div class="bg-iwd-primary  lg:py-16  py-10">
+    <div
+      id="countdown"
+      class="text-center flex items-center justify-center mx-6 text-white"
+    >
+      <div class="flex">
+        <div
+          class="sm:text-4xl min-[190px]:text-2xl lg:text-6xl font-bold sm:mx-5 min-[190px]:mx-2"
+        >
+          <div class="flex flex-col">
+            <span id="days">00</span>
+            <span class="sm:text-xl  lg:text-3xl">Días</span>
+          </div>
+        </div>
+        <div
+          class="sm:text-4xl min-[190px]:text-2xl lg:text-6xl font-bold sm:mx-5 min-[190px]:mx-2"
+        >
+          <div class="flex flex-col">
+            <span id="hours">00</span>
+            <span class="sm:text-xl  lg:text-3xl">Horas</span>
+          </div>
+        </div>
+        <div
+          class="sm:text-4xl min-[190px]:text-2xl lg:text-6xl font-bold sm:mx-5 min-[190px]:mx-2"
+        >
+          <div class="flex flex-col">
+            <span id="minutes">00</span>
+            <span class="sm:text-xl  lg:text-3xl">Minutos</span
+            >
+          </div>
+        </div>
+      <div
+        class="sm:text-4xl min-[190px]:text-2xl lg:text-6xl font-bold sm:mx-5 min-[190px]:mx-2 hidden min-[640px]:block"
+      >
+        <div class="flex flex-col">
+          <span id="seconds">00</span>
+          <span class="sm:text-xl  lg:text-3xl"
+          >Segundos</span
+          >
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  
+
+  
 </div>
+
+<script is:inline>
+  document.addEventListener("DOMContentLoaded", function () {
+    const endDate = new Date("2025-03-22T09:00:00").getTime();
+
+    const countdown = () => {
+      const now = new Date().getTime();
+      const distance = endDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("days").textContent = days;
+      document.getElementById("hours").textContent = hours;
+      document.getElementById("minutes").textContent = minutes;
+      document.getElementById("seconds").textContent = seconds;
+
+      if (distance < 0) {
+        clearInterval(interval);
+        document.getElementById("countdown").textContent = "EXPIRED";
+      }
+    };
+
+    const interval = setInterval(countdown, 1000);
+    countdown();
+  });
+</script>
