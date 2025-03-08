@@ -4,14 +4,14 @@ import Navbar from "../components/iwd2025/navbar/navbar.astro";
 import Cta from "../components/iwd2025/cta/cta.astro";
 import Call4Speakers from "components/iwd2025/call4speakers/call4speakers.astro";
 import Maps from "components/iwd2025/maps/maps.astro";
-import Timer from "components/iwd2025/timer/timer.astro";
+import Speakers from "components/iwd2025/speakers/speakers.astro";
 ---
 
 <Layout title="IWD 2025">
 <Navbar />
 <Cta />
-<Timer/>
-
-<Call4Speakers />
+<div class="py-12 md:py-0  lg:py-32 bg-iwd-secondary"></div>
+<Speakers></Speakers>
+<!-- <Call4Speakers /> -->
 <Maps/>
 </Layout>

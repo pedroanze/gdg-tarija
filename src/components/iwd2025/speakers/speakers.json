@@ -1,0 +1,24 @@
+[
+
+    {
+      "nombre": "Flavia Davila",
+      "charla": "¿Qué pasa con las mujeres y los datos?",
+      "foto": "src/assets/iwd2025/speakers/Flavia.jpg",
+      "ciudad":"Cochabamba",
+      "instagram": "https://www.instagram.com/justme.fla/",
+      "linkedin": "https://www.linkedin.com/in/flavia-davila/"
+    },
+
+      {
+        "nombre": "Adriana Eileen Paz Rivas",
+        "charla": "Multipotenciales: Ser Bueno en todo y nada a la vez, ¿Don o maldición?",
+        "ciudad":"La Paz",
+        "foto": "src/assets/iwd2025/speakers/AdrianaPaz.JPG",
+        "tiktok": "https://www.tiktok.com/@adrianapaz2000",
+        "instagram":"https://www.instagram.com/adri_gominola/",
+        "linkedin":"http://www.linkedin.com/in/adriana-eileen-paz-rivas"
+      }
+
+   
+  ]
+  

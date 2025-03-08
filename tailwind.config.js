@@ -30,6 +30,7 @@ export default {
         "iwd-primary":"#165185",
         "iwd-secondary":"#CAE6FF",
         "iwd-text":"#2480F0",
+        "iwd-accent":"#0f7c67",
         blue: {
           50: "#F0F5FE",
           100: "#DCE9FD",
