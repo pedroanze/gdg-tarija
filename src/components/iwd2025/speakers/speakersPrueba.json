@@ -12,7 +12,7 @@
     "nombre": "Adriana Calvo Bueno",
     "charla": "¿Dónde están las mujeres?",
     "ciudad":"Sucre",
-    "foto": "public/img/speakersIWD2025/AdrianaCalvo.jpeg",
+    "foto": "img/speakersIWD2025/AdrianaCalvo.jpeg",
     "tiktok": "https://www.tiktok.com/@adri.js_",
     "instagram":"https://www.instagram.com/adri.js_/"
   },
@@ -20,7 +20,7 @@
     "nombre": "Sidney Guerra",
     "charla": "De la ingeniería al emprendimiento: Mi viaje multifacético en la tecnología",
     "ciudad":"Oruro",
-    "foto": "/public/img/speakersIWD2025/Sidney.jpg",
+    "foto": "/img/speakersIWD2025/Sidney.jpg",
     "linkedin": "www.linkedin.com/in/sidney-guerrac",
     "instagram": "https://www.instagram.com/sidney_guerrac/"
 
@@ -29,7 +29,7 @@
     "nombre": "Damaris Mamani",
     "charla": "Atrévete a Intentar: Transformando el Miedo en Acción",
     "ciudad":"Tarija",
-    "foto": "public/img/speakersIWD2025/Damaris.jpg",
+    "foto": "img/speakersIWD2025/Damaris.jpg",
     "linkedin": "https://www.linkedin.com/in/damarismamani",
     "instagram": " https://www.instagram.com/damaris__mamani"
 
