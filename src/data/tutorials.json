@@ -1,31 +1,144 @@
 [
   {
-    "slug": "astro-basico",
-    "titulo": "Curso Básico de Astro",
-    "autor": "Ángel",
+    "slug": "build",
+    "titulo": "Model Context Protocol con Gemini: Integra flujos visuales con Streamlit",
+    "autor": "Mauricio Rosas",
+    "foto": "https://res.cloudinary.com/dopkch3x9/image/upload/v1746929395/DH_-_Mauricio_Rosas_Vela%CC%81squez_qwpiny.jpg",
+    "linkedin": "https://www.linkedin.com/in/mauricio-rosas-vel%C3%A1squez-8433352a2/",
+    "fecha": "17 de mayo de 2025",
     "secciones": [
       {
-        "id": "bienvenida",
-        "titulo": "Bienvenida",
+        "id": "introduccion",
+        "titulo": "Introducción",
         "subsecciones": [
           {
-            "titulo": "Introducción",
-            "texto": "Bienvenido al curso...",
-            "codigo": "console.log('Hola Astro');",
-            "imagen": "/img/intro.png",
-            "cita": "“La simplicidad es la máxima sofisticación.” - Da Vinci"
+            "titulo": "Contexto del taller",
+            "texto": "El presente taller forma parte de la iniciativa Road to: Build With AI y tiene como finalidad capacitar a los participantes en el desarrollo rápido de herramientas prácticas impulsadas por inteligencia artificial. A lo largo de tres horas, se construirá una aplicación web que, a partir de una simple descripción textual, sea capaz de generar flujos de pantallas para una aplicación móvil o web, visualizándolos como diagramas estructurados.",
+            "cita": null
+          },
+          {
+            "titulo": "Tecnologías usadas",
+            "texto": "Este proyecto utiliza como núcleo un modelo de lenguaje de Google (Gemini), al cual se accede mediante una API gratuita. Para mejorar la precisión y la utilidad de las respuestas generadas, se emplea el enfoque de *Model Context Protocol (MCP)*, el cual permite estructurar los prompts con contexto explícito y orientación de rol. La aplicación se desarrolla con **Streamlit**, lo que permite crear interfaces interactivas rápidamente sin necesidad de conocimientos avanzados de frontend. A su vez, los flujos de pantallas se visualizan utilizando **Graphviz**, una herramienta sencilla y efectiva para representar grafos y diagramas. Todo el código del proyecto se gestiona con **Git** y **GitHub**, y finalmente se",
+            "cita": null
+          }
+        ]
+      },
+      {
+        "id": "requisitos",
+        "titulo": "Requisitos previos",
+        "subsecciones": [
+          {
+            "titulo": "Python instalado",
+            "texto": "Es necesario tener Python 3.10 o superior instalado en el sistema. Se puede verificar con `python --version` o instalar desde https://www.python.org/downloads/",
+            "codigo": "python --version",
+            "cita": null
+          },
+          {
+            "titulo": "Conocimientos básicos de Git y GitHub",
+            "texto": "Se recomienda saber clonar repos, hacer commits y subir cambios a GitHub. Git se puede instalar desde https://git-scm.com/downloads",
+            "codigo": "git --version",
+            "cita": null
+          },
+          {
+            "titulo": "Cuenta de Google activa",
+            "texto": "Es indispensable para acceder a Google AI Studio y generar claves de API para Gemini.",
+            "cita": null
           }
         ]
       },
       {
         "id": "instalacion",
-        "titulo": "Instalación de Astro",
+        "titulo": "Instalación del entorno",
         "subsecciones": [
           {
-            "titulo": "Requisitos",
-            "texto": "Necesitas Node.js y un editor...",
-            "codigo": "npm create astro@latest",
-            "imagen": "/img/install.png",
+            "titulo": "Crear carpeta y entorno virtual",
+            "texto": "Se creará una carpeta para el proyecto y un entorno virtual para aislar dependencias.",
+            "codigo": "mkdir generador-flujos-apps\ncd generador-flujos-apps\npython -m venv venv\nvenv\\Scripts\\activate",
+            "cita": null
+          },
+          {
+            "titulo": "Instalar dependencias",
+            "texto": "Se instalarán Streamlit, Graphviz y requests mediante pip.",
+            "codigo": "pip install streamlit graphviz requests",
+            "cita": null
+          },
+          {
+            "titulo": "Verificar instalación de Graphviz",
+            "texto": "Además de instalar la librería, se debe tener Graphviz en el sistema. Verifica con los comandos apropiados según tu sistema operativo.",
+            "codigo": "brew install graphviz\nsudo apt install graphviz",
+            "cita": null
+          },
+          {
+            "titulo": "Crear archivo base",
+            "texto": "Crea un archivo `app.py` como punto de inicio del proyecto.",
+            "codigo": "import streamlit as st\n\nst.title(\"Generador de Flujos de Apps\")\nst.text_input(\"Describe tu idea de app\")\nst.button(\"Generar flujo\")",
+            "cita": null
+          }
+        ]
+      },
+      {
+        "id": "mcp",
+        "titulo": "Protocolo MCP",
+        "subsecciones": [
+          {
+            "titulo": "Estructura de un prompt MCP",
+            "texto": "El MCP divide el prompt en secciones como ROL, OBJETIVO, INPUT y OUTPUT para darle al modelo más contexto estructurado.",
+            "codigo": "[ROL]\nActúa como un diseñador de productos digitales especializado en UX.\n\n[OBJETIVO]\nTu tarea es generar un flujo de pantallas a partir de una idea de aplicación proporcionada por el usuario.\n\n[INPUT]\nUna app para ayudar a personas mayores a recordar tomar sus medicamentos.\n\n[OUTPUT]\nInicio → Registro → Panel de usuario → Alarma de medicamento → Confirmación",
+            "cita": null
+          },
+          {
+            "titulo": "Ventajas del MCP",
+            "texto": "Permite respuestas más estructuradas, precisas y controladas. Mejora el debugging de prompts y la claridad del rol del modelo.",
+            "cita": null
+          }
+        ]
+      },
+      {
+        "id": "api-gemini",
+        "titulo": "Uso de la API de Gemini",
+        "subsecciones": [
+          {
+            "titulo": "Obtener clave de API",
+            "texto": "La clave gratuita se genera en https://aistudio.google.com/app/apikey y debe guardarse en una variable de entorno o archivo `.env`.",
+            "cita": null
+          },
+          {
+            "titulo": "Ejemplo básico de uso",
+            "texto": "Código en Python que muestra cómo enviar un prompt y recibir un flujo generado.",
+            "codigo": "import requests\n\nAPI_KEY = \"TU_CLAVE_API\"\nurl = f\"https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key={API_KEY}\"\n\nprompt_mcp = \"\"\"\n[ROL]\nEres un diseñador de experiencia de usuario experto en apps móviles.\n\n[OBJETIVO]\nGenera un flujo de pantallas necesario para la aplicación descrita.\n\n[INPUT]\nUna app para encontrar mascotas perdidas y contactar con sus dueños.\n\n[OUTPUT]\nInicio → Mapa de mascotas → Detalle → Contacto → Confirmación\n\"\"\"\n\nresponse = requests.post(\n    url,\n    headers={\"Content-Type\": \"application/json\"},\n    json={\"contents\": [{\"parts\": [{\"text\": prompt_mcp}]}]}\n)\n\nresult = response.json()\nprint(result['candidates'][0]['content']['parts'][0]['text'])",
+            "cita": null
+          }
+        ]
+      },
+      {
+        "id": "streamlit",
+        "titulo": "Interfaz con Streamlit y Graphviz",
+        "subsecciones": [
+          {
+            "titulo": "Estructura de la app",
+            "texto": "La interfaz tiene entrada, botón de envío y visualización de resultados con texto y grafo.",
+            "cita": null
+          },
+          {
+            "titulo": "Ventajas del enfoque",
+            "texto": "Streamlit permite crear la interfaz sin saber frontend. Graphviz permite visualizar el flujo fácilmente.",
+            "cita": null
+          }
+        ]
+      },
+      {
+        "id": "deploy",
+        "titulo": "Despliegue en Streamlit Cloud",
+        "subsecciones": [
+          {
+            "titulo": "Requisitos para publicar",
+            "texto": "Necesitas una cuenta en GitHub y en Streamlit Cloud. El repo debe tener `app.py` y `requirements.txt`.",
+            "codigo": "streamlit\nrequests\ngraphviz",
+            "cita": null
+          },
+          {
+            "titulo": "Pasos para deploy",
+            "texto": "Sube el proyecto a GitHub, vincula tu cuenta de Streamlit Cloud y crea la app desde el panel de control.",
             "cita": null
           }
         ]

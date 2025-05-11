@@ -2,6 +2,10 @@
 import Layout from "layouts/Layout.astro";
 import data from "../../data/tutorials.json";
 import CourseSidebar from "components/tutorial/CourseSidebar.astro";
+import { Image } from "astro:assets";
+import ImgLinkedIn from "../../assets/svg/linkedin.svg";
+import Navbar from "components/tutorial/navbar/Navbar.astro";
+import { Icon } from "astro-icon/components";
 
 export function getStaticPaths() {
   return data.map((tutorial) => ({
@@ -18,68 +22,132 @@ if (!tutorial) {
 ---
 
 <Layout title={tutorial.titulo}>
-  <div class="flex flex-col md:flex-row min-h-screen bg-gray-50">
+  <Navbar />
+  <div class="mt-24 flex flex-col md:flex-row min-h-screen">
     <!-- Sidebar -->
     <CourseSidebar tutorial={tutorial} />
 
     <!-- Main content -->
-    <main class="flex-1 px-8 py-10 text-gray-800">
-      <h1 class="text-4xl font-bold mb-4 text-purple-700">
-        Bienvenida al Road to Build With AI – Tarija
-      </h1>
+    <main class="flex-1 bg-Background">
+      <div class="max-w-4xl mx-auto px-6 py-10">
+        <h1 class="text-4xl font-bold mb-6 text-purple-700 text-center">
+          Bienvenida al Road to Build With AI – Tarija
+        </h1>
 
-      <section class="bg-white p-6 rounded-lg shadow border space-y-5">
-        <p class="text-gray-800 text-lg">
-          ¡Bienvenidas y bienvenidos!<br />
-          Hoy arrancamos una jornada única donde combinaremos <strong
-            >tecnología, aprendizaje y comunidad</strong
-          >. Este espacio es parte del <strong>Road to Build With AI</strong>,
-          una serie de entrenamientos presenciales organizados en diferentes
-          ciudades del país como antesala a la gran hackathon nacional <strong
-            >Build With AI Bolivia 2025</strong
-          >, que se realizará en Santa Cruz.
-        </p>
+        <!-- Speaker Card -->
+        <div
+          class="bg-white border border-gray-200 rounded-xl shadow-md mb-10 p-6 flex items-center gap-6"
+        >
+          <img
+            src={tutorial.foto}
+            alt={tutorial.autor}
+            class="w-20 h-20 rounded-full object-cover border shadow"
+          />
+          <div>
+            <p class="text-sm text-gray-500 uppercase font-semibold">
+              Tallerista
+            </p>
+            <h2 class="text-lg font-bold text-gray-800">{tutorial.autor}</h2>
+            <div class="flex items-center gap-4 text-sm text-gray-600 mt-2">
+              <a
+                href={tutorial.linkedin}
+                class="flex items-center gap-1 hover:text-blue-600 transition"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Icon name="mdi:linkedin" class="h-5 w-auto" />
+                Ver perfil
+              </a>
+              <span class="flex items-center gap-1 text-sm">
+                <Icon name="mdi:calendar-month-outline" class="h-5 w-auto" />
+                {tutorial.fecha}
+              </span>
+            </div>
+          </div>
+        </div>
 
-        <p class="text-gray-700">
-          El objetivo de este taller es que salgas con una idea clara de cómo
-          aplicar <strong>inteligencia artificial generativa</strong> en productos
-          reales, usando herramientas modernas, buenas prácticas de diseño y despliegue
-          ágil. Queremos ayudarte a transformar tus ideas en prototipos funcionales…
-          ¡y listos para competir!
-        </p>
+        <!-- Content Card -->
+        <section
+          class="bg-white p-8 rounded-xl shadow space-y-6 border border-gray-100"
+        >
+          <p class="text-gray-800 text-lg leading-relaxed">
+            ¡Bienvenidas y bienvenidos!<br />
+            Hoy arrancamos una jornada única donde combinaremos
+            <strong> tecnología, aprendizaje y comunidad</strong>. Este espacio
+            es parte del
+            <strong> Road to Build With AI</strong>, una serie de entrenamientos
+            presenciales organizados en diferentes ciudades del país como
+            antesala a la gran hackathon nacional <strong
+              >Build With AI Bolivia 2025</strong
+            >, que se realizará en Santa Cruz.
+          </p>
 
-        <hr class="my-6 border-gray-300" />
+          <p class="text-gray-700 text-base">
+            El objetivo de este taller es que salgas con una idea clara de cómo
+            aplicar
+            <strong>inteligencia artificial generativa</strong> en productos reales,
+            usando herramientas modernas, buenas prácticas de diseño y despliegue
+            ágil. Queremos ayudarte a transformar tus ideas en prototipos funcionales…
+            ¡y listos para competir!
+          </p>
 
-        <h2 class="text-2xl font-semibold text-gray-800">
-          ¿Qué vas a aprender hoy?
-        </h2>
-        <ul class="list-disc list-inside text-gray-800 space-y-2">
-          <li>Cómo construir soluciones con IA integrada desde cero</li>
-          <li>Casos reales de uso de IA generativa en productos</li>
-          <li>Herramientas y recursos para desplegar más rápido y mejor</li>
-          <li>Tips clave para brillar en una hackathon</li>
-        </ul>
+          <hr class="border-gray-300" />
 
-        <hr class="my-6 border-gray-300" />
+          <div>
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+              ¿Qué vas a aprender hoy?
+            </h2>
+            <ul class="list-disc list-inside text-gray-800 space-y-2 text-base">
+              <li>✅ Cómo construir soluciones con IA integrada desde cero</li>
+              <li>✅ Casos reales de uso de IA generativa en productos</li>
+              <li>
+                ✅ Herramientas y recursos para desplegar más rápido y mejor
+              </li>
+              <li>✅ Tips clave para brillar en una hackathon</li>
+            </ul>
+          </div>
 
-        <h2 class="text-2xl font-semibold text-gray-800">Sobre GDG Tarija</h2>
-        <p class="text-gray-700">
-          Este evento es posible gracias a <strong
-            >Google Developer Groups Tarija</strong
-          >, una comunidad abierta para personas apasionadas por la tecnología.
-          Aquí compartimos conocimiento, organizamos eventos, y sobre todo,
-          creamos espacios para aprender y construir juntos.
-        </p>
+          <hr class="border-gray-300" />
 
-        <p class="text-gray-700 font-medium">
-          Si estás aquí, es porque te interesa construir el futuro. Así que…
-          pongámonos manos a la obra.
-        </p>
+          <div>
+            <h2 class="text-2xl font-semibold text-gray-800 mb-2">
+              Sobre GDG Tarija
+            </h2>
+            <p class="text-gray-700">
+              Este evento es posible gracias a <strong
+                >Google Developer Groups Tarija</strong
+              >, una comunidad abierta para personas apasionadas por la
+              tecnología. Aquí compartimos conocimiento, organizamos eventos, y
+              sobre todo, creamos espacios para aprender y construir juntos.
+            </p>
 
-        <p class="text-xl font-bold text-purple-700">
-          ¡Bienvenid@s al Road! 🚀
-        </p>
-      </section>
+            <p class="text-gray-700 font-medium mt-4">
+              Si estás aquí, es porque te interesa construir el futuro. Así que…
+              pongámonos manos a la obra.
+            </p>
+          </div>
+          <!-- Botón de inicio con título debajo -->
+          <div class="mt-10">
+            <a
+              href={`/tutorial/${slug}/introduccion`}
+              class="block w-full bg-white text-purple-600 hover:bg-purple-50 border border-purple-100 hover:border-purple-300 font-semibold text-lg py-5 px-6 rounded-xl transition-all duration-200 shadow-md relative"
+            >
+              <div class="flex items-center justify-between">
+                <div>
+                  <p class="text-sm text-gray-500 font-normal mt-2">
+                    <span class="font-medium text-gray-700">Introducción</span>
+                  </p>
+                  <span>Comenzar ahora</span>
+                </div>
+                <Icon
+                  name="mdi:rocket-launch-outline"
+                  class="w-7 h-7 text-purple-500"
+                />
+              </div>
+            </a>
+          </div>
+        </section>
+      </div>
     </main>
   </div>
 </Layout>
