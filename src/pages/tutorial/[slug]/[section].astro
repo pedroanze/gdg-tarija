@@ -1,0 +1,69 @@
+---
+import Layout from "layouts/Layout.astro";
+import data from "../../../data/tutorials.json";
+import CourseSidebar from "components/tutorial/CourseSidebar.astro";
+
+export function getStaticPaths() {
+  return data.flatMap((tutorial) =>
+    tutorial.secciones.map((sec) => ({
+      params: {
+        slug: tutorial.slug,
+        section: sec.id,
+      },
+    }))
+  );
+}
+
+const { slug, section } = Astro.params;
+
+const tutorial = data.find((t) => t.slug === slug);
+if (!tutorial) throw new Error("Tutorial no encontrado");
+
+const currentSection = tutorial.secciones.find((s) => s.id === section);
+if (!currentSection) throw new Error("Sección no encontrada");
+---
+
+<Layout title={`${currentSection.titulo} - ${tutorial.titulo}`}>
+  <div class="flex flex-col md:flex-row min-h-screen bg-background">
+    <!-- Sidebar fijo -->
+    <CourseSidebar tutorial={tutorial} />
+
+    <!-- Contenido principal -->
+    <main class="flex-1 px-8 py-10 text-gray-800">
+      <h1 class="text-3xl font-bold mb-6 text-gray-900">
+        {currentSection.titulo}
+      </h1>
+
+      {
+        currentSection.subsecciones.map((sub, i) => (
+          <section class="mb-10">
+            <h2 class="text-2xl font-semibold mb-2 text-blue-800">
+              {i + 1}. {sub.titulo}
+            </h2>
+            <p class="mb-4 text-gray-700">{sub.texto}</p>
+
+            {sub.codigo && (
+              <pre class="bg-gray-100 p-4 rounded text-sm mb-4 overflow-auto">
+                <code>{sub.codigo}</code>
+              </pre>
+            )}
+
+            {sub.imagen && (
+              <img
+                src={sub.imagen}
+                alt={sub.titulo}
+                class="rounded shadow mb-4 max-w-full"
+              />
+            )}
+
+            {sub.cita && (
+              <blockquote class="border-l-4 border-blue-300 pl-4 italic text-gray-600">
+                {sub.cita}
+              </blockquote>
+            )}
+          </section>
+        ))
+      }
+    </main>
+  </div>
+</Layout>

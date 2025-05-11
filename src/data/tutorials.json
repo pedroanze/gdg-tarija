@@ -1,0 +1,35 @@
+[
+  {
+    "slug": "astro-basico",
+    "titulo": "Curso Básico de Astro",
+    "autor": "Ángel",
+    "secciones": [
+      {
+        "id": "bienvenida",
+        "titulo": "Bienvenida",
+        "subsecciones": [
+          {
+            "titulo": "Introducción",
+            "texto": "Bienvenido al curso...",
+            "codigo": "console.log('Hola Astro');",
+            "imagen": "/img/intro.png",
+            "cita": "“La simplicidad es la máxima sofisticación.” - Da Vinci"
+          }
+        ]
+      },
+      {
+        "id": "instalacion",
+        "titulo": "Instalación de Astro",
+        "subsecciones": [
+          {
+            "titulo": "Requisitos",
+            "texto": "Necesitas Node.js y un editor...",
+            "codigo": "npm create astro@latest",
+            "imagen": "/img/install.png",
+            "cita": null
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,85 @@
+---
+import Layout from "layouts/Layout.astro";
+import data from "../../data/tutorials.json";
+import CourseSidebar from "components/tutorial/CourseSidebar.astro";
+
+export function getStaticPaths() {
+  return data.map((tutorial) => ({
+    params: { slug: tutorial.slug },
+  }));
+}
+
+const { slug } = Astro.params;
+const tutorial = data.find((t) => t.slug === slug);
+
+if (!tutorial) {
+  throw new Error(`Tutorial con slug "${slug}" no encontrado`);
+}
+---
+
+<Layout title={tutorial.titulo}>
+  <div class="flex flex-col md:flex-row min-h-screen bg-gray-50">
+    <!-- Sidebar -->
+    <CourseSidebar tutorial={tutorial} />
+
+    <!-- Main content -->
+    <main class="flex-1 px-8 py-10 text-gray-800">
+      <h1 class="text-4xl font-bold mb-4 text-purple-700">
+        Bienvenida al Road to Build With AI – Tarija
+      </h1>
+
+      <section class="bg-white p-6 rounded-lg shadow border space-y-5">
+        <p class="text-gray-800 text-lg">
+          ¡Bienvenidas y bienvenidos!<br />
+          Hoy arrancamos una jornada única donde combinaremos <strong
+            >tecnología, aprendizaje y comunidad</strong
+          >. Este espacio es parte del <strong>Road to Build With AI</strong>,
+          una serie de entrenamientos presenciales organizados en diferentes
+          ciudades del país como antesala a la gran hackathon nacional <strong
+            >Build With AI Bolivia 2025</strong
+          >, que se realizará en Santa Cruz.
+        </p>
+
+        <p class="text-gray-700">
+          El objetivo de este taller es que salgas con una idea clara de cómo
+          aplicar <strong>inteligencia artificial generativa</strong> en productos
+          reales, usando herramientas modernas, buenas prácticas de diseño y despliegue
+          ágil. Queremos ayudarte a transformar tus ideas en prototipos funcionales…
+          ¡y listos para competir!
+        </p>
+
+        <hr class="my-6 border-gray-300" />
+
+        <h2 class="text-2xl font-semibold text-gray-800">
+          ¿Qué vas a aprender hoy?
+        </h2>
+        <ul class="list-disc list-inside text-gray-800 space-y-2">
+          <li>Cómo construir soluciones con IA integrada desde cero</li>
+          <li>Casos reales de uso de IA generativa en productos</li>
+          <li>Herramientas y recursos para desplegar más rápido y mejor</li>
+          <li>Tips clave para brillar en una hackathon</li>
+        </ul>
+
+        <hr class="my-6 border-gray-300" />
+
+        <h2 class="text-2xl font-semibold text-gray-800">Sobre GDG Tarija</h2>
+        <p class="text-gray-700">
+          Este evento es posible gracias a <strong
+            >Google Developer Groups Tarija</strong
+          >, una comunidad abierta para personas apasionadas por la tecnología.
+          Aquí compartimos conocimiento, organizamos eventos, y sobre todo,
+          creamos espacios para aprender y construir juntos.
+        </p>
+
+        <p class="text-gray-700 font-medium">
+          Si estás aquí, es porque te interesa construir el futuro. Así que…
+          pongámonos manos a la obra.
+        </p>
+
+        <p class="text-xl font-bold text-purple-700">
+          ¡Bienvenid@s al Road! 🚀
+        </p>
+      </section>
+    </main>
+  </div>
+</Layout>
