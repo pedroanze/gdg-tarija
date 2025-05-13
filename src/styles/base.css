@@ -40,10 +40,10 @@ html {
   /* Gradient */
   .card-wrapper::before {
     background: conic-gradient(
-      #34A853 3deg,
-      #EA4335 15deg,
-      #F9AB00 25deg,
-      #4285F4 40deg,
+      #34a853 3deg,
+      #ea4335 15deg,
+      #f9ab00 25deg,
+      #4285f4 40deg,
       transparent 60deg
     );
 
@@ -55,11 +55,22 @@ html {
     @apply absolute left-[1px] top-[1px] h-[calc(100%-2px)] w-[calc(100%-2px)] rounded-2xl bg-gradient-to-b from-gray-600 to-gray-700;
   }
 
-  .card-content:hover .redes-sociales{
+  .card-content:hover .redes-sociales {
     @apply translate-y-0 opacity-100;
   }
 
-  .card-content:hover .card-items{
+  .card-content:hover .card-items {
     @apply -translate-y-3;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .astro-code,
+  .astro-code span {
+    color: var(--shiki-dark) !important;
+    background-color: var(--shiki-dark-bg) !important;
+    font-style: var(--shiki-dark-font-style) !important;
+    font-weight: var(--shiki-dark-font-weight) !important;
+    text-decoration: var(--shiki-dark-text-decoration) !important;
   }
 }
