@@ -23,18 +23,6 @@
     "Comisión": "Organizer"
   },
   {
-    "Photo": "/img/members/Natalia_Calle.jpg",
-    "Name":"Natalia Calle",
-    "Linkedin": "https://www.linkedin.com/in/natalia-callet/",
-    "Github": "",
-    "Facebook": "",
-    "Instagram": "",
-    "Sitio_web": "",
-    "About": "Ingeniera Informática, apasionada por el aprendizaje continuo y la adquisición de nuevas habilidades, herramientas y tecnologías.",
-    "foto": "",
-    "Comisión": "Organizer"
-  },
-  {
     "Photo": "/img/members/Damaris.jpg",
     "Name": "Damaris Mamani",
     "Linkedin": "",
@@ -81,18 +69,6 @@
     "About": "Otaku, Gamer y un entusiasta de la tecnología",
     "foto": "",
     "Comisión": "Diseño"
-  },
-  {
-    "Photo": "/img/members/Fridel_Baldiviezo.jpg",
-    "Name":"Fridel Baldiviezo",
-    "Linkedin": "https://www.linkedin.com/in/frideldev/",
-    "Github": "https://github.com/frideldev",
-    "Facebook": "https://www.facebook.com/frideldev",
-    "Instagram": "",
-    "Sitio_web": "http://fridel.info.bo/",
-    "About": "MBA con especialidad en direccion de poeyectos , ing de sistemas , docente universitario, emprendedor de proyectos sociales e investigador",
-    "foto": "",
-    "Comisión": "Desarrollo"
   },
   {
     "Photo": "/img/members/Yordi_Vega.jpg",
