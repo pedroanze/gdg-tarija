@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Inicio",
+    "link": "/"
+  },
+  {
+    "name": "Eventos",
+    "link": "/#events"
+  },
+  {
+    "name": "Miembros",
+    "link": "/#members"
+  },
+  {
+    "name": "Nosotros",
+    "link": "/#about"
+  },
+  {
+    "name": "Contacto",
+    "link": "/#contact"
+  }
+] 

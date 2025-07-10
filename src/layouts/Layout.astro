@@ -2,9 +2,18 @@
 import "@styles/base.css";
 interface Props {
   title: string;
+  description?: string;
+  image?: string;
 }
 
-const { title } = Astro.props;
+const { title, description, image } = Astro.props;
+
+// Valores por defecto
+const defaultDescription = "Google Developer Group Tarija - Comunidad tech más vibrante de Bolivia. Descubre las últimas innovaciones de Google, conecta con desarrolladores y participa en eventos como Google I/O Extended.";
+const defaultImage = "https://res.cloudinary.com/dopkch3x9/image/upload/v1751748539/logo_GDG_dgigmw.png";
+
+const metaDescription = description || defaultDescription;
+const metaImage = image || defaultImage;
 ---
 
 <!doctype html>
@@ -12,9 +21,46 @@ const { title } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-    <meta name="description" content="GDG Tarija" />
-    <meta property="og:image" content="" />
+    <meta
+      name="description"
+      content={metaDescription}
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags -->
+    <meta property="og:title" content="{title}" />
+    <meta
+      property="og:description"
+      content={metaDescription}
+    />
+    <meta
+      property="og:image"
+      content={metaImage}
+    />
+    <meta property="og:url" content="https://gdgtarija.dev" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="GDG Tarija" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{title}" />
+    <meta
+      name="twitter:description"
+      content={metaDescription}
+    />
+    <meta
+      name="twitter:image"
+      content={metaImage}
+    />
+
+    <!-- Additional SEO -->
+    <meta
+      name="keywords"
+      content="GDG, Google Developer Group, Tarija, Bolivia, Google I/O Extended, Developers, Tech Community, Programming, Innovation"
+    />
+    <meta name="author" content="GDG Tarija" />
+    <link rel="canonical" href="https://gdgtarija.com" />
+
     <title>{title}</title>
 
     <link

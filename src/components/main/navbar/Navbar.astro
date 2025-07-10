@@ -1,35 +1,39 @@
 ---
 import { Image } from "astro:assets";
+import { Menu, X } from "lucide-astro";
 import Logo from "../../../assets/svg/LOGO-GDG-TARIJA.svg";
 import Logo2 from "../../../assets/svg/LOGO-GDG-TARIJA-DESKTOP.svg";
 import MenuList from "../navbar/menuList.json";
 ---
 
 <header
-  class="bg-Background top-0 start-0 border-b border-Gray-900 w-full fixed z-10"
+  class="bg-white/95 backdrop-blur-sm top-0 start-0 border-b border-gray-200 w-full fixed z-10 shadow-sm"
 >
-  <nav class="flex flex-wrap justify-between items-center py-6 px-6 md:px-10">
+  <nav class="flex flex-wrap justify-between items-center py-4 px-6 md:px-10">
     <div class="h-12 flex items-center">
       <Image class="w-36 md:hidden" src={Logo} alt="logo" />
       <Image class="w-48 hidden md:flex lg:w-80" src={Logo2} alt="logo2" />
     </div>
-    <div
+    <button
       id="menu-button"
-      class="text-Gray-900 text-4xl font-bold md:hidden cursor-pointer"
+      class="text-gray-700 hover:text-azul-GDG md:hidden cursor-pointer p-2 rounded-lg hover:bg-gray-100 transition-all duration-200"
     >
-      &equiv;
-    </div>
+      <Menu class="h-6 w-6" />
+    </button>
     <div
       id="menu-open"
-      class="items-center text-center w-full hidden md:flex md:w-auto animate-fade-down animate-duration-500"
+      class="items-center text-center w-full hidden md:flex md:w-auto animate-fade-down animate-duration-300"
     >
       <ul
-        class="font-medium text-sm lg:text-lg text-Gray-900 bg-Background flex flex-col pt-7 md:flex-row md:pt-0 gap-9 gap-x-5 lg:gap-x-9"
+        class="font-medium text-sm lg:text-lg text-gray-700 bg-white/95 backdrop-blur-sm flex flex-col pt-6 md:flex-row md:pt-0 gap-6 md:gap-x-8 lg:gap-x-10 md:bg-transparent md:backdrop-blur-none rounded-lg md:rounded-none shadow-lg md:shadow-none mt-2 md:mt-0"
       >
         {
           MenuList.map((menu) => (
             <li>
-              <a href={menu.href} class="hover:text-gray-500">
+              <a 
+                href={menu.href} 
+                class="block px-4 py-3 md:px-0 md:py-0 hover:text-azul-GDG hover:bg-gray-50 md:hover:bg-transparent transition-all duration-200 rounded-md"
+              >
                 {menu.title}
               </a>
             </li>
@@ -43,13 +47,24 @@ import MenuList from "../navbar/menuList.json";
 <script>
   const button = document.querySelector("#menu-button");
   const menuOpen = document.querySelector("#menu-open");
+  const menuIcon = button.querySelector("svg");
+  
   button.addEventListener("click", () => {
     menuOpen.classList.toggle("hidden");
+    
+    // Cambiar ícono cuando el menú está abierto/cerrado
+    if (menuOpen.classList.contains("hidden")) {
+      menuIcon.innerHTML = '<path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>';
+    } else {
+      menuIcon.innerHTML = '<path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>';
+    }
   });
 
   window.addEventListener("scroll", () => {
     if (!menuOpen.classList.contains("hidden")) {
       menuOpen.classList.add("hidden");
+      // Restaurar ícono de menú al hacer scroll
+      menuIcon.innerHTML = '<path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>';
     }
   });
 </script>
