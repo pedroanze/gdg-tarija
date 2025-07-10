@@ -10,7 +10,8 @@ const { title, description, image } = Astro.props;
 
 // Valores por defecto
 const defaultDescription = "Google Developer Group Tarija - Comunidad tech más vibrante de Bolivia. Descubre las últimas innovaciones de Google, conecta con desarrolladores y participa en eventos como Google I/O Extended.";
-const defaultImage = "https://res.cloudinary.com/dopkch3x9/image/upload/v1751748539/logo_GDG_dgigmw.png";
+// Imagen optimizada para WhatsApp (cuadrada y menor a 300KB)
+const defaultImage = "https://res.cloudinary.com/dopkch3x9/image/upload/w_1200,h_1200,c_fill,f_auto,q_auto:good/v1751748539/logo_GDG_dgigmw.png";
 
 const metaDescription = description || defaultDescription;
 const metaImage = image || defaultImage;
@@ -37,7 +38,10 @@ const metaImage = image || defaultImage;
       property="og:image"
       content={metaImage}
     />
-    <meta property="og:url" content="https://gdgtarija.dev" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="1200" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:url" content="https://gdgtarija.com" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="GDG Tarija" />
 
@@ -52,6 +56,9 @@ const metaImage = image || defaultImage;
       name="twitter:image"
       content={metaImage}
     />
+
+    <!-- WhatsApp specific optimization -->
+    <meta property="og:image:alt" content="GDG Tarija - Google Developer Group" />
 
     <!-- Additional SEO -->
     <meta
