@@ -13,9 +13,9 @@ import { Calendar, MapPin, Users, ArrowRight } from "lucide-astro";
   </div>
 
   <div class="relative max-w-6xl mx-auto px-6 pt-20 pb-12 w-full">
-    <div class="text-center space-y-8">
+    <div class="text-center space-y-8 animate-fade-up animate-duration-[1000ms] animate-ease-out">
       <!-- Logo de Google I/O -->
-      <div class="flex justify-center mb-8">
+      <div class="flex justify-center mb-8 animate-fade-up animate-duration-[1200ms] animate-delay-[200ms]">
         <img
           src="https://res.cloudinary.com/dopkch3x9/image/upload/v1751729535/logo_google_IO_jcbvrf.svg"
           alt="Google I/O Extended Logo"
@@ -24,7 +24,7 @@ import { Calendar, MapPin, Users, ArrowRight } from "lucide-astro";
       </div>
 
       <!-- Título principal -->
-      <div class="space-y-4">
+      <div class="space-y-4 animate-fade-up animate-duration-[1200ms] animate-delay-[400ms]">
         <!-- Subtítulo llamativo -->
         <p
           class="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto font-medium"
@@ -35,10 +35,10 @@ import { Calendar, MapPin, Users, ArrowRight } from "lucide-astro";
       </div>
 
       <!-- Información del evento -->
-      <div class="grid md:grid-cols-2 gap-4 max-w-2xl mx-auto mt-12">
+      <div class="grid md:grid-cols-2 gap-4 max-w-2xl mx-auto mt-12 animate-fade-up animate-duration-[1200ms] animate-delay-[600ms]">
         <!-- Fecha -->
         <div
-          class="flex items-center space-x-3 p-3 bg-white/70 backdrop-blur-sm rounded-lg border border-gray-200 shadow-sm"
+          class="flex items-center space-x-3 p-3 bg-white/70 backdrop-blur-sm rounded-lg border border-gray-200 shadow-sm hover:scale-105 transition-transform duration-300"
         >
           <div class="p-2 bg-azul-GDG/10 rounded-full">
             <Calendar class="h-5 w-5 text-azul-GDG" />
@@ -53,7 +53,7 @@ import { Calendar, MapPin, Users, ArrowRight } from "lucide-astro";
 
         <!-- Lugar -->
         <div
-          class="flex items-center space-x-3 p-3 bg-white/70 backdrop-blur-sm rounded-lg border border-gray-200 shadow-sm"
+          class="flex items-center space-x-3 p-3 bg-white/70 backdrop-blur-sm rounded-lg border border-gray-200 shadow-sm hover:scale-105 transition-transform duration-300"
         >
           <div class="p-2 bg-verde-GDG/10 rounded-full">
             <MapPin class="h-5 w-5 text-verde-GDG" />
@@ -68,7 +68,7 @@ import { Calendar, MapPin, Users, ArrowRight } from "lucide-astro";
       </div>
 
       <!-- Botón de inscripción -->
-      <div class="flex justify-center items-center mt-12">
+      <div class="flex justify-center items-center mt-12 animate-fade-up animate-duration-[1200ms] animate-delay-[800ms]">
         <a
           href="https://events.gdg.com.bo/io-tarija-2025"
           target="_blank"

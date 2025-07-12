@@ -28,16 +28,15 @@ const stats = [
 
 <section class="py-16 bg-gray-50 border-y-2 border-[#E8EAEB]">
   <div class="max-w-6xl mx-auto px-6">
-    <div class="grid md:grid-cols-3 gap-8">
+    <!-- Grid de estadísticas -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       {
-        stats.map((stat) => (
-          <StatCard
-            gradientClass={stat.gradientClass}
-            borderColorClass={stat.borderColorClass}
-            img={stat.img}
-            title={stat.title}
-            subtitle={stat.subtitle}
-          />
+        stats.map((stat, index) => (
+          <div
+            class={`animate-fade-up animate-duration-[1000ms] animate-delay-[${index * 200}ms] animate-ease-out`}
+          >
+            <StatCard {...stat} />
+          </div>
         ))
       }
     </div>
