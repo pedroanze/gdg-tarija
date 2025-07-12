@@ -18,77 +18,44 @@ import { Menu, X } from "lucide-astro";
         </a>
       </div>
 
-      <!-- Navegación de escritorio -->
+      <div class="hidden md:block">
+        <a
+          href="https://events.gdg.com.bo/io-tarija-2025"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="bg-azul-GDG hover:bg-blue-600 text-white px-6 py-2 rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+        >
+          Inscríbete
+        </a>
+      </div>
 
-      <!-- Botón CTA -->
-      <a
-        href="https://events.gdg.com.bo/io-tarija-2025"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="bg-azul-GDG hover:bg-blue-600 text-white px-6 py-2 rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
-      >
-        Inscríbete
-      </a>
+      <!-- Botón hamburguesa móvil -->
+      <div class="md:hidden">
+        <button
+          id="mobile-menu-button"
+          class="p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200"
+        >
+          <Menu id="menu-icon" class="h-6 w-6 text-gray-700" />
+          <X id="close-icon" class="h-6 w-6 text-gray-700 hidden" />
+        </button>
+      </div>
     </div>
 
-    <!-- Menú móvil -->
-    <div class="md:hidden">
-      <button
-        id="mobile-menu-button"
-        class="p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200"
-      >
-        <Menu id="menu-icon" class="h-6 w-6 text-gray-700" />
-        <X id="close-icon" class="h-6 w-6 text-gray-700 hidden" />
-      </button>
-    </div>
-  </div>
-
-  <!-- Menú móvil expandido -->
-  <div
-    id="mobile-menu"
-    class="hidden md:hidden mt-4 pb-4 border-t border-gray-200"
-  >
-    <div class="flex flex-col space-y-3 mt-4">
-      <a
-        href="/"
-        class="text-gray-700 hover:text-azul-GDG transition-colors duration-200 font-medium py-2"
-      >
-        Inicio
-      </a>
-      <a
-        href="/#events"
-        class="text-gray-700 hover:text-azul-GDG transition-colors duration-200 font-medium py-2"
-      >
-        Eventos
-      </a>
-      <a
-        href="/#members"
-        class="text-gray-700 hover:text-azul-GDG transition-colors duration-200 font-medium py-2"
-      >
-        Miembros
-      </a>
-      <a
-        href="/#about"
-        class="text-gray-700 hover:text-azul-GDG transition-colors duration-200 font-medium py-2"
-      >
-        Nosotros
-      </a>
-      <a
-        href="/#contact"
-        class="text-gray-700 hover:text-azul-GDG transition-colors duration-200 font-medium py-2"
-      >
-        Contacto
-      </a>
-
-      <!-- Botón CTA móvil -->
-      <a
-        href="https://gdg.community.dev/gdg-tarija/"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="bg-azul-GDG hover:bg-blue-600 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-center mt-4"
-      >
-        Inscríbete
-      </a>
+    <!-- Menú móvil expandido -->
+    <div
+      id="mobile-menu"
+      class="hidden md:hidden mt-4 pb-4 border-t border-gray-200"
+    >
+      <div class="flex flex-col space-y-3 mt-4">
+        <a
+          href="https://events.gdg.com.bo/io-tarija-2025"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="bg-azul-GDG hover:bg-blue-600 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-center mt-4"
+        >
+          Inscríbete
+        </a>
+      </div>
     </div>
   </div>
 </nav>
@@ -126,4 +93,3 @@ import { Menu, X } from "lucide-astro";
     });
   });
 </script>
-
